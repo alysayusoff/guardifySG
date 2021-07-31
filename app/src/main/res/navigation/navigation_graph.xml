@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/landingPage">
+
+    <fragment
+        android:id="@+id/landingPage"
+        android:name="com.example.guardifysg.landingPage"
+        android:label="fragment_landing_page"
+        tools:layout="@layout/fragment_landing_page" />
+    <fragment
+        android:id="@+id/aboutPage"
+        android:name="com.example.guardifysg.aboutPage"
+        android:label="fragment_about_page"
+        tools:layout="@layout/fragment_about_page" />
+    <fragment
+        android:id="@+id/detailsPage"
+        android:name="com.example.guardifysg.detailsPage"
+        android:label="fragment_details_page"
+        tools:layout="@layout/fragment_details_page" />
+    <fragment
+        android:id="@+id/policiesPage"
+        android:name="com.example.guardifysg.policiesPage"
+        android:label="fragment_policies_page"
+        tools:layout="@layout/fragment_policies_page" />
+    <fragment
+        android:id="@+id/guidePage"
+        android:name="com.example.guardifysg.guidePage"
+        android:label="fragment_guide_page"
+        tools:layout="@layout/fragment_guide_page" />
+    <fragment
+        android:id="@+id/questionnairePage"
+        android:name="com.example.guardifysg.questionnairePage"
+        android:label="fragment_questionnaire_page"
+        tools:layout="@layout/fragment_questionnaire_page" />
+</navigation>
