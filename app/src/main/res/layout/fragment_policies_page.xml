@@ -6,15 +6,528 @@
     android:layout_height="match_parent"
     tools:context=".policiesPage">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Policies Page"
-        android:textSize="26sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#D5D5D5"
+        android:baselineAligned="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="681dp"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/typeContainer"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:padding="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="1dp">
+
+            <TextView
+                android:id="@+id/browseType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2D8BBD"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingStart="5dp"
+                android:text="BROWSE INSURANCE POLICIES BY TYPE"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal1"
+                android:layout_width="409dp"
+                android:layout_height="wrap_content"
+                android:background="#2D8BBD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/browseType">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerPolicyType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textCritical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Critical Illness"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11dp"
+                        app:layout_constraintBottom_toTopOf="@id/typeCriticalIllness"
+                        app:layout_constraintEnd_toEndOf="@id/typeCriticalIllness"
+                        app:layout_constraintStart_toStartOf="@id/typeCriticalIllness"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/typeCriticalIllness"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="handleSelection"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cancer"
+                        app:layout_constraintEnd_toStartOf="@id/typeDisability"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textCritical" />
+
+                    <TextView
+                        android:id="@+id/textDisability"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Disability"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11dp"
+                        app:layout_constraintBottom_toTopOf="@id/typeDisability"
+                        app:layout_constraintEnd_toEndOf="@id/typeDisability"
+                        app:layout_constraintStart_toStartOf="@id/typeDisability"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/typeDisability"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="handleSelection"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/disability"
+                        app:layout_constraintStart_toEndOf="@id/typeCriticalIllness"
+                        app:layout_constraintTop_toBottomOf="@id/textDisability" />
+
+                    <TextView
+                        android:id="@+id/textHospitalisation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Hospitalisation"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11dp"
+                        app:layout_constraintBottom_toTopOf="@id/typeHospitalisation"
+                        app:layout_constraintEnd_toEndOf="@id/typeHospitalisation"
+                        app:layout_constraintStart_toStartOf="@id/typeHospitalisation"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/typeHospitalisation"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:onClick="handleSelection"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/health"
+                        app:layout_constraintStart_toEndOf="@id/typeDisability"
+                        app:layout_constraintTop_toBottomOf="@id/textHospitalisation" />
+
+                    <TextView
+                        android:id="@+id/textAccident"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Accident"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11dp"
+                        app:layout_constraintBottom_toTopOf="@id/typeAccident"
+                        app:layout_constraintEnd_toEndOf="@id/typeAccident"
+                        app:layout_constraintStart_toStartOf="@id/typeAccident"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/typeAccident"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:onClick="handleSelection"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/car"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/typeHospitalisation"
+                        app:layout_constraintTop_toBottomOf="@id/textAccident" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textPolicies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=" INSURANCE POLICIES"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/horizontal1" />
+
+            <ImageButton
+                android:id="@+id/filter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:onClick="handleSelection"
+                android:scaleType="fitCenter"
+                android:src="@drawable/noun_filters_220951__1_"
+                app:layout_constraintTop_toBottomOf="@id/horizontal1"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerAllPolicies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/textPolicies"
+                tools:layout_editor_absoluteX="3dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerDynamicPolicy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#F1F1F1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogo"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@drawable/aia_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="AIA Beyond Critical Care"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyDescription"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses."
+                        android:textColor="#838383"
+                        android:textSize="13dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo"
+                        app:layout_constraintTop_toBottomOf="@id/policyTitle" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerDynamicPolicy2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#F1F1F1"
+                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogo2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@drawable/aia_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="AIA Beyond Critical Care"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyDescription2"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses."
+                        android:textColor="#838383"
+                        android:textSize="13dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo2"
+                        app:layout_constraintTop_toBottomOf="@id/policyTitle2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerDynamicPolicy3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#F1F1F1"
+                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy2"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogo3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@drawable/aia_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyTitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="AIA Beyond Critical Care"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyDescription3"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses."
+                        android:textColor="#838383"
+                        android:textSize="13dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo3"
+                        app:layout_constraintTop_toBottomOf="@id/policyTitle3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerDynamicPolicy4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#F1F1F1"
+                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy3"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogo4"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@drawable/aia_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyTitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="AIA Beyond Critical Care"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyDescription4"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses."
+                        android:textColor="#838383"
+                        android:textSize="13dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo4"
+                        app:layout_constraintTop_toBottomOf="@id/policyTitle4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerDynamicPolicy5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#F1F1F1"
+                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy4"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogo5"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@drawable/aia_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyTitle5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="AIA Beyond Critical Care"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyDescription5"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses."
+                        android:textColor="#838383"
+                        android:textSize="13dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo5"
+                        app:layout_constraintTop_toBottomOf="@id/policyTitle5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerDynamicPolicy6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#F1F1F1"
+                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy5"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogo6"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@drawable/aia_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyTitle6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="AIA Beyond Critical Care"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo6"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyDescription6"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses."
+                        android:textColor="#838383"
+                        android:textSize="13dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo6"
+                        app:layout_constraintTop_toBottomOf="@id/policyTitle6" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerDynamicPolicy7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#F1F1F1"
+                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy6"
+                    tools:layout_editor_absoluteX="3dp">
+
+                    <ImageView
+                        android:id="@+id/imgLogo7"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="5dp"
+                        android:src="@drawable/aia_logo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyTitle7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="AIA Beyond Critical Care"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo7"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyDescription7"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses."
+                        android:textColor="#838383"
+                        android:textSize="13dp"
+                        app:layout_constraintStart_toEndOf="@id/imgLogo7"
+                        app:layout_constraintTop_toBottomOf="@id/policyTitle7" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
