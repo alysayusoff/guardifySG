@@ -56,6 +56,7 @@ public class questionnairePage extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
         Spinner genderSpinner = (Spinner) getView().findViewById(R.id.genderSpinner);
         ArrayList<String> genderChoice = new ArrayList<>();
         genderChoice.add("Male");
@@ -103,6 +104,7 @@ public class questionnairePage extends Fragment {
         ageGroupChoice.add("$501 - $1,000");
         ageGroupChoice.add("$1,000 - $1,500");
         ageGroupChoice.add("$1,500 and above");
+
 
     }
 
