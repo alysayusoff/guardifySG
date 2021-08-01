@@ -5,5 +5,148 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".questionnairePage" >
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender" />
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/AgeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/age_group" />
+
+            <Spinner
+                android:id="@+id/ageSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AgeTitle"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/BudgetTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/budget" />
+
+            <Spinner
+                android:id="@+id/budgetSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/ExistingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/existing_insurance_you_own" />
+
+            <CheckBox
+                android:id="@+id/lifeInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/life_insurance" />
+
+            <CheckBox
+                android:id="@+id/disabilityInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/disability_insurance" />
+
+            <CheckBox
+                android:id="@+id/shieldInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/integrated_shield_plan" />
+
+            <CheckBox
+                android:id="@+id/accidentInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accident_insurance" />
+
+            <TextView
+                android:id="@+id/coverageReqTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/type_of_coverage_required" />
+
+            <Spinner
+                android:id="@+id/coverageSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/TermTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/how_long_are_you_looking_to_cover" />
+
+            <Spinner
+                android:id="@+id/durationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/expenseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly_expenditure_estimate" />
+
+            <Spinner
+                android:id="@+id/expenseSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
     
 </androidx.constraintlayout.widget.ConstraintLayout>
+
