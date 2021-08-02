@@ -73,7 +73,6 @@
                 android:autoText="false"
                 android:gravity="center_vertical"
                 android:text="Description"
-                android:textAlignment="textStart"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:autoSizeTextType="none"
@@ -118,13 +117,13 @@
                 android:text="Term"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/expandibleTerm"
+                app:layout_constraintBottom_toBottomOf="@+id/expandableTerm"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/expandibleTerm" />
+                app:layout_constraintTop_toTopOf="@+id/expandableTerm" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/expandibleTerm"
+                android:id="@+id/expandableTerm"
                 android:layout_width="460dp"
                 android:layout_height="49dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -141,7 +140,7 @@
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/expandibleTerm"
+                app:layout_constraintTop_toBottomOf="@+id/expandableTerm"
                 app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
