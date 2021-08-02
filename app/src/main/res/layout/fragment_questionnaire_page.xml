@@ -77,24 +77,28 @@
                 android:id="@+id/lifeInsurance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:text="@string/life_insurance" />
 
             <CheckBox
                 android:id="@+id/disabilityInsurance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:text="@string/disability_insurance" />
 
             <CheckBox
                 android:id="@+id/shieldInsurance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:text="@string/integrated_shield_plan" />
 
             <CheckBox
                 android:id="@+id/accidentInsurance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:text="@string/accident_insurance" />
 
             <TextView

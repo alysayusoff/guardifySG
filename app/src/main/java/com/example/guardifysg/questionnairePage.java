@@ -58,6 +58,43 @@ public class questionnairePage extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
+
+        // Questionnaire Spinner Codes (Gender)
+        Spinner genderSpinner = (Spinner) getView().findViewById(R.id.genderSpinner);
+        ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(genderSpinner.getContext() , R.array.gender_array, android.R.layout.simple_spinner_item);
+        genderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        genderSpinner.setAdapter(genderAdapter);
+
+        // Questionnaire Spinner Codes (Age Group)
+        Spinner ageSpinner = (Spinner) getView().findViewById(R.id.ageSpinner);
+        ArrayAdapter<CharSequence> ageAdapter = ArrayAdapter.createFromResource(ageSpinner.getContext(), R.array.age_array, android.R.layout.simple_spinner_item);
+        ageAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ageSpinner.setAdapter(ageAdapter);
+
+        // Questionnaire Spinner Codes (Budget)
+        Spinner budgetSpinner = (Spinner) getView().findViewById(R.id.budgetSpinner);
+        ArrayAdapter<CharSequence> budgetAdapter = ArrayAdapter.createFromResource(budgetSpinner.getContext(), R.array.budget_array, android.R.layout.simple_spinner_item);
+        budgetAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        budgetSpinner.setAdapter(budgetAdapter);
+
+        // Questionnaire Spinner Codes (Coverage)
+        Spinner coverageSpinner = (Spinner) getView().findViewById(R.id.coverageSpinner);
+        ArrayAdapter<CharSequence> coverageAdapter = ArrayAdapter.createFromResource(coverageSpinner.getContext(), R.array.coverage_array, android.R.layout.simple_spinner_item);
+        coverageAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        coverageSpinner.setAdapter(coverageAdapter);
+
+        // Questionnaire Spinner Codes (Term)
+        Spinner termSpinner = (Spinner) getView().findViewById(R.id.durationSpinner);
+        ArrayAdapter<CharSequence> termAdapter = ArrayAdapter.createFromResource(termSpinner.getContext(), R.array.term_array, android.R.layout.simple_spinner_item);
+        termAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        termSpinner.setAdapter(termAdapter);
+
+        // Questionnaire Spinner Codes (Expense)
+        Spinner expenseSpinner = (Spinner) getView().findViewById(R.id.expenseSpinner);
+        ArrayAdapter<CharSequence> expenseAdapter = ArrayAdapter.createFromResource(expenseSpinner.getContext(), R.array.expense_array, android.R.layout.simple_spinner_item);
+        expenseAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        expenseSpinner.setAdapter(expenseAdapter);
+
     }
 
     @Override
