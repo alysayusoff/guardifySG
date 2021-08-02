@@ -330,7 +330,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:fontFamily="sans-serif-condensed-medium"
-                        android:text="AIA Beyond Critical Care"
+                        android:text="ALYSA-TEST"
                         android:textColor="#000000"
                         android:textSize="17dp"
                         app:layout_constraintStart_toEndOf="@id/imgLogo3"
