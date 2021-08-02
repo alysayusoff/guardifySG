@@ -14,4 +14,53 @@
     <string name="how_long_are_you_looking_to_cover">How long are you looking to cover?</string>
     <string name="monthly_expenditure_estimate">Monthly Expenditure Estimate</string>
     <string name="submit">Submit</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="age_array">
+        <item>0 to 19</item>
+        <item>20 to 24</item>
+        <item>25 to 29</item>
+        <item>30 to 34</item>
+        <item>35 to 39</item>
+        <item>40 to 44</item>
+        <item>45 to 49</item>
+        <item>50 to 54</item>
+        <item>55 to 59</item>
+        <item>60 to 64</item>
+        <item>65 to 69</item>
+        <item>70 and older</item>
+    </string-array>
+
+    <string-array name="budget_array">
+        <item>$0 to $100</item>
+        <item>$101 to $150</item>
+        <item>$151 to $200</item>
+        <item>$201 to $250</item>
+        <item>$251 and above</item>
+    </string-array>
+
+    <string-array name="coverage_array">
+        <item>Cover for Hospital Bills</item>
+        <item>Cover for Accidents</item>
+        <item>Cover for Critical Illness</item>
+        <item>Cover for Life</item>
+    </string-array>
+
+    <string-array name="term_array">
+        <item>Up to age 65</item>
+        <item>Up to age 85</item>
+        <item>Life Time Coverage</item>
+    </string-array>
+
+    <string-array name="expense_array">
+        <item>$0 to $500</item>
+        <item>$501 to $1,000</item>
+        <item>$1,001 to $1,500</item>
+        <item>$1,501 and above</item>
+    </string-array>
+
 </resources>
