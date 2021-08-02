@@ -1,4 +1,5 @@
 <resources>
+    //questionnairePage strings
     <string name="app_name">guardifySG</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -62,5 +63,18 @@
         <item>$1,001 to $1,500</item>
         <item>$1,501 and above</item>
     </string-array>
+
+    //policiesPage strings
+    <string name="content">image</string>
+    <string name="browseByType">BROWSE INSURANCE POLICIES BY TYPE</string>
+    <string name="type1">Critical Illness</string>
+    <string name="type2">Disability</string>
+    <string name="type3">Hospitalisation</string>
+    <string name="type4">Accident</string>
+    <string name="header">INSURANCE POLICIES</string>
+    <string name="policyName">AIA Beyond Critical Care</string>
+    <string name="policyDescription">
+        Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses.
+    </string>
 
 </resources>
