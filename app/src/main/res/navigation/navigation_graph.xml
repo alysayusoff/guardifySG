@@ -24,7 +24,11 @@
         android:id="@+id/policiesPage"
         android:name="com.example.guardifysg.policiesPage"
         android:label="fragment_policies_page"
-        tools:layout="@layout/fragment_policies_page" />
+        tools:layout="@layout/fragment_policies_page" >
+        <action
+            android:id="@+id/action_policiesPage_to_detailsPage"
+            app:destination="@id/detailsPage" />
+    </fragment>
     <fragment
         android:id="@+id/guidePage"
         android:name="com.example.guardifysg.guidePage"
