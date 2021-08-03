@@ -2,6 +2,7 @@ package com.example.guardifysg;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -57,8 +58,17 @@ public class questionnairePage extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+    }
 
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_questionnaire_page, container, false);
+    }
 
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         // Questionnaire Spinner Codes (Gender)
         Spinner genderSpinner = (Spinner) getView().findViewById(R.id.genderSpinner);
         ArrayAdapter<CharSequence> genderAdapter = ArrayAdapter.createFromResource(genderSpinner.getContext() , R.array.gender_array, android.R.layout.simple_spinner_item);
@@ -95,12 +105,5 @@ public class questionnairePage extends Fragment {
         expenseAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         expenseSpinner.setAdapter(expenseAdapter);
 
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_questionnaire_page, container, false);
     }
 }
