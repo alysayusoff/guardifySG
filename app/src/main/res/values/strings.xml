@@ -77,4 +77,11 @@
         Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses.
     </string>
 
+    //AboutUsPage strings
+    <string-array name="aboutus_array">
+        <item>Inquiry</item>
+        <item>Quote</item>
+        <item>Feedback</item>
+        <item>Other</item>
+    </string-array>
 </resources>
