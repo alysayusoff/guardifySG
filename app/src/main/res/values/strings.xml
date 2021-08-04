@@ -84,4 +84,11 @@
         <item>Feedback</item>
         <item>Other</item>
     </string-array>
+
+    //homepage strings
+    <string name="questionnaireText">FIND YOUR SUITABLE POLICIES!</string>
+    <string name="latestNews">THE LATEST NEWS</string>
+    <string name="newsTitle">NEW COVID-19 POLICIES</string>
+    <string name="newsDesc">MULTIPLE INSURANCE COMPANIES NOW OFFER COVERAGE FOR HOSPITALISATION DUE TO COVID-19</string>
+
 </resources>
