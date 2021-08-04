@@ -9,7 +9,11 @@
         android:id="@+id/landingPage"
         android:name="com.example.guardifysg.landingPage"
         android:label="fragment_landing_page"
-        tools:layout="@layout/fragment_landing_page" />
+        tools:layout="@layout/fragment_landing_page" >
+        <action
+            android:id="@+id/action_landingPage_to_questionnairePage"
+            app:destination="@id/questionnairePage" />
+    </fragment>
     <fragment
         android:id="@+id/aboutPage"
         android:name="com.example.guardifysg.aboutPage"
