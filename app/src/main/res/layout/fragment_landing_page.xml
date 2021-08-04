@@ -58,7 +58,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/typeCriticalIllness"
+                    android:id="@+id/questionnaireButton"
                     android:layout_width="110dp"
                     android:layout_height="35dp"
                     android:layout_alignParentEnd="true"
