@@ -9,13 +9,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/guideTopSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="411dp"
+        android:layout_height="276dp"
         android:padding="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0"
-        tools:layout_editor_absoluteX="16dp">
+        app:layout_constraintBottom_toTopOf="@+id/guideBottomSection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/guideHeader"
@@ -25,38 +25,34 @@
             android:text="INSURANCE BASICS"
             android:textColor="#000000"
             android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0"
-            />
+            app:layout_constraintBottom_toBottomOf="@id/guideHeader"
+            app:layout_constraintTop_toTopOf="@id/guideHeader"
+            app:layout_constraintVertical_bias="0" />
 
         <ImageView
             android:id="@+id/guideHeaderImg"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="40dp"
-            tools:src="@tools:sample/backgrounds/scenic"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/guideHeader"
-            app:layout_constraintVertical_bias="0"
             android:contentDescription="Insurance Basics"
-            />
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/guideIntroText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideHeader"
+            tools:src="@drawable/guideheaderimage" />
 
         <TextView
             android:id="@+id/guideIntroText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Insurance protects you, your family and things you value from financial loss. Learn how insurance works, what to look out for, and why you should compare first before buying."
-            android:textSize="18sp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="190dp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/guideHeaderImg"
             app:layout_constraintVertical_bias="0"
-            />
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="190dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -66,92 +62,100 @@
         android:layout_height="457dp"
         android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideTopSection" >
+        app:layout_constraintTop_toBottomOf="@+id/guideTopSection">
 
         <LinearLayout
             android:id="@+id/guideExpandableBox"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="0dp"
-            android:orientation="vertical">
+            tools:layout_editor_absoluteX="0dp">
 
             <View
-                android:background="#D3D3D3"
                 android:id="@+id/item_divider1"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"/>
+                android:layout_height="2dp"
+                android:background="#D3D3D3" />
+
             <TextView
                 android:id="@+id/item_title1"
-                android:textSize="20sp"
-                tools:text="What is insurance?"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="What is insurance?" />
+
             <TextView
                 android:id="@+id/sub_item1"
-                android:textSize="16sp"
-                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur." />
 
             <View
-                android:background="#D3D3D3"
                 android:id="@+id/item_divider2"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"/>
+                android:layout_height="2dp"
+                android:background="#D3D3D3" />
+
             <TextView
                 android:id="@+id/item_title2"
-                android:textSize="20sp"
-                tools:text="Who needs insurance?"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Who needs insurance?" />
+
             <TextView
                 android:id="@+id/sub_item2"
-                android:textSize="16sp"
-                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur." />
 
             <View
-                android:background="#D3D3D3"
                 android:id="@+id/item_divider3"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"/>
+                android:layout_height="2dp"
+                android:background="#D3D3D3" />
+
             <TextView
                 android:id="@+id/item_title3"
-                android:textSize="20sp"
-                tools:text="Why should anyone get insurance?"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Why should anyone get insurance?" />
+
             <TextView
                 android:id="@+id/sub_item3"
-                android:textSize="16sp"
-                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur." />
 
             <View
-                android:background="#D3D3D3"
                 android:id="@+id/item_divider4"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"/>
+                android:layout_height="2dp"
+                android:background="#D3D3D3" />
+
             <TextView
                 android:id="@+id/item_title4"
-                android:textSize="20sp"
-                tools:text="When should anyone get insurance? Is it too late to apply?"
-                android:textStyle="bold"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="When should anyone get insurance? Is it too late to apply?" />
+
             <TextView
                 android:id="@+id/sub_item4"
-                android:textSize="16sp"
-                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur." />
 
         </LinearLayout>
 
