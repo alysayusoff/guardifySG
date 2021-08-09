@@ -36,18 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Back button clicked", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     public void handleSelection(View view) {
         Toast.makeText(this, "Image clicked", Toast.LENGTH_SHORT).show();
     }
-
-    /*public void test(View view) {
-        Toast.makeText(this, "Container clicked", Toast.LENGTH_SHORT).show();
-        *//*detailsPage detailsPage = new detailsPage();
-        AppCompatActivity activity = (AppCompatActivity) view.getContext();
-        activity.getSupportFragmentManager().beginTransaction().replace(R.id.mainLayout, detailsPage).addToBackStack(null).commit();
-        view.setVisibility(View.INVISIBLE);*//*
-    }*/
 }

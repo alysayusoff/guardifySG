@@ -1,5 +1,9 @@
 package com.example.guardifysg;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -7,12 +11,14 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -79,6 +85,32 @@ public class landingPage extends Fragment {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_landingPage_to_questionnairePage);
+            }
+        });
+
+        //news 1
+        ConstraintLayout newsContainer = view.findViewById(R.id.newsContainer);
+        newsContainer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView titleData = view.findViewById(R.id.newsTitle);
+                TextView descData = view.findViewById(R.id.newsLongDesc);
+
+                NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                navController.navigate(action);
+            }
+        });
+
+        //news 2
+        ConstraintLayout newsContainer2 = view.findViewById(R.id.newsContainer2);
+        newsContainer2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView titleData = view.findViewById(R.id.newsTitle2);
+                TextView descData = view.findViewById(R.id.newsLongDesc2);
+
+                NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                navController.navigate(action);
             }
         });
     }

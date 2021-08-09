@@ -102,26 +102,29 @@
 
                 <TextView
                     android:id="@+id/newsTitle"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/newsTitle"
+                    android:text="@string/artTitle1"
                     android:textColor="#000000"
                     android:textSize="17sp"
+                    app:layout_constraintBottom_toTopOf="@id/newsShortDesc"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/newsDescription"
-                    android:layout_width="300dp"
-                    android:layout_height="50dp"
+                    android:id="@+id/newsShortDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/newsDesc"
+                    android:text="@string/artShortDesc1"
                     android:textColor="#838383"
                     android:textSize="13sp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/newsTitle" />
 
@@ -131,8 +134,18 @@
                     android:layout_height="75dp"
                     android:contentDescription="@string/content"
                     android:padding="5dp"
-                    android:src="@drawable/covid"
+                    android:src="@drawable/image_from_ios_67"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/newsTitle"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsLongDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artLongDesc1"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -150,27 +163,30 @@
 
                 <TextView
                     android:id="@+id/newsTitle2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/newsTitle"
+                    android:text="TEST"
                     android:textColor="#000000"
                     android:textSize="17sp"
+                    app:layout_constraintBottom_toTopOf="@id/newsDescription2"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/newsDescription2"
-                    android:layout_width="300dp"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/newsDesc"
+                    android:text="TEST"
                     android:textColor="#838383"
                     android:textSize="13sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo2"
                     app:layout_constraintTop_toBottomOf="@id/newsTitle2" />
 
                 <ImageView
@@ -180,7 +196,17 @@
                     android:contentDescription="@string/content"
                     android:padding="5dp"
                     android:src="@drawable/covid"
+                    app:layout_constraintStart_toEndOf="@id/newsTitle2"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsLongDesc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEST"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -198,25 +224,28 @@
 
                 <TextView
                     android:id="@+id/newsTitle3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/newsTitle"
                     android:textColor="#000000"
                     android:textSize="17sp"
+                    app:layout_constraintBottom_toTopOf="@id/newsDescription3"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/newsDescription3"
-                    android:layout_width="300dp"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/newsDesc"
                     android:textColor="#838383"
                     android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo3"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/newsTitle3" />
@@ -228,7 +257,17 @@
                     android:contentDescription="@string/content"
                     android:padding="5dp"
                     android:src="@drawable/covid"
+                    app:layout_constraintStart_toEndOf="@id/newsTitle3"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsLongDesc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEST"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -246,25 +285,28 @@
 
                 <TextView
                     android:id="@+id/newsTitle4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/newsTitle"
                     android:textColor="#000000"
                     android:textSize="17sp"
+                    app:layout_constraintBottom_toTopOf="@id/newsDescription4"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo4"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/newsDescription4"
-                    android:layout_width="300dp"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/newsDesc"
                     android:textColor="#838383"
                     android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo4"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/newsTitle4" />
@@ -276,7 +318,17 @@
                     android:contentDescription="@string/content"
                     android:padding="5dp"
                     android:src="@drawable/covid"
+                    app:layout_constraintStart_toEndOf="@id/newsTitle4"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsLongDesc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEST"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -294,25 +346,28 @@
 
                 <TextView
                     android:id="@+id/newsTitle5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/newsTitle"
                     android:textColor="#000000"
                     android:textSize="17sp"
+                    app:layout_constraintBottom_toTopOf="@id/newsDescription5"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/newsDescription5"
-                    android:layout_width="300dp"
-                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/newsDesc"
                     android:textColor="#838383"
                     android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/newsLogo5"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/newsTitle5" />
@@ -324,7 +379,17 @@
                     android:contentDescription="@string/content"
                     android:padding="5dp"
                     android:src="@drawable/covid"
+                    app:layout_constraintStart_toEndOf="@id/newsTitle5"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsLongDesc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEST"
+                    android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

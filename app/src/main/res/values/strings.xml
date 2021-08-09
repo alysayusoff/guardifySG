@@ -91,4 +91,15 @@
     <string name="newsTitle">NEW COVID-19 POLICIES</string>
     <string name="newsDesc">MULTIPLE INSURANCE COMPANIES NOW OFFER COVERAGE FOR HOSPITALISATION DUE TO COVID-19</string>
 
+    //newsPage strings
+    <string name="artTitle1">MAS reprimands AIA, Prudential and Aviva for breaching regulatory requirements</string>
+    <string name="artShortDesc1">Insurance companies Aviva, AIA and Prudential have been found by the Monetary Authority of Singapore (MAS) to have breached regulations by not reviewing the performance of their supervisors and for paying them beyond the limit set by regulations.</string>
+    <string name="artLongDesc1">MAS in a release on Tuesday (June 15) said that the companies have been reprimanded for the offences that happened between
+        2017 and 2019. MAS has serious concerns regarding the misconduct and the financial institutions, and individuals are required to remediate the issues
+        promptly.The Monetary Authority of Singapore (MAS) found that three insurance companies did not review the performance of their supervisors. The
+        firms also failed to assign the supervisors a grade as required under regulations. They paid commissions to these supervisors that exceeded the
+        stipulated cap as well. The central bank has reprimanded these companies and two other individuals for the breaches. MAS has also directed Aviva
+        Financial Advisers to appoint independent persons to conduct a review of its internal control processes </string>
+    <string name="artURL1">https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/image_from_ios_67.jpg?itok=1ECrU_fl</string>
+
 </resources>
