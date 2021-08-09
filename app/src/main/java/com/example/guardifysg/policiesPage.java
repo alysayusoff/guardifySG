@@ -12,6 +12,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 /**
@@ -72,8 +73,8 @@ public class policiesPage extends Fragment {
     public void onViewCreated(@NonNull @org.jetbrains.annotations.NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        //navigation
         final NavController navController = Navigation.findNavController(view);
-
         ConstraintLayout dynamicPolicy = view.findViewById(R.id.containerDynamicPolicy);
         dynamicPolicy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,5 +82,21 @@ public class policiesPage extends Fragment {
                 navController.navigate(R.id.action_policiesPage_to_detailsPage);
             }
         });
+
+        //handlers for filter
+        ImageView imgBtn1 = view.findViewById(R.id.typeCriticalIllness);
+        ImageView imgBtn2 = view.findViewById(R.id.typeAccident);
+        ImageView imgBtn3 = view.findViewById(R.id.typeDisability);
+        ImageView imgBtn4 = view.findViewById(R.id.typeHospitalisation);
+        imgBtn1.setOnClickListener(typeListener);
+        imgBtn2.setOnClickListener(typeListener);
+        imgBtn3.setOnClickListener(typeListener);
+        imgBtn4.setOnClickListener(typeListener);
     }
+
+    private View.OnClickListener typeListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            Toast.makeText(getContext(), "Image clicked", Toast.LENGTH_SHORT).show();
+        }
+    };
 }

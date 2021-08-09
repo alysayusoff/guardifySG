@@ -37,8 +37,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-    public void handleSelection(View view) {
-        Toast.makeText(this, "Image clicked", Toast.LENGTH_SHORT).show();
-    }
 }
