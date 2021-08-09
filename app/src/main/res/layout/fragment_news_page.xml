@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newsPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/newsImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/covid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAS reprimands AIA, Prudential and Aviva for breaching regulatory requirements"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/newsImage" />
+
+            <TextView
+                android:id="@+id/newsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MAS in a release on Tuesday (June 15) said that the companies have been reprimanded for the offences that happened between 2017 and 2019. MAS has serious concerns regarding the misconduct and the financial institutions, and individuals are required to remediate the issues promptly.
+The Monetary Authority of Singapore (MAS) found that three insurance companies did not review the performance of their supervisors
+The firms also failed to assign the supervisors a grade as required under regulations
+They paid commissions to these supervisors that exceeded the stipulated cap as well
+The central bank has reprimanded these companies and two other individuals for the breaches
+MAS has also directed Aviva Financial Advisers to appoint independent persons to conduct a review of its internal control processes "
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/newsTitle" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
