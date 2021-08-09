@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_landingPage_to_questionnairePage"
             app:destination="@id/questionnairePage" />
+        <action
+            android:id="@+id/action_landingPage_to_newsPage"
+            app:destination="@id/newsPage" />
     </fragment>
     <fragment
         android:id="@+id/aboutPage"
@@ -47,5 +50,12 @@
         android:id="@+id/newsPage"
         android:name="com.example.guardifysg.newsPage"
         android:label="fragment_news_page"
-        tools:layout="@layout/fragment_news_page" />
+        tools:layout="@layout/fragment_news_page" >
+        <argument
+            android:name="news"
+            app:argType="string" />
+        <argument
+            android:name="desc"
+            app:argType="string" />
+    </fragment>
 </navigation>

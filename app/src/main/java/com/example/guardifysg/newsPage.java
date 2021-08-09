@@ -1,12 +1,26 @@
 package com.example.guardifysg;
 
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.lang.ref.Reference;
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,5 +74,17 @@ public class newsPage extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_news_page, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        String artTitle = newsPageArgs.fromBundle(getArguments()).getNews();
+        TextView frag1Title = view.findViewById(R.id.newsTitle);
+        frag1Title.setText(artTitle);
+
+        String artDesc = newsPageArgs.fromBundle(getArguments()).getDesc();
+        TextView frag1Desc = view.findViewById(R.id.newsContent);
+        frag1Desc.setText(artDesc);
     }
 }
