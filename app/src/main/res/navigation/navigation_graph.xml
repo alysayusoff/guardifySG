@@ -43,4 +43,9 @@
         android:name="com.example.guardifysg.questionnairePage"
         android:label="fragment_questionnaire_page"
         tools:layout="@layout/fragment_questionnaire_page" />
+    <fragment
+        android:id="@+id/newsPage"
+        android:name="com.example.guardifysg.newsPage"
+        android:label="fragment_news_page"
+        tools:layout="@layout/fragment_news_page" />
 </navigation>

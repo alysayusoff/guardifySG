@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -105,5 +107,98 @@ public class questionnairePage extends Fragment {
         expenseAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         expenseSpinner.setAdapter(expenseAdapter);
 
+        Button submitButton = getView().findViewById(R.id.submitButton);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String genderValue = genderSpinner.getSelectedItem().toString();
+                String ageValue = ageSpinner.getSelectedItem().toString();
+                String budgetValue = budgetSpinner.getSelectedItem().toString();
+                String coverageValue = coverageSpinner.getSelectedItem().toString();
+                String termValue = termSpinner.getSelectedItem().toString();
+                String expenseValue = expenseSpinner.getSelectedItem().toString();
+
+                // Gender Value Check
+                if (genderValue.equals("Male")){
+                    System.out.println("Selected Gender is Male");
+                } else if(genderValue.equals("Female")){
+                    System.out.println("Selected Gender is Female");
+                }
+
+                // Age Value Check
+                if (ageValue.equals("0 to 19")){
+                    System.out.println("Selected Age Group is 0 to 19");
+                } else if (ageValue.equals("20 to 24")) {
+                    System.out.println("Selected Age Group is 20 to 24");
+                } else if (ageValue.equals("25 to 29")) {
+                    System.out.println("Selected Age Group is 25 to 29");
+                } else if (ageValue.equals("30 to 34")) {
+                    System.out.println("Selected Age Group is 30 to 34");
+                } else if (ageValue.equals("35 to 39")) {
+                    System.out.println("Selected Age Group is 35 to 39");
+                } else if (ageValue.equals("40 to 44")) {
+                    System.out.println("Selected Age Group is 40 to 44");
+                } else if (ageValue.equals("45 to 49")) {
+                    System.out.println("Selected Age Group is 45 to 49");
+                } else if (ageValue.equals("50 to 54")) {
+                    System.out.println("Selected Age Group is 50 to 54");
+                } else if (ageValue.equals("55 to 59")) {
+                    System.out.println("Selected Age Group is 55 to 59");
+                } else if (ageValue.equals("60 to 64")) {
+                    System.out.println("Selected Age Group is 60 to 64");
+                } else if (ageValue.equals("65 to 69")) {
+                    System.out.println("Selected Age Group is 65 to 69");
+                } else if (ageValue.equals("70 and older")) {
+                    System.out.println("Selected Age Group is 70 and older");
+                }
+
+                // Budget Value Check
+                if (budgetValue.equals("$0 to $100")){
+                    System.out.println("Selected Budget is $0 to $100");
+                } else if (budgetValue.equals("$101 to $150")){
+                    System.out.println("Selected Budget is $101 to $150");
+                } else if (budgetValue.equals("$151 to $200")){
+                    System.out.println("Selected Budget is $151 to $200");
+                } else if (budgetValue.equals("$201 to $250")){
+                    System.out.println("Selected Budget is $201 to $250");
+                } else if (budgetValue.equals("$250 and above")){
+                    System.out.println("Selected Budget is $250 and above");
+                }
+
+                // Coverage Value Check
+                if (coverageValue.equals("Cover for Hospital Bills")){
+                    System.out.println("Selected Coverage is Cover for Hospital Bills");
+                } else if (coverageValue.equals("Cover for Accidents")){
+                    System.out.println("Selected Coverage is Cover for Accidents");
+                } else if (coverageValue.equals("Cover for Critical Illness")){
+                    System.out.println("Selected Coverage is Cover For Critical Illness");
+                } else if (coverageValue.equals("Cover for Life")){
+                    System.out.println("Selected Coverage is Cover for Life");
+                }
+
+                // Term Value Check
+                if (termValue.equals("Up to age 65")){
+                    System.out.println("Selected Term is Up to age 65");
+                } else if (termValue.equals("Up to age 85")){
+                    System.out.println("Selected Term is Up to age 85");
+                } else if (termValue.equals("Life Time Coverage")){
+                    System.out.println("Selected Term is Life Time Coverage");
+                }
+
+                // Expense Value Check
+                if (expenseValue.equals("$0 to $500")){
+                    System.out.println("Selected Expense is $0 to $500");
+                } else if (expenseValue.equals("$501 to $1,000")){
+                    System.out.println("Selected Expense is $501 to $1,000");
+                } else if (expenseValue.equals("$1,001 to $1,500")){
+                    System.out.println("Selected Expense is $1,001 to $1,500");
+                } else if (expenseValue.equals("$1,501 and above")) {
+                    System.out.println("Selected Expense is $1,501 and above");
+                }
+
+            }
+        });
+
     }
+
 }
