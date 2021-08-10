@@ -91,7 +91,7 @@
     <string name="newsTitle">NEW COVID-19 POLICIES</string>
     <string name="newsDesc">MULTIPLE INSURANCE COMPANIES NOW OFFER COVERAGE FOR HOSPITALISATION DUE TO COVID-19</string>
 
-    //newsPage strings
+    //newsPage strings 1
     <string name="artTitle1">MAS reprimands AIA, Prudential and Aviva for breaching regulatory requirements</string>
     <string name="artShortDesc1">Insurance companies Aviva, AIA and Prudential have been found by the Monetary Authority of Singapore (MAS) to have breached regulations by not reviewing the performance of their supervisors and for paying them beyond the limit set by regulations.</string>
     <string name="artLongDesc1">MAS in a release on Tuesday (June 15) said that the companies have been reprimanded for the offences that happened between
@@ -100,6 +100,12 @@
         firms also failed to assign the supervisors a grade as required under regulations. They paid commissions to these supervisors that exceeded the
         stipulated cap as well. The central bank has reprimanded these companies and two other individuals for the breaches. MAS has also directed Aviva
         Financial Advisers to appoint independent persons to conduct a review of its internal control processes </string>
-    <string name="artURL1">https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/image_from_ios_67.jpg?itok=1ECrU_fl</string>
+    //string 2
+    <string name="artTitle2">NTUC Income reimagines insurance to give control back to customers</string>
+    <string name="artShortDesc2">The company(NTUC Income) introduced Singapore’s first rain insurance, Droplet, which protects customers against price surges on ride-hailing platforms during rainy days</string>
+    <string name="artLongDesc2">As an insurtech player, Income has launched groundbreaking products that have enriched customers’ insurance experience. For instance, the company introduced Singapore’s first rain insurance,
+        Droplet, which protects customers against price surges on ride-hailing platforms during rainy days by reimbursing 60 per cent of fares so that commuters could confidently hail rides. In support of the Singapore
+        Green Plan 2030, Income recently partnered with car marketplace Carro, integrating the latter’s telematics capabilities and its dynamic pricing technology to launch Covered, a usage-based model where electric car
+        drivers pay for motor insurance according to the mileage they drove. Income aims to insure all eligible electric vehicles to promote the adoption of green cars in the island-state.</string>
 
 </resources>
