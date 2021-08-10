@@ -9,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,7 +29,6 @@ public class aboutPage extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
     public aboutPage() {
         // Required empty public constructor
     }
@@ -70,9 +72,22 @@ public class aboutPage extends Fragment {
         //Spinner for About Us Category
         Spinner myAboutUsSpinner = (Spinner) getView().findViewById(R.id.AboutUsSpinner);
 
-
         ArrayAdapter<CharSequence> myAboutUsAdapter = ArrayAdapter.createFromResource(myAboutUsSpinner.getContext() , R.array.aboutus_array, android.R.layout.simple_spinner_item);
         myAboutUsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         myAboutUsSpinner.setAdapter(myAboutUsAdapter);
+
+        EditText edittext1 = view.findViewById(R.id.editTextTextPersonName);
+        EditText edittext2 = view.findViewById(R.id.editTextTextPersonName4);
+        EditText edittext3 = view.findViewById(R.id.editTextTextPersonName3);
+        Button AUsubmitButton = getView().findViewById(R.id.aboutussubmitbutton);
+        AUsubmitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Submitted", Toast.LENGTH_SHORT).show();
+                edittext1.getText().clear();
+                edittext2.getText().clear();
+                edittext3.getText().clear();
+            }
+        });
     }
 }
