@@ -3,6 +3,8 @@ package com.example.guardifysg;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Bundle;
 
@@ -15,11 +17,13 @@ import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
 import android.transition.Slide;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
@@ -33,6 +37,10 @@ import com.smarteist.autoimageslider.SliderView;
 public class landingPage extends Fragment {
     SliderView sliderView;
     int[] images={R.drawable.aia_logo,R.drawable.covid_icon,R.drawable.cancer};
+
+    // MODIFIED GLOBAL VARIABLES HERE
+    ConstraintLayout news1, news2, news3, news4, news5;
+    //
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -84,17 +92,18 @@ public class landingPage extends Fragment {
     @Override
     public void onViewCreated(@NonNull @org.jetbrains.annotations.NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        final NavController navController = Navigation.findNavController(view);
-
+      
+        //ching chieh image carousell
         sliderView=view.findViewById(R.id.image_slider);
         SliderAdapter sliderAdapter=new SliderAdapter(images);
         sliderView.setSliderAdapter(sliderAdapter);
         sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
         sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
         sliderView.startAutoCycle();
-
-
+      
+        //navController code
+        final NavController navController = Navigation.findNavController(view);
+        //open questionnairePage code
         ImageView btnQuestionnaire = view.findViewById(R.id.questionnaireButton);
         btnQuestionnaire.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,31 +111,52 @@ public class landingPage extends Fragment {
                 navController.navigate(R.id.action_landingPage_to_questionnairePage);
             }
         });
-
-        //news 1
-        ConstraintLayout newsContainer = view.findViewById(R.id.newsContainer);
-        newsContainer.setOnClickListener(new View.OnClickListener() {
+        //open newsPage code
+        View.OnClickListener checker = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView titleData = view.findViewById(R.id.newsTitle);
-                TextView descData = view.findViewById(R.id.newsLongDesc);
-
-                NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
-                navController.navigate(action);
+                if (news1.isPressed()) {
+                    TextView titleData = v.findViewById(R.id.newsTitle);
+                    TextView descData = v.findViewById(R.id.newsLongDesc);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    navController.navigate(action);
+                }
+                if (news2.isPressed()) {
+                    TextView titleData = v.findViewById(R.id.newsTitle2);
+                    TextView descData = v.findViewById(R.id.newsLongDesc2);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    navController.navigate(action);
+                }
+                if (news3.isPressed()) {
+                    TextView titleData = v.findViewById(R.id.newsTitle3);
+                    TextView descData = v.findViewById(R.id.newsLongDesc3);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    navController.navigate(action);
+                }
+                if (news4.isPressed()) {
+                    TextView titleData = v.findViewById(R.id.newsTitle4);
+                    TextView descData = v.findViewById(R.id.newsLongDesc4);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    navController.navigate(action);
+                }
+                if (news5.isPressed()) {
+                    TextView titleData = v.findViewById(R.id.newsTitle5);
+                    TextView descData = v.findViewById(R.id.newsLongDesc5);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    navController.navigate(action);
+                }
             }
-        });
+        };
 
-        //news 2
-        ConstraintLayout newsContainer2 = view.findViewById(R.id.newsContainer2);
-        newsContainer2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView titleData = view.findViewById(R.id.newsTitle2);
-                TextView descData = view.findViewById(R.id.newsLongDesc2);
-
-                NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
-                navController.navigate(action);
-            }
-        });
+        news1 = view.findViewById(R.id.newsContainer);
+        news2 = view.findViewById(R.id.newsContainer2);
+        news3 = view.findViewById(R.id.newsContainer3);
+        news4 = view.findViewById(R.id.newsContainer4);
+        news5 = view.findViewById(R.id.newsContainer5);
+        news1.setOnClickListener(checker);
+        news2.setOnClickListener(checker);
+        news3.setOnClickListener(checker);
+        news4.setOnClickListener(checker);
+        news5.setOnClickListener(checker);
     }
 }
