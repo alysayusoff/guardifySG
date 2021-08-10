@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Foo Li May/AndroidStudioProjects/guardifySG/app/src/main/res/layout/fragment_landing_page.xml" value="0.1" />
+        <entry key="..\:/Users/Foo Li May/AndroidStudioProjects/guardifySG/app/src/main/res/layout/fragment_news_page.xml" value="0.1" />
+        <entry key="..\:/Users/Foo Li May/AndroidStudioProjects/guardifySG/app/src/main/res/layout/slider_item.xml" value="0.1796875" />
         <entry key="..\:/Users/Li Shan/AndroidStudioProjects/guardifySG/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/Li Shan/AndroidStudioProjects/guardifySG/app/src/main/res/layout/fragment_about_page.xml" value="0.2957427536231884" />
         <entry key="..\:/Users/Li Shan/AndroidStudioProjects/guardifySG/app/src/main/res/layout/fragment_details_page.xml" value="0.2957427536231884" />

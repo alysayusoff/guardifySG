@@ -14,11 +14,16 @@ import androidx.navigation.NavController;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
+import android.transition.Slide;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,6 +31,8 @@ import android.widget.TextView;
  * create an instance of this fragment.
  */
 public class landingPage extends Fragment {
+    SliderView sliderView;
+    int[] images={R.drawable.aia_logo,R.drawable.covid_icon,R.drawable.cancer};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -79,6 +86,14 @@ public class landingPage extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         final NavController navController = Navigation.findNavController(view);
+
+        sliderView=view.findViewById(R.id.image_slider);
+        SliderAdapter sliderAdapter=new SliderAdapter(images);
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
+        sliderView.startAutoCycle();
+
 
         ImageView btnQuestionnaire = view.findViewById(R.id.questionnaireButton);
         btnQuestionnaire.setOnClickListener(new View.OnClickListener() {
