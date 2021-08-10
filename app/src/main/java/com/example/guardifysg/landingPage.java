@@ -16,6 +16,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
+import android.transition.Slide;
 import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,12 +25,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link landingPage#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class landingPage extends Fragment {
+    SliderView sliderView;
+    int[] images={R.drawable.aia_logo,R.drawable.covid_icon,R.drawable.cancer};
 
     // MODIFIED GLOBAL VARIABLES HERE
     ConstraintLayout news1, news2, news3, news4, news5;
@@ -85,6 +92,15 @@ public class landingPage extends Fragment {
     @Override
     public void onViewCreated(@NonNull @org.jetbrains.annotations.NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+      
+        //ching chieh image carousell
+        sliderView=view.findViewById(R.id.image_slider);
+        SliderAdapter sliderAdapter=new SliderAdapter(images);
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
+        sliderView.startAutoCycle();
+      
         //navController code
         final NavController navController = Navigation.findNavController(view);
         //open questionnairePage code
