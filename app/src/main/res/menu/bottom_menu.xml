@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item android:id="@+id/landingPage" android:title="Home" android:icon="@drawable/homewhite" />
     <item android:id="@+id/guidePage" android:title="Guide" android:icon="@drawable/informationwhite" />
     <item android:id="@+id/policiesPage" android:title="Policies" android:icon="@drawable/discover" />
-    <item android:id="@+id/landingPage" android:title="Home" android:icon="@drawable/homewhite" />
     <item android:id="@+id/aboutPage" android:title="About" android:icon="@drawable/agentwhite" />
-    <item android:title="Item" android:icon="@drawable/settings" />
 </menu>
