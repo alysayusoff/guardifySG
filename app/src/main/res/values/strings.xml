@@ -107,5 +107,44 @@
         Droplet, which protects customers against price surges on ride-hailing platforms during rainy days by reimbursing 60 per cent of fares so that commuters could confidently hail rides. In support of the Singapore
         Green Plan 2030, Income recently partnered with car marketplace Carro, integrating the latter’s telematics capabilities and its dynamic pricing technology to launch Covered, a usage-based model where electric car
         drivers pay for motor insurance according to the mileage they drove. Income aims to insure all eligible electric vehicles to promote the adoption of green cars in the island-state.</string>
+    //string 3
+    <string name="artTitle3">Great Eastern offers complimentary COVID-19 protection coverage for all Singapore residents</string>
+    <string name="artShortDesc3">Leading insurer Great Eastern is continuing its efforts to protect the community and support the national phased recovery with the launch of the GREAT Covid Care Plan, a complimentary post-vaccination protection plan available to all Singapore residents</string>
+    <string name="artLongDesc3">The GREAT Covid Care Plan provides a cash payout of S$200 per day of hospitalisation up to a total of $2,000, in the event one is hospitalised due to COVID-19 after their vaccination. The plan provides worldwide coverage so that hospitalisation in Singapore as well as overseas is covered. This will provide additional peace of mind for Singaporeans who may travel abroad for work or leisure, and for overseas residents returning to their home country for visits as countries start to open up.
+        This free coverage applies to any Singapore resident who has completed his/her first dose of a COVID-19 vaccine2 approved for use by the Health Sciences Authority or supplied under the Special Access Route (SAR). Coverage also includes children who have been vaccinated. Parents may register on behalf of their children who are under 18.
+        Registration on Great Eastern’s website is required to activate the free coverage, and all eligible recipients will receive their GREAT Covid Care insurance certificate via email once their sign up is confirmed. The plan provides coverage for 12 months from the date of registration or when the individual receives his/her first dose of COVID-19 vaccine, whichever is later. The sign up period ends on 30 September 2021 and applicants must also complete their first vaccination dose by 31 December 2021 to qualify for the coverage.
+        The GREAT Covid Care Plan complements the coverage provided by the S$1 million GREAT Vaccine Fund launched in January 2021 and is the latest support measure that Great Eastern has rolled out with the progression of the COVID-19 vaccination programme in Singapore.
+        More information on the GREAT Covid Care Plan can be found on Great Eastern’s website. The company will also be reaching out to its customers through its financial representatives.</string>
+    //string 4
+    <string name="artTitle4">As borders begin to open, NTUC Income adds Covid-19 coverage to travel insurance</string>
+    <string name="artShortDesc4">SINGAPORE — Customers who buy travel insurance from NTUC Income will now receive coverage for Covid-19 medical expenses while overseas, the insurer announced on Thursday (Nov 26).</string>
+    <string name="artLongDesc4">The Covid-19 benefits are automatically included in single trip travel insurance plans purchased from Thursday and are also included in plans that cover pre-existing conditions. They apply to trips with travel dates starting from Thursday.
+        Travellers who have bought the plan will be protected for 90 days for Covid-19-related hospitalisation expenses of up to US$100,000 while overseas, as well as costs incurred for medical evacuation or repatriation of up to US$100,000, if that becomes necessary.
+        NTUC Income said in a press release that it has decided to enhance its travel insurance offerings “in response to the gradual lifting of border restrictions in Singapore and other parts of the world”.
+        These Covid-19 benefits, however, will be excluded from travel insurance for trips to countries that the World Health Organization deems as high-risk for Covid-19 at the point of purchase, NTUC Income said.
+        Mr Fabian Ng, NTUC Income’s general manager for consumer business, said: “While overseas travel in general continues to be restricted, we understand that there are some who will need to travel for necessary business-related and other essential matters.</string>
+    //string 5
+    <string name="artTitle5">Subscription-based Netflix-style insurance launched by NTUC Income</string>
+    <string name="artShortDesc5">SINGAPORE - Customers of streaming service Netflix are familiar with the concept of paying around $10 a month for a subscription plan that can be changed at any time.</string>
+    <string name="artLongDesc5">SINGAPORE - Customers of streaming service Netflix are familiar with the concept of paying around $10 a month for a subscription plan that can be changed at any time.
+        This model has now been adopted by insurer NTUC Income.
+        Tribe, as the product is called, was launched on Wednesday (July 28) and is Singapore\'s first subscription-based and customisable insurance offering.
+        Customers can subscribe to any of its three modular insurance packs for as little as $5 a month and obtain coverage that includes critical illness.
+        They can mix and match the packs and choose to vary the premiums according to their changing financial demands.
+        The three packs comprise an essential one that includes term life and critical illness plans,  a recovery package with hospitalisation cash plans, and a child pack with illness and injury coverage for children up to 16 years old.
+        Each pack has three "sizes", which depend on the amount of monthly premiums. These sizes can be upgraded or downgraded at anytime, according to a customer\'s needs.
+        NTUC Income chief digital officer Peter Tay said Tribe is targeted at those who need to have more control over their cash flow and may not be able to pay for long-term, fixed conventional plans. This includes gig workers, new parents and those starting their first jobs.
+        "In recent years, Income has been… rolling out new insurance business models to address unmet needs," he added.
+        "Cash flow constraints against the backdrop of a volatile economy are also heightening customers' desire for greater control over what, when and how they purchase insurance, as well as the ability to customise and consolidate their purchases at a desired price point."
+        Customer feedback has shown that conventional insurance can come with high barriers to entry, such as the cash outlay required. Insurance plans may also have components that the customer does not need, Mr Tay said.
+        "So Tribe was set up to help consumers to build more relevant portfolios, and with on-demand adaptability at a price that they are comfortable with."
+        For example, a 34-year-old food delivery rider can buy the "medium-sized" recovery pack at a premium of $20 a month. Under the illness recovery component, he can get daily hospital cash of $75 and daily cash benefit of $75 as well for prolonged medical leave due to illness or infectious disease.
+        The injury recovery plan can provide $125 of daily hospital cash and the same amount in daily cash benefit for prolonged medical leave due to injury.
+        He can choose to upgrade just the illness recovery portion when his income stabilises, for instance.
+        If he has a child, he can also downgrade this recovery plan so he can buy a child pack on the same budget.
+        Mr Tay said: "We are bullish about the subscription model for insurance simply because it speaks to a customer as an individual and plays to his or her unique circumstance."
+        He noted that globally, subscription businesses have grown five to eight times faster than traditional businesses, with services like Netflix and Spotify booming in popularity.
+        "Technology has enabled customers to get access to what they want immediately and with greater personalisation," he said.
+        This provides new market opportunities for insurers. "Access to insurance and its affordability must be made available so that people can stay protected."</string>
 
 </resources>
