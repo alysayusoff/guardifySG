@@ -6,183 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".detailsPage">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/policyHeader"
             android:layout_width="match_parent"
-            android:layout_height="207dp">
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/companyLogo"
-                android:layout_width="269dp"
-                android:layout_height="108dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
+                android:layout_width="267dp"
+                android:layout_height="126dp"
                 android:src="@drawable/png_clipart_logo_aia_group_insurance_american_international_assurance_company_aia_public_aia_company_text"
-                app:layout_constraintBottom_toTopOf="@+id/policyName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.941" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/policyName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
+                android:fontFamily="sans-serif-condensed-medium"
                 android:text="AIA Beyond Critical Care"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="28sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/companyLogo" />
 
             <TextView
                 android:id="@+id/policyType"
                 android:layout_width="wrap_content"
-                android:layout_height="27dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="12dp"
+                android:layout_height="wrap_content"
                 android:text="Critical Illness"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/policyName" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/policyDetail1"
-            android:layout_width="match_parent"
-            android:layout_height="116dp">
-
-            <TextView
-                android:id="@+id/description"
-                android:layout_width="463dp"
-                android:layout_height="49dp"
-                android:autoText="false"
-                android:gravity="center_vertical"
-                android:text="Description"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:autoSizeTextType="none"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/expandibleDescription"
-                android:layout_width="463dp"
-                android:layout_height="63dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description"
-                app:layout_constraintVertical_bias="0.0">
-
-                <TextView
-                    android:id="@+id/descriptionText"
-                    android:layout_width="464dp"
-                    android:layout_height="64dp"
-                    android:text="Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover up to 104 other illnesses."
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/policyDetail2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:id="@+id/term"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center_vertical"
-                android:text="Term"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/expandableTerm"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/expandableTerm" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/expandableTerm"
-                android:layout_width="460dp"
-                android:layout_height="49dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <TextView
-                android:id="@+id/termText"
-                android:layout_width="464dp"
-                android:layout_height="44dp"
-                android:text="Up to age 85 or minimum of 30 Years whichever is earlier"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/expandableTerm"
-                app:layout_constraintVertical_bias="0.0" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/policyDetail3"
-            android:layout_width="match_parent"
-            android:layout_height="113dp">
-
-            <TextView
-                android:id="@+id/coverage"
-                android:layout_width="464dp"
-                android:layout_height="37dp"
-                android:gravity="center_vertical"
-                android:text="Coverage"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/expandibleCoverage"
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                app:layout_constraintTop_toBottomOf="@+id/coverage"
-                tools:layout_editor_absoluteX="16dp">
-
-                <TextView
-                    android:id="@+id/coverageText"
-                    android:layout_width="462dp"
-                    android:layout_height="64dp"
-                    android:text="1) Major Critical Illness and Relapse (43 Major Illness  2) Multistage Critical Illness (Early/Intermediate/Major)  3) Mental Illness "
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

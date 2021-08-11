@@ -1,12 +1,16 @@
 package com.example.guardifysg;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +27,11 @@ public class detailsPage extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    RecyclerView recyclerView;
+    DetailsAdapter recyclerAdapter;
+
+    List<PolicyDetail> policyDetailsList;
 
     public detailsPage() {
         // Required empty public constructor
@@ -58,7 +67,55 @@ public class detailsPage extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_details_page, container, false);
+        // setContentView(R.layout.fragment_details_page);
+        View detailsView = inflater.inflate(R.layout.fragment_details_page, container, false);
+        recyclerView = detailsView.findViewById(R.id.recyclerView);
+
+        initData();
+        initRecyclerView();
+
+        // add divider between each detail
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this.getContext(), DividerItemDecoration.VERTICAL);
+        recyclerView.addItemDecoration(dividerItemDecoration);
+
+        return detailsView;
     }
+
+    private void initRecyclerView() {
+        // constructor for RecyclerAdaptor
+        recyclerAdapter = new DetailsAdapter(policyDetailsList);
+        recyclerView.setAdapter(recyclerAdapter);
+    }
+
+    private void initData(){
+        policyDetailsList =  new ArrayList<>();
+        policyDetailsList.add(new PolicyDetail("Description", "Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover up to 104 other illnesses."));
+        policyDetailsList.add(new PolicyDetail("Term", "Up to age 85 or minimum of 30 Years whichever is earlier."));
+        policyDetailsList.add(new PolicyDetail("Coverage", "1) Major Critical Illness & Relapse (43 Major Illness\n" +
+                "\n" +
+                "2) Multistage Critical Illness (Early/Intermediate/Major)\n" +
+                "\n" +
+                "3) Mental Illness\n"));
+        policyDetailsList.add(new PolicyDetail("Payout", "1) Up to 200% of coverage amount for 43 major critical illnesses or 5 rediagnosed/recurring illnesses.\n" +
+                "\n" +
+                "2) Up to $350,000 for early, intermediate, and major critical illnesses until age 75 when add-on Early Critical Cover Extra Rider.\n" +
+                "\n" +
+                "3) 100% of premium paid will be refunded at the end of policy.\n" +
+                "\n" +
+                "4) Up to 20% of coverage amount (up to $50,000 per claim) up to age 75 for 5 prominent Mental Illnesses.\n" +
+                "\n" +
+                "5) Death Benefit: 100% of the coverage amount paid in one lump sum after minusing any CI claims.\n" +
+                "\n" +
+                "6) Compassionate benefit: $10,000\n" +
+                "\n" +
+                "7) Health Screening Benefit: Up to $200 reimbursement for health screening."));
+        policyDetailsList.add(new PolicyDetail("Premium Type", "Annually"));
+        policyDetailsList.add(new PolicyDetail("Premium Cost", "N/A"));
+
+    }
+
+
+
 }
