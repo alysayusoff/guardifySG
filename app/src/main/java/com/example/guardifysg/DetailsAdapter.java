@@ -49,7 +49,6 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.ViewHold
 
     // responsible for managing rows & holds elements in each individual row
     class ViewHolder extends RecyclerView.ViewHolder {
-
         TextView detailTitle, detailText;
         ConstraintLayout expandableDetail;
 
@@ -64,8 +63,6 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.ViewHold
                 policyDetails.setExpanded(!policyDetails.isExpanded());
                 notifyItemChanged(getAbsoluteAdapterPosition());
             });
-
         }
-
     }
 }
