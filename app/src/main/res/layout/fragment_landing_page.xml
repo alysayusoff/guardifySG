@@ -130,7 +130,7 @@
                 <TextView
                     android:id="@+id/newsShortDesc"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/artShortDesc1"
@@ -191,7 +191,7 @@
                 <TextView
                     android:id="@+id/newsDescription2"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/artShortDesc2"
@@ -241,7 +241,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Great Eastern offers complimentary COVID-19 protection coverage for all Singapore residents"
+                    android:text="@string/artTitle3"
                     android:textColor="#000000"
                     android:textSize="17sp"
                     app:layout_constraintBottom_toTopOf="@id/newsDescription3"
@@ -252,10 +252,10 @@
                 <TextView
                     android:id="@+id/newsDescription3"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Leading insurer Great Eastern is continuing its efforts to protect the community and support the national phased recovery with the launch of the GREAT Covid Care Plan, a complimentary post-vaccination protection plan available to all Singapore residents"
+                    android:text="@string/artShortDesc3"
                     android:textColor="#838383"
                     android:textSize="13sp"
                     app:layout_constraintEnd_toStartOf="@id/newsLogo3"
@@ -279,15 +279,7 @@
                     android:id="@+id/newsLongDesc3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="The GREAT Covid Care Plan provides a cash payout of S$200 per day of hospitalisation up to a total of $2,000, in the event one is hospitalised due to COVID-19 after their vaccination. The plan provides worldwide coverage so that hospitalisation in Singapore as well as overseas is covered. This will provide additional peace of mind for Singaporeans who may travel abroad for work or leisure, and for overseas residents returning to their home country for visits as countries start to open up.
-
-This free coverage applies to any Singapore resident who has completed his/her first dose of a COVID-19 vaccine2 approved for use by the Health Sciences Authority or supplied under the Special Access Route (SAR). Coverage also includes children who have been vaccinated. Parents may register on behalf of their children who are under 18.
-
-Registration on Great Eastern’s website is required to activate the free coverage, and all eligible recipients will receive their GREAT Covid Care insurance certificate via email once their sign up is confirmed. The plan provides coverage for 12 months from the date of registration or when the individual receives his/her first dose of COVID-19 vaccine, whichever is later. The sign up period ends on 30 September 2021 and applicants must also complete their first vaccination dose by 31 December 2021 to qualify for the coverage.
-
-The GREAT Covid Care Plan complements the coverage provided by the S$1 million GREAT Vaccine Fund launched in January 2021 and is the latest support measure that Great Eastern has rolled out with the progression of the COVID-19 vaccination programme in Singapore.
-
-More information on the GREAT Covid Care Plan can be found on Great Eastern’s website. The company will also be reaching out to its customers through its financial representatives."
+                    android:text="@string/artLongDesc3"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -310,7 +302,7 @@ More information on the GREAT Covid Care Plan can be found on Great Eastern’s 
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/newsTitle"
+                    android:text="@string/artTitle4"
                     android:textColor="#000000"
                     android:textSize="17sp"
                     app:layout_constraintBottom_toTopOf="@id/newsDescription4"
@@ -321,10 +313,10 @@ More information on the GREAT Covid Care Plan can be found on Great Eastern’s 
                 <TextView
                     android:id="@+id/newsDescription4"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/newsDesc"
+                    android:text="@string/artShortDesc4"
                     android:textColor="#838383"
                     android:textSize="13sp"
                     app:layout_constraintEnd_toStartOf="@id/newsLogo4"
@@ -338,7 +330,7 @@ More information on the GREAT Covid Care Plan can be found on Great Eastern’s 
                     android:layout_height="75dp"
                     android:contentDescription="@string/content"
                     android:padding="5dp"
-                    android:src="@drawable/covid"
+                    android:src="@drawable/news4"
                     app:layout_constraintStart_toEndOf="@id/newsTitle4"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -348,7 +340,7 @@ More information on the GREAT Covid Care Plan can be found on Great Eastern’s 
                     android:id="@+id/newsLongDesc4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TEST"
+                    android:text="@string/artLongDesc4"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -371,7 +363,7 @@ More information on the GREAT Covid Care Plan can be found on Great Eastern’s 
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/newsTitle"
+                    android:text="@string/artTitle5"
                     android:textColor="#000000"
                     android:textSize="17sp"
                     app:layout_constraintBottom_toTopOf="@id/newsDescription5"
@@ -382,10 +374,10 @@ More information on the GREAT Covid Care Plan can be found on Great Eastern’s 
                 <TextView
                     android:id="@+id/newsDescription5"
                     android:layout_width="0dp"
-                    android:layout_height="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/newsDesc"
+                    android:text="@string/artShortDesc5"
                     android:textColor="#838383"
                     android:textSize="13sp"
                     app:layout_constraintEnd_toStartOf="@id/newsLogo5"
@@ -399,7 +391,7 @@ More information on the GREAT Covid Care Plan can be found on Great Eastern’s 
                     android:layout_height="75dp"
                     android:contentDescription="@string/content"
                     android:padding="5dp"
-                    android:src="@drawable/covid"
+                    android:src="@drawable/news5"
                     app:layout_constraintStart_toEndOf="@id/newsTitle5"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -409,7 +401,7 @@ More information on the GREAT Covid Care Plan can be found on Great Eastern’s 
                     android:id="@+id/newsLongDesc5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TEST"
+                    android:text="@string/artLongDesc5"
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
