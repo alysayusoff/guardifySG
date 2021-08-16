@@ -4,10 +4,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,7 +78,24 @@ public class detailsPage extends Fragment {
         View detailsView = inflater.inflate(R.layout.fragment_details_page, container, false);
         recyclerView = detailsView.findViewById(R.id.recyclerView);
 
-        initData();
+        //alysa edited here
+        /*initData();*/
+        String desc = detailsPageArgs.fromBundle(getArguments()).getPolicyDesc();
+        String term = detailsPageArgs.fromBundle(getArguments()).getTerm();
+        String coverage = detailsPageArgs.fromBundle(getArguments()).getCoverage();
+        String payout = detailsPageArgs.fromBundle(getArguments()).getPayout();
+        String premium = detailsPageArgs.fromBundle(getArguments()).getPremium();
+        String cost = detailsPageArgs.fromBundle(getArguments()).getCost();
+
+        policyDetailsList =  new ArrayList<>();
+        policyDetailsList.add(new PolicyDetail("Description", desc));
+        policyDetailsList.add(new PolicyDetail("Term", term));
+        policyDetailsList.add(new PolicyDetail("Coverage", coverage));
+        policyDetailsList.add(new PolicyDetail("Payout", payout));
+        policyDetailsList.add(new PolicyDetail("Premium Type", premium));
+        policyDetailsList.add(new PolicyDetail("Premium Cost", cost));
+        //alysa end edit code
+
         initRecyclerView();
 
         // add divider between each detail
@@ -89,7 +111,8 @@ public class detailsPage extends Fragment {
         recyclerView.setAdapter(recyclerAdapter);
     }
 
-    private void initData(){
+    //alysa commented function
+    /*private void initData(){
         policyDetailsList =  new ArrayList<>();
         policyDetailsList.add(new PolicyDetail("Description", "Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover up to 104 other illnesses."));
         policyDetailsList.add(new PolicyDetail("Term", "Up to age 85 or minimum of 30 Years whichever is earlier."));
@@ -114,8 +137,14 @@ public class detailsPage extends Fragment {
         policyDetailsList.add(new PolicyDetail("Premium Type", "Annually"));
         policyDetailsList.add(new PolicyDetail("Premium Cost", "N/A"));
 
+    }*/
+
+    //alysa added function here
+    @Override
+    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        String title = detailsPageArgs.fromBundle(getArguments()).getPolicyName();
+        TextView frag1title = view.findViewById(R.id.policyName);
+        frag1title.setText(title);
     }
-
-
-
 }

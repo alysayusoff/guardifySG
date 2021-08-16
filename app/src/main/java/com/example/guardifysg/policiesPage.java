@@ -4,15 +4,18 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -21,6 +24,9 @@ import android.widget.Toast;
  * create an instance of this fragment.
  */
 public class policiesPage extends Fragment {
+
+    //GLOBAL VARS HERE
+    CardView cardView1, cardView2;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -73,15 +79,8 @@ public class policiesPage extends Fragment {
     public void onViewCreated(@NonNull @org.jetbrains.annotations.NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //navigation
+        //navController
         final NavController navController = Navigation.findNavController(view);
-        ConstraintLayout dynamicPolicy = view.findViewById(R.id.containerDynamicPolicy);
-        dynamicPolicy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_policiesPage_to_detailsPage);
-            }
-        });
 
         //handlers for filter
         ImageView imgBtn1 = view.findViewById(R.id.typeCriticalIllness);
@@ -92,6 +91,62 @@ public class policiesPage extends Fragment {
         imgBtn2.setOnClickListener(typeListener);
         imgBtn3.setOnClickListener(typeListener);
         imgBtn4.setOnClickListener(typeListener);
+
+        //handlers for policies
+        View.OnClickListener cardListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cardView1.isPressed()) {
+                    TextView nameData = view.findViewById(R.id.cardTitle1);
+                    TextView descData = view.findViewById(R.id.cardDesc1);
+                    TextView termData = view.findViewById(R.id.cardTerm1);
+                    TextView coverageData = view.findViewById(R.id.cardCoverage1);
+                    TextView payoutData = view.findViewById(R.id.cardPayout1);
+                    TextView premiumData = view.findViewById(R.id.cardPremium1);
+                    TextView costData = view.findViewById(R.id.cardCost1);
+                    TextView websiteData = view.findViewById(R.id.cardWebsite1);
+                    TextView contactData = view.findViewById(R.id.cardContact1);
+                    NavDirections action = policiesPageDirections.actionPoliciesPageToDetailsPage(
+                            nameData.getText().toString(),
+                            descData.getText().toString(),
+                            termData.getText().toString(),
+                            coverageData.getText().toString(),
+                            payoutData.getText().toString(),
+                            premiumData.getText().toString(),
+                            costData.getText().toString(),
+                            websiteData.getText().toString(),
+                            contactData.getText().toString());
+                    navController.navigate(action);
+                }
+                else if (cardView2.isPressed()) {
+                    TextView nameData = view.findViewById(R.id.cardTitle2);
+                    TextView descData = view.findViewById(R.id.cardDesc2);
+                    TextView termData = view.findViewById(R.id.cardTerm2);
+                    TextView coverageData = view.findViewById(R.id.cardCoverage2);
+                    TextView payoutData = view.findViewById(R.id.cardPayout2);
+                    TextView premiumData = view.findViewById(R.id.cardPremium2);
+                    TextView costData = view.findViewById(R.id.cardCost2);
+                    TextView websiteData = view.findViewById(R.id.cardWebsite2);
+                    TextView contactData = view.findViewById(R.id.cardContact2);
+                    NavDirections action = policiesPageDirections.actionPoliciesPageToDetailsPage(
+                            nameData.getText().toString(),
+                            descData.getText().toString(),
+                            termData.getText().toString(),
+                            coverageData.getText().toString(),
+                            payoutData.getText().toString(),
+                            premiumData.getText().toString(),
+                            costData.getText().toString(),
+                            websiteData.getText().toString(),
+                            contactData.getText().toString());
+                    navController.navigate(action);
+                }
+            }
+        };
+
+        cardView1 = view.findViewById(R.id.cardView1);
+        cardView1.setOnClickListener(cardListener);
+        cardView2 = view.findViewById(R.id.cardView2);
+        cardView2.setOnClickListener(cardListener);
     }
 
     private View.OnClickListener typeListener = new View.OnClickListener() {

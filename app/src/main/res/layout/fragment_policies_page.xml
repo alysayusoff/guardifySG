@@ -8,32 +8,29 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:background="#D5D5D5"
         android:baselineAligned="false"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="681dp"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/typeContainer"
-            android:layout_width="409dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:padding="3dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="1dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
             <TextView
                 android:id="@+id/browseType"
@@ -48,140 +45,128 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/containerPolicyType"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <HorizontalScrollView
-                android:id="@+id/horizontal1"
-                android:layout_width="409dp"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containerPolicyType"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#2D8BBD"
+                app:layout_constraintTop_toBottomOf="@id/browseType"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/browseType">
+                app:layout_constraintBottom_toTopOf="@id/textPolicies"
+                app:layout_constraintStart_toStartOf="parent" >
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/containerPolicyType"
+                <TextView
+                    android:id="@+id/textCritical"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/type1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@id/typeCriticalIllness"
+                    app:layout_constraintEnd_toEndOf="@id/typeCriticalIllness"
+                    app:layout_constraintStart_toStartOf="@id/typeCriticalIllness"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/textCritical"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="@string/type1"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toTopOf="@id/typeCriticalIllness"
-                        app:layout_constraintEnd_toEndOf="@id/typeCriticalIllness"
-                        app:layout_constraintStart_toStartOf="@id/typeCriticalIllness"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/typeCriticalIllness"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/radius_border"
+                    android:contentDescription="@string/content"
+                    android:layout_margin="5dp"
+                    android:padding="15dp"
+                    android:src="@drawable/cancerwhite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/typeDisability"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textCritical" />
 
-                    <ImageView
-                        android:id="@+id/typeCriticalIllness"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/radius_border"
-                        android:padding="15dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/cancerwhite"
-                        app:layout_constraintEnd_toStartOf="@id/typeDisability"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textCritical"
-                        android:contentDescription="@string/content" />
+                <TextView
+                    android:id="@+id/textDisability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/type2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@id/typeDisability"
+                    app:layout_constraintEnd_toEndOf="@id/typeDisability"
+                    app:layout_constraintStart_toStartOf="@id/typeDisability"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/textDisability"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="@string/type2"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toTopOf="@id/typeDisability"
-                        app:layout_constraintEnd_toEndOf="@id/typeDisability"
-                        app:layout_constraintStart_toStartOf="@id/typeDisability"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/typeDisability"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/radius_border"
+                    android:contentDescription="@string/content"
+                    android:layout_margin="5dp"
+                    android:padding="15dp"
+                    android:src="@drawable/disability"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/typeHospitalisation"
+                    app:layout_constraintStart_toEndOf="@id/typeCriticalIllness"
+                    app:layout_constraintTop_toBottomOf="@id/textDisability" />
 
-                    <ImageView
-                        android:id="@+id/typeDisability"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/radius_border"
-                        android:padding="15dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/disability"
-                        app:layout_constraintStart_toEndOf="@id/typeCriticalIllness"
-                        app:layout_constraintTop_toBottomOf="@id/textDisability"
-                        android:contentDescription="@string/content" />
+                <TextView
+                    android:id="@+id/textHospitalisation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/type3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@id/typeHospitalisation"
+                    app:layout_constraintEnd_toEndOf="@id/typeHospitalisation"
+                    app:layout_constraintStart_toStartOf="@id/typeHospitalisation"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/textHospitalisation"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="@string/type3"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toTopOf="@id/typeHospitalisation"
-                        app:layout_constraintEnd_toEndOf="@id/typeHospitalisation"
-                        app:layout_constraintStart_toStartOf="@id/typeHospitalisation"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/typeHospitalisation"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/radius_border"
+                    android:contentDescription="@string/content"
+                    android:layout_margin="5dp"
+                    android:padding="15dp"
+                    android:src="@drawable/healthwhite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/typeAccident"
+                    app:layout_constraintStart_toEndOf="@id/typeDisability"
+                    app:layout_constraintTop_toBottomOf="@id/textHospitalisation" />
 
-                    <ImageView
-                        android:id="@+id/typeHospitalisation"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/radius_border"
-                        android:padding="15dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/healthwhite"
-                        app:layout_constraintStart_toEndOf="@id/typeDisability"
-                        app:layout_constraintTop_toBottomOf="@id/textHospitalisation"
-                        android:contentDescription="@string/content" />
+                <TextView
+                    android:id="@+id/textAccident"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/type4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@id/typeAccident"
+                    app:layout_constraintEnd_toEndOf="@id/typeAccident"
+                    app:layout_constraintStart_toStartOf="@id/typeAccident"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
-                        android:id="@+id/textAccident"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="3dp"
-                        android:text="@string/type4"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toTopOf="@id/typeAccident"
-                        app:layout_constraintEnd_toEndOf="@id/typeAccident"
-                        app:layout_constraintStart_toStartOf="@id/typeAccident"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <ImageView
+                    android:id="@+id/typeAccident"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/radius_border"
+                    android:contentDescription="@string/content"
+                    android:layout_margin="5dp"
+                    android:padding="15dp"
+                    android:src="@drawable/carwhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/typeHospitalisation"
+                    app:layout_constraintTop_toBottomOf="@id/textAccident" />
 
-                    <ImageView
-                        android:id="@+id/typeAccident"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="7dp"
-                        android:background="@drawable/radius_border"
-                        android:padding="15dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/carwhite"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/typeHospitalisation"
-                        app:layout_constraintTop_toBottomOf="@id/textAccident"
-                        android:contentDescription="@string/content" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </HorizontalScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/textPolicies"
@@ -193,337 +178,386 @@
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/horizontal1" />
+                app:layout_constraintTop_toBottomOf="@id/containerPolicyType" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/containerAllPolicies"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/textPolicies"
-                tools:layout_editor_absoluteX="3dp">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textPolicies" >
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/containerDynamicPolicy"
-                    android:layout_width="match_parent"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="#F1F1F1"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="3dp">
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/cardView2" >
 
-                    <ImageView
-                        android:id="@+id/imgLogo"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:contentDescription="@string/content"
-                        android:padding="5dp"
-                        android:src="@drawable/aia_logo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/policyTitle"
-                        android:layout_width="wrap_content"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/containerDynamicPolicy"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/policyName"
-                        android:textColor="#000000"
-                        android:textSize="17sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:layout_marginBottom="10dp"
+                        android:background="#E8E8E8"
+                        app:layout_constraintTop_toTopOf="parent" >
 
-                    <TextView
-                        android:id="@+id/policyDetail1"
-                        android:layout_width="300dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/policyDescription"
-                        android:textColor="#838383"
-                        android:textSize="13sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo"
-                        app:layout_constraintTop_toBottomOf="@id/policyTitle" />
+                        <ImageView
+                            android:id="@+id/cardImg1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/content"
+                            android:padding="5dp"
+                            android:src="@drawable/aia_logo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/cardTitle1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="@string/cardTitle1"
+                            android:textColor="#000000"
+                            android:textSize="17sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/cardDesc1"
+                            app:layout_constraintStart_toEndOf="@id/cardImg1"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/containerDynamicPolicy2"
-                    android:layout_width="match_parent"
+                        <TextView
+                            android:id="@+id/cardDesc1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/cardDesc1"
+                            android:textColor="#707070"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/cardImg1"
+                            app:layout_constraintTop_toBottomOf="@id/cardTitle1" />
+
+                        <TextView
+                            android:id="@+id/cardTerm1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardTerm1" />
+
+                        <TextView
+                            android:id="@+id/cardCoverage1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardCoverage1" />
+
+                        <TextView
+                            android:id="@+id/cardPayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardPayout1" />
+
+                        <TextView
+                            android:id="@+id/cardPremium1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardPremium1" />
+
+                        <TextView
+                            android:id="@+id/cardCost1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardCost1" />
+
+                        <TextView
+                            android:id="@+id/cardWebsite1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardWebsite1" />
+
+                        <TextView
+                            android:id="@+id/cardContact1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardContact1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="#F1F1F1"
-                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy"
-                    tools:layout_editor_absoluteX="3dp">
+                    app:layout_constraintTop_toBottomOf="@id/cardView1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/cardView3" >
 
-                    <ImageView
-                        android:id="@+id/imgLogo2"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:padding="5dp"
-                        android:src="@drawable/aia_logo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="@string/content" />
-
-                    <TextView
-                        android:id="@+id/policyTitle2"
-                        android:layout_width="wrap_content"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/containerDynamicPolicy2"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/policyName"
-                        android:textColor="#000000"
-                        android:textSize="17sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo2"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:layout_marginBottom="10dp"
+                        android:background="#E8E8E8"
+                        app:layout_constraintTop_toTopOf="parent" >
 
-                    <TextView
-                        android:id="@+id/policyDescription2"
-                        android:layout_width="300dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/policyDescription"
-                        android:textColor="#838383"
-                        android:textSize="13sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo2"
-                        app:layout_constraintTop_toBottomOf="@id/policyTitle2" />
+                        <ImageView
+                            android:id="@+id/cardImg2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/content"
+                            android:padding="5dp"
+                            android:src="@drawable/aia_logo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/cardTitle2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="@string/cardTitle2"
+                            android:textColor="#000000"
+                            android:textSize="17sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/cardDesc2"
+                            app:layout_constraintStart_toEndOf="@id/cardImg2"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/containerDynamicPolicy3"
-                    android:layout_width="match_parent"
+                        <TextView
+                            android:id="@+id/cardDesc2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/cardDesc2"
+                            android:textColor="#707070"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/cardImg2"
+                            app:layout_constraintTop_toBottomOf="@id/cardTitle2" />
+
+                        <TextView
+                            android:id="@+id/cardTerm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardTerm2" />
+
+                        <TextView
+                            android:id="@+id/cardCoverage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardCoverage2" />
+
+                        <TextView
+                            android:id="@+id/cardPayout2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardPayout2" />
+
+                        <TextView
+                            android:id="@+id/cardPremium2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardPremium2" />
+
+                        <TextView
+                            android:id="@+id/cardCost2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardCost2" />
+
+                        <TextView
+                            android:id="@+id/cardWebsite2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardWebsite2" />
+
+                        <TextView
+                            android:id="@+id/cardContact2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardContact2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="#F1F1F1"
-                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy2"
-                    tools:layout_editor_absoluteX="3dp">
+                    app:layout_constraintTop_toBottomOf="@id/cardView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" >
 
-                    <ImageView
-                        android:id="@+id/imgLogo3"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:padding="5dp"
-                        android:src="@drawable/aia_logo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="@string/content" />
-
-                    <TextView
-                        android:id="@+id/policyTitle3"
-                        android:layout_width="wrap_content"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/containerDynamicPolicy3"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/policyName"
-                        android:textColor="#000000"
-                        android:textSize="17sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo3"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        android:layout_marginBottom="10dp"
+                        android:background="#E8E8E8"
+                        app:layout_constraintTop_toTopOf="parent" >
 
-                    <TextView
-                        android:id="@+id/policyDescription3"
-                        android:layout_width="300dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/policyDescription"
-                        android:textColor="#838383"
-                        android:textSize="13sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo3"
-                        app:layout_constraintTop_toBottomOf="@id/policyTitle3" />
+                        <ImageView
+                            android:id="@+id/cardImg3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:contentDescription="@string/content"
+                            android:padding="5dp"
+                            android:src="@drawable/aia_logo"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/cardTitle3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:text="@string/cardTitle3"
+                            android:textColor="#000000"
+                            android:textSize="17sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/cardDesc3"
+                            app:layout_constraintStart_toEndOf="@id/cardImg3"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/containerDynamicPolicy4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="#F1F1F1"
-                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy3"
-                    tools:layout_editor_absoluteX="3dp">
+                        <TextView
+                            android:id="@+id/cardDesc3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/cardDesc3"
+                            android:textColor="#707070"
+                            android:textSize="13sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/cardImg3"
+                            app:layout_constraintTop_toBottomOf="@id/cardTitle3" />
 
-                    <ImageView
-                        android:id="@+id/imgLogo4"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:padding="5dp"
-                        android:src="@drawable/aia_logo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="@string/content" />
+                        <TextView
+                            android:id="@+id/cardTerm3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardTerm3" />
 
-                    <TextView
-                        android:id="@+id/policyTitle4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/policyName"
-                        android:textColor="#000000"
-                        android:textSize="17sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo4"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/cardCoverage3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardCoverage3" />
 
-                    <TextView
-                        android:id="@+id/policyDescription4"
-                        android:layout_width="300dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/policyDescription"
-                        android:textColor="#838383"
-                        android:textSize="13sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo4"
-                        app:layout_constraintTop_toBottomOf="@id/policyTitle4" />
+                        <TextView
+                            android:id="@+id/cardPayout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardPayout3" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/cardPremium3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardPremium3" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/containerDynamicPolicy5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="#F1F1F1"
-                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy4"
-                    tools:layout_editor_absoluteX="3dp">
+                        <TextView
+                            android:id="@+id/cardCost3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardCost3" />
 
-                    <ImageView
-                        android:id="@+id/imgLogo5"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:padding="5dp"
-                        android:src="@drawable/aia_logo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="@string/content" />
+                        <TextView
+                            android:id="@+id/cardWebsite3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardWebsite3" />
 
-                    <TextView
-                        android:id="@+id/policyTitle5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/policyName"
-                        android:textColor="#000000"
-                        android:textSize="17sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo5"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/cardContact3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/cardContact3" />
 
-                    <TextView
-                        android:id="@+id/policyDescription5"
-                        android:layout_width="300dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/policyDescription"
-                        android:textColor="#838383"
-                        android:textSize="13sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo5"
-                        app:layout_constraintTop_toBottomOf="@id/policyTitle5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/containerDynamicPolicy6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="#F1F1F1"
-                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy5"
-                    tools:layout_editor_absoluteX="3dp">
-
-                    <ImageView
-                        android:id="@+id/imgLogo6"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:padding="5dp"
-                        android:src="@drawable/aia_logo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="@string/content" />
-
-                    <TextView
-                        android:id="@+id/policyTitle6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/policyName"
-                        android:textColor="#000000"
-                        android:textSize="17sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo6"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/policyDescription6"
-                        android:layout_width="300dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/policyDescription"
-                        android:textColor="#838383"
-                        android:textSize="13sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo6"
-                        app:layout_constraintTop_toBottomOf="@id/policyTitle6" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/containerDynamicPolicy7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:background="#F1F1F1"
-                    app:layout_constraintTop_toBottomOf="@id/containerDynamicPolicy6"
-                    tools:layout_editor_absoluteX="3dp">
-
-                    <ImageView
-                        android:id="@+id/imgLogo7"
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:padding="5dp"
-                        android:src="@drawable/aia_logo"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:contentDescription="@string/content" />
-
-                    <TextView
-                        android:id="@+id/policyTitle7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/policyName"
-                        android:textColor="#000000"
-                        android:textSize="17sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo7"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/policyDescription7"
-                        android:layout_width="300dp"
-                        android:layout_height="50dp"
-                        android:layout_marginStart="5dp"
-                        android:fontFamily="sans-serif-medium"
-                        android:text="@string/policyDescription"
-                        android:textColor="#838383"
-                        android:textSize="13sp"
-                        app:layout_constraintStart_toEndOf="@id/imgLogo7"
-                        app:layout_constraintTop_toBottomOf="@id/policyTitle7" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

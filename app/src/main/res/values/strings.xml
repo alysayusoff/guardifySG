@@ -64,19 +64,6 @@
         <item>$1,501 and above</item>
     </string-array>
 
-    //policiesPage strings
-    <string name="content">image</string>
-    <string name="browseByType">BROWSE INSURANCE POLICIES BY TYPE</string>
-    <string name="type1">Critical Illness</string>
-    <string name="type2">Disability</string>
-    <string name="type3">Hospitalisation</string>
-    <string name="type4">Accident</string>
-    <string name="header">INSURANCE POLICIES</string>
-    <string name="policyName">AIA Beyond Critical Care</string>
-    <string name="policyDescription">
-        Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses.
-    </string>
-
     //AboutUsPage strings
     <string-array name="aboutus_array">
         <item>Inquiry</item>
@@ -146,5 +133,103 @@
         He noted that globally, subscription businesses have grown five to eight times faster than traditional businesses, with services like Netflix and Spotify booming in popularity.
         "Technology has enabled customers to get access to what they want immediately and with greater personalisation," he said.
         This provides new market opportunities for insurers. "Access to insurance and its affordability must be made available so that people can stay protected."</string>
+
+    //policiesPage strings
+    <string name="content">image</string>
+    <string name="browseByType">BROWSE INSURANCE POLICIES BY TYPE</string>
+    <string name="type1">Critical Illness</string>
+    <string name="type2">Disability</string>
+    <string name="type3">Hospitalisation</string>
+    <string name="type4">Accident</string>
+    <string name="header">INSURANCE POLICIES</string>
+
+    <string name="cardTitle1">AIA Beyond Critical Care</string>
+    <string name="cardDesc1">Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses.</string>
+    <string name="cardTerm1">Up to age 85 or minimum of 30 Years whichever is earlier</string>
+    <string name="cardCoverage1">
+        Major Critical Illness &amp; Relapse (43 Major Illnesses)
+        Multistage Critical Illness (Early/Intermediate/Major)
+        Mental Illness
+    </string>
+    <string name="cardPayout1">
+        to 200% of coverage amount for 43 major critical illnesses or 5 rediagnosed/recurring illnesses.
+        Up to $350,000 for early, intermediate, and major critical illnesses until age 75 when add-on Early Critical Cover Extra Rider.
+        100% of premium paid will be refunded at the end of policy.
+        Up to 20% of coverage amount (up to $50,000 per claim) up to age 75 for 5 prominent Mental Illnesses.
+        Death Benefit: 100% of the coverage amount paid in one lump sum after minusing any CI claims.
+        Compassionate benefit: $10,000
+        Health Screening Benefit: Up to $200 reimbursement for health screening.
+    </string>
+    <string name="cardPremium1">Annually</string>
+    <string name="cardCost1">N/A</string>
+    <string name="cardWebsite1">https://www.aia.com.sg/en/index.html</string>
+    <string name="cardContact1">
+        For local call 1800 248 8000
+        From overseas 65-6248 8000
+        8.45am to 5.30pm (Mon-Fri)
+    </string>
+
+    <string name="cardTitle2">AIA Solitaire PA (II)</string>
+    <string name="cardDesc2">Covers more than just personal accidents, with additional coverage of dengue fever, TCM and many more.</string>
+    <string name="cardTerm2">Coverage up till age 80</string>
+    <string name="cardCoverage2">
+        Road Accidents
+        PMD-related Accidents
+        Building Fires
+        Strikes or Riots
+        Terrorism or Assault
+        Dengue
+        Food Poisoning
+        Falls/Sprains
+        Kitsch Cuts and Burns
+        Amateur Sports
+    </string>
+    <string name="cardPayout2">
+        Payout depend on Plan Class and Benefit claimed
+        Accident Death Benefit: Starting from $100,000.
+        Accident Major Dismemberment Benefit: Starting from $300,000
+        And many more found within the brochure.
+    </string>
+    <string name="cardPremium2">Monthly/Annually</string>
+    <string name="cardCost2">Starting from $18 per month/ $220 per year</string>
+    <string name="cardWebsite2">https://www.aia.com.sg/en/index.html</string>
+    <string name="cardContact2">
+        For local call 1800 248 8000
+        From overseas 65-6248 8000
+        8.45am to 5.30pm (Mon-Fri)
+    </string>
+
+    <string name="cardTitle3">AIA Premier Disability Cover</string>
+    <string name="cardDesc3">Ongoing income to help provide financial stability while adjusting to your situation.</string>
+    <string name="cardTerm3">Coverage up till age 65</string>
+    <string name="cardCoverage3">Covers you if you are unable to work/earn an income due to disability/illness</string>
+    <string name="cardPayout3">
+        Up to 75% of existing income received in monthly payout up to full recovery or age 65.
+        Income top ups if the new job pays less than the monthly payout.
+        Lump sum payment of 24 times of the monthly payout.
+        Death benefit: 12 times the monthly payout.
+        Reimbursement for rehabilitation up to 6 times the monthly payout.
+        Payback benefit: 2 times the monthly payout to replace income lost during deferment period.
+    </string>
+    <string name="cardPremium3">Annually</string>
+    <string name="cardCost3">Depending on income</string>
+    <string name="cardWebsite3">https://www.aia.com.sg/en/index.html</string>
+    <string name="cardContact3">
+        For local call 1800 248 8000
+        From overseas 65-6248 8000
+        8.45am to 5.30pm (Mon-Fri)
+    </string>
+
+    <!--
+
+    <string name="cardTitle"></string>
+    <string name="cardDesc"></string>
+    <string name="cardTerm"></string>
+    <string name="cardCoverage"></string>
+    <string name="cardPayout"></string>
+    <string name="cardPremium"></string>
+    <string name="cardCost"></string>
+    <string name="cardWebsite"></string>
+    <string name="cardContact"></string> -->
 
 </resources>

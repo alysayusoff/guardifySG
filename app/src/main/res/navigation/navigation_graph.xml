@@ -26,7 +26,35 @@
         android:id="@+id/detailsPage"
         android:name="com.example.guardifysg.detailsPage"
         android:label="fragment_details_page"
-        tools:layout="@layout/fragment_details_page" />
+        tools:layout="@layout/fragment_details_page" >
+        <argument
+            android:name="policy_name"
+            app:argType="string" />
+        <argument
+            android:name="policy_desc"
+            app:argType="string" />
+        <argument
+            android:name="term"
+            app:argType="string" />
+        <argument
+            android:name="coverage"
+            app:argType="string" />
+        <argument
+            android:name="payout"
+            app:argType="string" />
+        <argument
+            android:name="premium"
+            app:argType="string" />
+        <argument
+            android:name="cost"
+            app:argType="string" />
+        <argument
+            android:name="website"
+            app:argType="string" />
+        <argument
+            android:name="contact"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/policiesPage"
         android:name="com.example.guardifysg.policiesPage"
