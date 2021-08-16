@@ -36,7 +36,7 @@ import com.smarteist.autoimageslider.SliderView;
  */
 public class landingPage extends Fragment {
     SliderView sliderView;
-    int[] images={R.drawable.aia_logo,R.drawable.covid_icon,R.drawable.cancer};
+    int[] images={R.drawable.image_from_ios_67,R.drawable.greateastern_covid_plan,R.drawable.news5};
 
     // MODIFIED GLOBAL VARIABLES HERE
     ConstraintLayout news1, news2, news3, news4, news5;
