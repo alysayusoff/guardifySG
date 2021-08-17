@@ -144,29 +144,29 @@
     <string name="header">INSURANCE POLICIES</string>
 
     <string name="cardTitle1">AIA Beyond Critical Care</string>
-    <string name="cardDesc1">Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover upto 104 other illnesses.</string>
+    <string name="cardDesc1">Offers premium refund for 43 Major illnesses, relapse as well as mental illness. Comes with optional add-ons to cover up to 104 other illnesses.</string>
     <string name="cardTerm1">Up to age 85 or minimum of 30 Years whichever is earlier</string>
     <string name="cardCoverage1">
         Major Critical Illness &amp; Relapse (43 Major Illnesses)
-        Multistage Critical Illness (Early/Intermediate/Major)
-        Mental Illness
+        \nMultistage Critical Illness (Early/Intermediate/Major)
+        \nMental Illness
     </string>
     <string name="cardPayout1">
-        to 200% of coverage amount for 43 major critical illnesses or 5 rediagnosed/recurring illnesses.
-        Up to $350,000 for early, intermediate, and major critical illnesses until age 75 when add-on Early Critical Cover Extra Rider.
-        100% of premium paid will be refunded at the end of policy.
-        Up to 20% of coverage amount (up to $50,000 per claim) up to age 75 for 5 prominent Mental Illnesses.
-        Death Benefit: 100% of the coverage amount paid in one lump sum after minusing any CI claims.
-        Compassionate benefit: $10,000
-        Health Screening Benefit: Up to $200 reimbursement for health screening.
+        1. Up to 200% of coverage amount for 43 major critical illnesses or 5 rediagnosed/recurring illnesses.
+        \n2. Up to $350,000 for early, intermediate, and major critical illnesses until age 75 when add-on Early Critical Cover Extra Rider.
+        \n3. 100% of premium paid will be refunded at the end of policy.
+        \n4. Up to 20% of coverage amount (up to $50,000 per claim) up to age 75 for 5 prominent Mental Illnesses.
+        \n5. Death Benefit: 100% of the coverage amount paid in one lump sum after minusing any CI claims.
+        \n6. Compassionate benefit: $10,000
+        \n7. Health Screening Benefit: Up to $200 reimbursement for health screening.
     </string>
     <string name="cardPremium1">Annually</string>
     <string name="cardCost1">N/A</string>
     <string name="cardWebsite1">https://www.aia.com.sg/en/index.html</string>
     <string name="cardContact1">
         For local call 1800 248 8000
-        From overseas 65-6248 8000
-        8.45am to 5.30pm (Mon-Fri)
+        \nFrom overseas 65-6248 8000
+        \n8.45am to 5.30pm (Mon-Fri)
     </string>
 
     <string name="cardTitle2">AIA Solitaire PA (II)</string>
@@ -174,29 +174,28 @@
     <string name="cardTerm2">Coverage up till age 80</string>
     <string name="cardCoverage2">
         Road Accidents
-        PMD-related Accidents
-        Building Fires
-        Strikes or Riots
-        Terrorism or Assault
-        Dengue
-        Food Poisoning
-        Falls/Sprains
-        Kitsch Cuts and Burns
-        Amateur Sports
+        \nPMD-related Accidents
+        \nBuilding Fires
+        \nStrikes or Riots
+        \nTerrorism or Assault
+        \nDengue
+        \nFood Poisoning
+        \nFalls/Sprains
+        \nKitsch Cuts and Burns
+        \nAmateur Sports
     </string>
     <string name="cardPayout2">
         Payout depend on Plan Class and Benefit claimed
-        Accident Death Benefit: Starting from $100,000.
-        Accident Major Dismemberment Benefit: Starting from $300,000
-        And many more found within the brochure.
+        \n1. Accident Death Benefit: Starting from $100,000.
+        \n2. Accident Major Dismemberment Benefit: Starting from $300,000
     </string>
     <string name="cardPremium2">Monthly/Annually</string>
-    <string name="cardCost2">Starting from $18 per month/ $220 per year</string>
+    <string name="cardCost2">Starting from $18 per month/$220 per year</string>
     <string name="cardWebsite2">https://www.aia.com.sg/en/index.html</string>
     <string name="cardContact2">
         For local call 1800 248 8000
-        From overseas 65-6248 8000
-        8.45am to 5.30pm (Mon-Fri)
+        \nFrom overseas 65-6248 8000
+        \n8.45am to 5.30pm (Mon-Fri)
     </string>
 
     <string name="cardTitle3">AIA Premier Disability Cover</string>
@@ -204,32 +203,517 @@
     <string name="cardTerm3">Coverage up till age 65</string>
     <string name="cardCoverage3">Covers you if you are unable to work/earn an income due to disability/illness</string>
     <string name="cardPayout3">
-        Up to 75% of existing income received in monthly payout up to full recovery or age 65.
-        Income top ups if the new job pays less than the monthly payout.
-        Lump sum payment of 24 times of the monthly payout.
-        Death benefit: 12 times the monthly payout.
-        Reimbursement for rehabilitation up to 6 times the monthly payout.
-        Payback benefit: 2 times the monthly payout to replace income lost during deferment period.
+        1. Up to 75% of existing income received in monthly payout up to full recovery or age 65.
+        \n2. Income top ups if the new job pays less than the monthly payout.
+        \n3. Lump sum payment of 24 times of the monthly payout.
+        \n4. Death benefit: 12 times the monthly payout.
+        \n5. Reimbursement for rehabilitation up to 6 times the monthly payout.
+        \n6. Payback benefit: 2 times the monthly payout to replace income lost during deferment period.
     </string>
     <string name="cardPremium3">Annually</string>
     <string name="cardCost3">Depending on income</string>
     <string name="cardWebsite3">https://www.aia.com.sg/en/index.html</string>
     <string name="cardContact3">
         For local call 1800 248 8000
-        From overseas 65-6248 8000
-        8.45am to 5.30pm (Mon-Fri)
+        \nFrom overseas 65-6248 8000
+        \n8.45am to 5.30pm (Mon-Fri)
     </string>
 
-    <!--
+    <string name="cardTitle4">HealthShield Gold Max</string>
+    <string name="cardDesc4">Medisave-approved Integrated Shield Plan that covers you from diagnosis to recovery.</string>
+    <string name="cardTerm4">Lifetime Coverage</string>
+    <string name="cardCoverage4">
+        Hospitalisation/Surgical Benefits
+        \nPre-Hospitalisation Benefits</string>
+    <string name="cardPayout4">
+        Payout depend on Plan Type (A/B/C) and benefit claims
+        \nUp to $2 million claim limit per policy year.
+        \nUp to 13 months of pre- and post-hospitalisation benefits.
+        \nExtra Coverage of up to $100,000 for 30 critical illnesses per policy year.
+    </string>
+    <string name="cardPremium4">Annually</string>
+    <string name="cardCost4">Starting from as low as $53</string>
+    <string name="cardWebsite4">https://www.aia.com.sg/en/index.html</string>
+    <string name="cardContact4">
+        For local call 1800 248 8000
+        \nFrom overseas 65-6248 8000
+        \n8.45am to 5.30pm (Mon-Fri)
+    </string>
 
-    <string name="cardTitle"></string>
-    <string name="cardDesc"></string>
-    <string name="cardTerm"></string>
-    <string name="cardCoverage"></string>
-    <string name="cardPayout"></string>
-    <string name="cardPremium"></string>
-    <string name="cardCost"></string>
-    <string name="cardWebsite"></string>
-    <string name="cardContact"></string> -->
+    <string name="cardTitle5">Stroke Insurance</string>
+    <string name="cardDesc5">An affordable policy that offers a one-time full payout, with complimentary benefit covering any adverse side effect from Covid-19 vaccine.</string>
+    <string name="cardTerm5">Up to 85 years of age</string>
+    <string name="cardCoverage5">
+        Stroke with Permanent Neurological Deficit
+        \nNOT COVERED: Pre-existing conditions, first symptoms within 90 days of policy issue date
+    </string>
+    <string name="cardPayout5">
+        Stroke Benefit equal to sim insured or total premium paid, whichever higher
+        \nDeath Benefit of $5,000
+    </string>
+    <string name="cardPremium5">Annual</string>
+    <string name="cardCost5">From $8/month</string>
+    <string name="cardWebsite5">https://www.fwd.com.sg/</string>
+    <string name="cardContact5">
+        65 6820 8888
+        \n9:00am – 10:00pm (Mon to Fri)
+        \n9:00am – 1:00pm (Sat)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle6">Personal Accident Insurance</string>
+    <string name="cardDesc6">Coverage for injuries from small unexpected accidents and infectious diseases.</string>
+    <string name="cardTerm6">
+        Singaporean, 65 years of age or below (to purchase)
+        \nUp to 75 years of age
+    </string>
+    <string name="cardCoverage6">
+        23 different Diseases
+        \nEight different types of Accidents
+        \nNOT COVERED: Pre-existing conditions, Claimee being intoxicated on alcohol or drugs not prescribed by a Medical Practitioner
+    </string>
+    <string name="cardPayout6">
+        From $100,000 in Accidental Death
+        \nFrom $100,000 in Permanent total &amp; partial disability (per policy year)
+        \nFrom $100,000 in Guardian angel benefit (per policy year)
+        \nFrom $5,000 in Funeral grant for accidental death
+        \nFrom $2,000 in Medical Expenses for inpatient and outpatient care
+    </string>
+    <string name="cardPremium6">Annual</string>
+    <string name="cardCost6">Dependent on sum insured, from $120/month</string>
+    <string name="cardWebsite6">https://www.fwd.com.sg/</string>
+    <string name="cardContact6">
+        65 6820 8888
+        \n9:00am – 10:00pm (Mon to Fri)
+        \n9:00am – 1:00pm (Sat)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle7">Big 3 Critical Illness Insurance</string>
+    <string name="cardDesc7">An affordable policy that covers cancer, heart attack and stroke.</string>
+    <string name="cardTerm7">Up to 85 years of age</string>
+    <string name="cardCoverage7">
+        Cancer
+        \nHeart Attack of Specified Severity
+        \nStroke with Permanent Neurological Deficit
+        \nNOT COVERED: Pre-existing conditions, first symptoms within 90 days of policy issue date
+    </string>
+    <string name="cardPayout7">
+        Big 3 Benefit equal to the sum insured or total premium paid, whichever higher
+        \nDeath Benefit of $20,000
+    </string>
+    <string name="cardPremium7">Annual</string>
+    <string name="cardCost7">From $18/month</string>
+    <string name="cardWebsite7">https://www.fwd.com.sg/</string>
+    <string name="cardContact7">
+        65 6820 8888
+        \n9:00am – 10:00pm (Mon to Fri)
+        \n9:00am – 1:00pm (Sat)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle8">International Health Insurance</string>
+    <string name="cardDesc8">The perfect medical plan for you, wherever in the world you may be.</string>
+    <string name="cardTerm8">
+        Singaporean, 65 years of age or below (to purchase)
+        \nUp to 75 years of age
+    </string>
+    <string name="cardCoverage8">
+        Hospitalisation
+        \nNOT COVERED: Pre-existing conditions, Congenital Conditions, Sexually transmitted disease etc.
+    </string>
+    <string name="cardPayout8">As low as $0 Deductible\\\From $100,000 in Hospitalisation Benefit</string>
+    <string name="cardPremium8">Annual</string>
+    <string name="cardCost8">Dependent on sum insured, from $514/month</string>
+    <string name="cardWebsite8">https://www.fwd.com.sg/</string>
+    <string name="cardContact8">
+        65 6820 8888
+        \n9:00am – 10:00pm (Mon to Fri)
+        \n9:00am – 1:00pm (Sat)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle9">Care Secure (CareShield Life Supplement)</string>
+    <string name="cardDesc9">Lifetime coverage against moderate and severe disabilities. Up to $5,000 with comprehensive benefits such as support benefit, death benefit and dependant benefit.</string>
+    <string name="cardTerm9">Singapore Citizens and Permanent Residents, aged 30 to 64 years old (last birthday), with an existing CareShield Life plan.</string>
+    <string name="cardCoverage9">Must not be able to do at least two Activities of Daily Livings (ADLs): Dressing, washing, feeding, toileting, walking/moving around, transferring</string>
+    <string name="cardPayout9">
+        Death Benefit: Care Secure will pay 300% of the disability benefit in the event of your death and on the condition that you were already receiving the disability benefit. The policy terminates thereafter.
+        \nMonthly benefit: Care Secure at monthly benefit levels from $1,200 to $5,000 in multiples of $100.
+        \nCaretaker Benefit: If one becomes disabled and has at least one dependant, they will receive 25% of the disability benefit as dependant benefit every month for up to 36 months in their lifetime.
+    </string>
+    <string name="cardPremium9">Monthly</string>
+    <string name="cardCost9">
+        CareShield Life payout starts at $600 per month in 2020 and will increase until age 67, or when one makes a successful claim, whichever is earlier.
+    </string>
+    <string name="cardWebsite9">https://www.income.com.sg/</string>
+    <string name="cardContact9">
+        Refer to website for individual hotlines for different services
+        \n8.30am - 6.30pm (Mon-Fri)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle10">PA Secure</string>
+    <string name="cardDesc10">PA Secure aims to provide coverage against hefty medical bills in the event of an accident or catching an infectious disease</string>
+    <string name="cardTerm10">Singapore identification document and are between 15 days and 65 years old. May continue cover for up to 75 years old at a reduced sum assured, and may apply new terms; depending on decisions and if one pays an extra premium.</string>
+    <string name="cardCoverage10">
+        Coverage against 7 infectious diseases: HFMD, Dengue, Mumps, Zika Virus, Chicken Pox
+        \nAccidental Death, Permanent Disability, Daily Hospital Income and Medical Expenses in the event of an accident or due to an infectious disease.
+        \nNOT COVERED: This plan does not cover infectious disease diagnosed within 14 days from the policy start date as well as any infectious disease which has been announced as: (a) an epidemic by the health authority in Singapore or the Government of the Republic of Singapore; or (b) a pandemic by the World Health Organisation (WHO), in the affected countries, from the date of announcement until the epidemic or pandemic ends.
+    </string>
+    <string name="cardPayout10">
+        Optional benefits for students,$18/year. Get child care fees reimbursed if an insured child is hospitalised or on certified medical leave due to an injury or infectious disease.
+        \nOverseas travel. Optional benefit at $18/year. Get reimbursement due to hospitalisation.
+        \nCan choose between individual, couple and family plans.
+    </string>
+    <string name="cardPremium10">Monthly/Yearly</string>
+    <string name="cardCost10">Depending on the plan chosen (monthly or yearly), as low as $68 for yearly.</string>
+    <string name="cardWebsite10">https://www.income.com.sg/</string>
+    <string name="cardContact10">
+        Refer to website for individual hotlines for different services
+        \n8.30am - 6.30pm (Mon-Fri)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle11">SilverCare</string>
+    <string name="cardDesc11">Comprehensive protection for ageing well and for life. Enjoy benefits designed to make life better.</string>
+    <string name="cardTerm11">This premium rate is applicable for people aged 50 to 75, 76 and above have extra fees.</string>
+    <string name="cardCoverage11">
+        Permanent Disabilities
+        \nOutpatient expenses due to accident
+        \nHospitalisation expenses due to accident
+        \nExtra medical expenses for burns, broken bones and fractures
+        \nDaily hospital income
+        \nAmbulance Fee
+        \nMobility Aid
+        \nRehabilitation
+        \nSenior Day-Care
+    </string>
+    <string name="cardPayout11">
+        Hospitalisation expenses coverage and daily cash benefit SilverCare covers medical and hospital treatment expenses in the event of an accident. Will also get up to $100 per day of hospital stay.
+        \nIf permanent disability due to an accident happens, you will receive a lump sum benefit of up to $60,000. If accidental death occurs, an amount of $10,000 will be paid to help with final expenses.
+    </string>
+    <string name="cardPremium11">Yearly</string>
+    <string name="cardCost11">Depending on the plan, yearly cheapest goes as low as $160.50.</string>
+    <string name="cardWebsite11">https://www.income.com.sg/</string>
+    <string name="cardContact11">
+        Refer to website for individual hotlines for different services
+        \n8.30am - 6.30pm (Mon-Fri)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle12">Hospital Care Insurance</string>
+    <string name="cardDesc12">Lighten the financial load and rest easy, knowing that Hospital Care gives daily hospital cash benefit in the event that someone is hospitalised.</string>
+    <string name="cardTerm12">Hold a valid Singapore identification document and are between 30 days and 60 years old. May continue cover for you up to 65 years old and may apply new terms depending on their decision.</string>
+    <string name="cardCoverage12">
+        Covers day surgery expenses in a hospital, emergency outpatient expenses to treat an injury due to accident and ambulance expenses.
+        \nReceive daily hospital cash benefit of up to $2004 per day when someone is hospitalised
+        \nReceive ICU triple cover benefit of up to $600 per day instead if hospitalised in an ICU.
+    </string>
+    <string name="cardPayout12">
+        Daily hospital cash (for each complete 24-hour of hospitalisation): $200 per day (Up to 730 days for every injury or sickness)
+        \nICU triple cover: $600 per day (Up to 60 days for every injury or sickness)
+        \nDay surgery: Up to $750
+        \nEmergency outpatient expenses to treat an injury (Reimbursement up to the limits per accident for treatment of an injury within 48 hours following the accident and follow-up treatment up to 30 days from the date of the accident): Up to $750
+        \nAmbulance expenses: Up to $500
+    </string>
+    <string name="cardPremium12">Monthly/Yearly</string>
+    <string name="cardCost12">Depending on Plan</string>
+    <string name="cardWebsite12">https://www.income.com.sg/</string>
+    <string name="cardContact12">
+        Refer to website for individual hotlines for different services
+        \n8.30am - 6.30pm (Mon-Fri)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle13">My Early Critical Illness Plan II</string>
+    <string name="cardDesc13">Provides coverage for early, intermediate and severe stages of critical illnesses, as well as for death.</string>
+    <string name="cardTerm13">From 10 years and up to 99 ANB</string>
+    <string name="cardCoverage13">
+        Critical Illness Benefit: Upon diagnosis of any one of the covered 132 conditions across various stages of critical illnesses
+        \nBenign and Borderline Malignant Tumour Benefit: Upon a complete surgical excision of a Benign Tumour (suspected malignancy) requiring surgical excision from any of the 22 specified organs covered or upon diagnosis of a Borderline Malignant Tumour
+        \nIntensive Care Benefit: Upon Intensive Care Unit (ICU) stay of 4 days or more (due to illness or accident) in one hospital admission
+        \nSpecial Benefit: Upon diagnosis of any of the covered 27 special conditions
+        \nDeath Benefit
+    </string>
+    <string name="cardPayout13">
+        Critical Illness Benefit: 100% of the Sum Assured
+        \nBenign and Borderline Malignant Tumour Benefit: Additional 20% of the Sum Assured, up to S$25,000 per life
+        \nIntensive Care Benefit: Additional 20% of the Sum Assured, up to S$25,000 per life
+        \nSpecial Benefit: Additional 20% of the Sum Assured, up to S$25,000 per life per condition
+        \nDeath Benefit: $5,000
+    </string>
+    <string name="cardPremium13">Yearly</string>
+    <string name="cardCost13">N/A</string>
+    <string name="cardWebsite13">https://www.aviva.com.sg/en</string>
+    <string name="cardContact13">
+        Refer to website for individual hotlines for different services
+        \n8:45am to 5:30pm (Mon-Fri)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle14">Ideal Income</string>
+    <string name="cardDesc14">A plan that can replace the monthly income you lose if you become severely disabled.</string>
+    <string name="cardTerm14">Until full recovery</string>
+    <string name="cardCoverage14">
+        Monthly replacement income under Total Disability Benefit
+        \nPremium waiver
+        \nPartial Disability Benefit
+        \nDeath benefit
+        \nRehabilitation reimbursement
+        \nOption to increase your monthly payout
+    </string>
+    <string name="cardPayout14">
+        Monthly replacement income under Total Disability Benefit: Up to 75% of your declared income. Premiums will vary accordingly
+        \nPremium waiver: No need to continue paying premiums while receiving disability payout
+        \nPartial Disability Benefit: Receive a portion of monthly income if you are not fully recovered even if you have returned to work
+        \nDeath benefit: $5,000
+        \nRehabilitation reimbursement: Reimbursement for rehabilitation expenses such as medical therapies and workplace modification to aid in your recovery
+        \nOption to increase your monthly payout: By 3% per annum, to keep up with inflation
+    </string>
+    <string name="cardPremium14">Yearly</string>
+    <string name="cardCost14">Depending on the plan</string>
+    <string name="cardWebsite14">https://www.aviva.com.sg/en</string>
+    <string name="cardContact14">
+        Refer to website for individual hotlines for different services
+        \n8:45am to 5:30pm (Mon-Fri)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle15">MyAccidentGuard</string>
+    <string name="cardDesc15">Offers high and comprehensive protection in the event of an accident.</string>
+    <string name="cardTerm15">Covers up to age 99</string>
+    <string name="cardCoverage15">
+        Event of death or dismemberment due to an accident
+        \nAccidents while travelling as a fare-paying passenger on a commercial plane or on a cruise ship
+        \nAccidents while travelling in a public transport, as a pedestrian or if you get caught in a fire at home or in a public place
+        \nLoss of organs, insanity and/or miscarriage due to an accident
+        \nFood poisoning and 21 infectious diseases such as Hand Foot Mouth Disease (HFMD), Dengue (DHF), Zika
+        \nExtended coverage for terrorist attacks and natural disasters
+    </string>
+    <string name="cardPayout15">
+        Event of death or dismemberment due to an accident: Payout of up to 150% of Sum Assured
+        \nAccidents while travelling as a fare-paying passenger on a commercial plane or on a cruise ship: 3x payout of Sum Assured
+        \nAccidents while travelling in a public transport, as a pedestrian or if you get caught in a fire at home or in a public place: 2x payout of Sum Assured
+        \nDaily cash payout when hospitalised due to an accident
+    </string>
+    <string name="cardPremium15">Yearly</string>
+    <string name="cardCost15">Depending on plan</string>
+    <string name="cardWebsite15">https://www.aviva.com.sg/en</string>
+    <string name="cardContact15">
+        Refer to website for individual hotlines for different services
+        \n8:45am to 5:30pm (Mon-Fri)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle16">MyShield</string>
+    <string name="cardDesc16">Offers more affordable hospitalisation bills.</string>
+    <string name="cardTerm16">Lifetime coverage</string>
+    <string name="cardCoverage16">
+        Pre-hospital treatment of up to 180 days and post-hospital treatment of up to 365 days
+        \nCovers treatment received in the Accident and Emergency department
+        \nMajor outpatient treatments including chemotherapy and kidney dialysis
+        \nExtra inpatient benefit for 5 critical illnesses: Heart attack of specified severity, Major Cancer, Stroke with Permanent Neurological Deficit, End-Stage Lung Disease, End-Stage Liver Failure
+        \nChoosing of wards in public or private hospitals
+        \nPreventive treatment for cancer
+    </string>
+    <string name="cardPayout16">
+        Up to S$2 million policy year limit for MyShield Plan 1
+        \nFree cover of up to S$50,000 for newborns up to 6 months old
+        \nCovers hospital admission deposit of up to S$50,000 through Letter of Guarantee (LoG) 14 at over 20 hospitals including private hospitals
+    </string>
+    <string name="cardPremium16">Yearly</string>
+    <string name="cardCost16">Depending on plan</string>
+    <string name="cardWebsite16">https://www.aviva.com.sg/en</string>
+    <string name="cardContact16">
+        Refer to website for individual hotlines for different services
+        \n8:45am to 5:30pm (Mon-Fri)
+        \nClosed on weekends and public holidays
+    </string>
+
+    <string name="cardTitle17">Critical Care Advantage</string>
+    <string name="cardDesc17">Financial backup plan against life-threatening diseases with no waiting period between claims.</string>
+    <string name="cardTerm17">Age 1-85</string>
+    <string name="cardCoverage17">
+        Death
+        \nThree stages of illness
+        \nUp to 85 medical conditions under 37 critical illnesses
+    </string>
+    <string name="cardPayout17">
+        Illness stages: Early (100%, capped at $100,000), Intermediate (100%, capped at $200,000), Critical (100%)
+        \n7 Special Conditions: up to $185,000
+    </string>
+    <string name="cardPremium17">Monthly</string>
+    <string name="cardCost17">From $172.55</string>
+    <string name="cardWebsite17">https://www.greateasternlife.com/sg/en/index.html</string>
+    <string name="cardContact17">
+        For local call 1800 248 2888
+        \nFrom overseas +65 6248 2888
+        \n9am to 5.30pm (Mon-Fri)
+        \nClosed on weekends and Public Holidays
+    </string>
+
+    <string name="cardTitle18">GREAT SupremeHealth + GREAT TotalCare</string>
+    <string name="cardDesc18">Help available to find specialist, obtain pre-authorisation for hospital stays</string>
+    <string name="cardTerm18">120 days before &amp; up to 265 days after hospitalisation</string>
+    <string name="cardCoverage18">
+        Covers up to 95% of Total Hospital Bill
+        \nCovers all eligible expenses beyond hospitalisation for outpatient follow-up
+        \nDaily hospital cash benefit for remaining bill
+    </string>
+    <string name="cardPayout18">
+        Daily Ward: Up to $2,900/ 100% per day (for class B+ and above)
+        \nTreatment Charges: From $250 up to $1,200 per day
+        \nSurgery: From $240 up to $16,720/ 100% per procedure (for class B+ and above)
+        \nPre &amp; Post Hospitalisation Benefits (for Class B+ &amp; above): $120 per session/ 100% (for non-therapy related)
+    </string>
+    <string name="cardPremium18">Annually</string>
+    <string name="cardCost18">
+        Day: short stay, Class C Wards: Starting from $1500
+        \nClass B2, B1, A, Private Wards: Starting from $2000
+    </string>
+    <string name="cardWebsite18">https://www.greateasternlife.com/sg/en/index.html</string>
+    <string name="cardContact18">
+        For local call 1800 248 2888
+        \nFrom overseas +65 6248 2888
+        \n9am to 5.30pm (Mon-Fri)
+        \nClosed on weekends and Public Holidays
+    </string>
+
+    <string name="cardTitle19">Essential Protector Plus</string>
+    <string name="cardDesc19">Worldwide protection including events resulting from terrorism with complementary medicine practitioners.</string>
+    <string name="cardTerm19">Age 17-65, 24/7</string>
+    <string name="cardCoverage19">
+        Medical expenses including Traditional Chinese Medicine (TCM) &amp; Chiropractic treatments
+        \nHospitalisation due to accidents, dengue hemorrhagic fever &amp; food poisoning
+    </string>
+    <string name="cardPayout19">
+        Death, Permanent Disablement: Up to $200,000
+        \nMedical Expenses: Up to $15,000 per accident
+        \nFractures/Dislocations/Burns: Up to $8,000 per accident
+        \nHospitalisation due to illness: Up to $200 per day
+        \nMobility Aids Reimbursement: Up to $2,000
+        \n*Ladies: Additional 20%
+        \n*Overseas: payout X2
+    </string>
+    <string name="cardPremium19">Monthly/Annually</string>
+    <string name="cardCost19">
+        Month: From $19.56
+        \nYearly: From $222.91
+    </string>
+    <string name="cardWebsite19">https://www.greateasternlife.com/sg/en/index.html</string>
+    <string name="cardContact19">
+        For local call 1800 248 2888
+        \nFrom overseas +65 6248 2888
+        \n9am to 5.30pm (Mon-Fri)
+        \nClosed on weekends and Public Holidays
+    </string>
+
+    <string name="cardTitle20">CareShield Life + GREAT CareShield</string>
+    <string name="cardDesc20">Long-term care costs due to disability.</string>
+    <string name="cardTerm20">Lifetime</string>
+    <string name="cardCoverage20">
+        Mild disability: inability to perform at least 1 of ADL
+        \nModerate disability: inability to perform at least 2 ADLs
+        \nSevere disability: inability to perform at least 3 ADLs
+    </string>
+    <string name="cardPayout20">
+        Monthly benefit: Up to $5,000 for moderate &amp; severe disabilities (in multiples of $100)
+        \nInitial benefit: Up to 3X/ $15,000 upon mild disability or inability to perform at least 1 ADL, payable again upon full recovery
+    </string>
+    <string name="cardPremium20">Annually</string>
+    <string name="cardCost20">Up to $600 per year payable by own/ family member’ MediSave funds + remaining funds via cash</string>
+    <string name="cardWebsite20">https://www.greateasternlife.com/sg/en/index.html</string>
+    <string name="cardContact20">
+        For local call 1800 248 2888
+        \nFrom overseas +65 6248 2888
+        \n9am to 5.30pm (Mon-Fri)
+        \nClosed on weekends and Public Holidays
+    </string>
+
+    <string name="cardTitle21">PRUPersonal Accident</string>
+    <string name="cardDesc21">24-hour worldwide coverage in the event of an accident.</string>
+    <string name="cardTerm21">Up to 75 years old</string>
+    <string name="cardCoverage21">
+        Accidents, food poisoning, infectious diseases, animal and insect bites
+        \nInjuries sustained during National Service, reservist, and some adventurous activities like scuba diving
+        \nCoverage increases by up to 25% in the first five years if no claims are made
+    </string>
+    <string name="cardPayout21">
+        Accidental death and dismemberment benefit: $100,000 - $1,000,000
+        \nDouble accidental death and dismemberment benefit: $200,000 - $2,000,000
+        \nTriple accidental death and dismemberment benefit: $300,000 - $3,000,000
+        \nMedical reimbursement benefit (per incident/infectious disease): Up to $2,000 - $6,000
+        \nTraditional Chinese Medicine benefit (per incident): Up to $500 - $1,500
+    </string>
+    <string name="cardPremium21">Annual</string>
+    <string name="cardCost21">$175</string>
+    <string name="cardWebsite21">https://www.prudential.com.sg/</string>
+    <string name="cardContact21">
+        For local call 1800 333 0333
+        \n8:30am to 5:30pm (Mon-Fri)
+        \nFrom overseas/ payphone
+        \n+65 6333 0333
+    </string>
+
+    <string name="cardTitle22">PRUCancer 360</string>
+    <string name="cardDesc22">Coverage for all stages of cancer.</string>
+    <string name="cardTerm22">Up to 100 years old</string>
+    <string name="cardCoverage22">For all stages of cancers</string>
+    <string name="cardPayout22">$10,000 - $300,000</string>
+    <string name="cardPremium22">Monthly</string>
+    <string name="cardCost22">$74</string>
+    <string name="cardWebsite22">https://www.prudential.com.sg/</string>
+    <string name="cardContact22">
+        For local call 1800 333 0333
+        \n8:30am to 5:30pm (Mon-Fri)
+        \nFrom overseas/ payphone
+        \n+65 6333 0333
+    </string>
+
+    <string name="cardTitle23">PruShield</string>
+    <string name="cardDesc23">Medisave-approved Integrated Shield plan to provide coverage up to $1,200,000 per year.</string>
+    <string name="cardTerm23">More than 100 years old, minimum entry age is 75 years old.</string>
+    <string name="cardCoverage23">
+        Coverage for 180 days before hospitalisation and 365 days after hospitalisation
+        \nInpatient and day surgery
+        \nOutpatient treatment
+        \nEmergency overseas treatment
+    </string>
+    <string name="cardPayout23">
+         As charged, with a limit of $1,200,000 per year
+        \nFor emergency overseas treatment, the lower price between the overseas charges or Singapore private hospital charges
+    </string>
+    <string name="cardPremium23">Annual</string>
+    <string name="cardCost23">$216</string>
+    <string name="cardWebsite23">https://www.prudential.com.sg/</string>
+    <string name="cardContact23">
+        For local call 1800 333 0333
+        \n8:30am to 5:30pm (Mon-Fri)
+        \nFrom overseas/ payphone
+        \n+65 6333 0333
+    </string>
+
+    <string name="cardTitle24">PruProtect Life II</string>
+    <string name="cardDesc24">Coverage for total and permanent disability.</string>
+    <string name="cardTerm24">
+        Coverage term: Whole life for death and terminal illness
+        \nTotal and permanent disability up to 65 years old
+        \nPremium Term: 45 years
+    </string>
+    <string name="cardCoverage24">
+        Total and permanent disability
+        \nDoes not cover critical illnesses
+    </string>
+    <string name="cardPayout24">$50,000 ~ $200,000</string>
+    <string name="cardPremium24">Annual</string>
+    <string name="cardCost24">$1,602</string>
+    <string name="cardWebsite24">https://www.prudential.com.sg/</string>
+    <string name="cardContact24">
+        For local call 1800 333 0333
+        \n8:30am to 5:30pm (Mon-Fri)
+        \nFrom overseas/ payphone
+        \n+65 6333 0333
+    </string>
 
 </resources>

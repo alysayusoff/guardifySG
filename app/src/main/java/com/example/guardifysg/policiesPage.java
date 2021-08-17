@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDirections;
@@ -26,7 +25,9 @@ import android.widget.Toast;
 public class policiesPage extends Fragment {
 
     //GLOBAL VARS HERE
-    CardView cardView1, cardView2;
+    CardView cardView1, cardView2, cardView3, cardView4, cardView5, cardView6, cardView7, cardView8, cardView9, cardView10,
+            cardView11, cardView12, cardView13, cardView14, cardView15, cardView16, cardView17, cardView18, cardView19,
+            cardView20, cardView21, cardView22, cardView23, cardView24;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -94,52 +95,275 @@ public class policiesPage extends Fragment {
 
         //handlers for policies
         View.OnClickListener cardListener = new View.OnClickListener() {
+            //handler TextViews
+            TextView nameData, descData, termData, coverageData, payoutData, premiumData, costData, websiteData, contactData;
             @Override
             public void onClick(View v) {
                 if (cardView1.isPressed()) {
-                    TextView nameData = view.findViewById(R.id.cardTitle1);
-                    TextView descData = view.findViewById(R.id.cardDesc1);
-                    TextView termData = view.findViewById(R.id.cardTerm1);
-                    TextView coverageData = view.findViewById(R.id.cardCoverage1);
-                    TextView payoutData = view.findViewById(R.id.cardPayout1);
-                    TextView premiumData = view.findViewById(R.id.cardPremium1);
-                    TextView costData = view.findViewById(R.id.cardCost1);
-                    TextView websiteData = view.findViewById(R.id.cardWebsite1);
-                    TextView contactData = view.findViewById(R.id.cardContact1);
-                    NavDirections action = policiesPageDirections.actionPoliciesPageToDetailsPage(
-                            nameData.getText().toString(),
-                            descData.getText().toString(),
-                            termData.getText().toString(),
-                            coverageData.getText().toString(),
-                            payoutData.getText().toString(),
-                            premiumData.getText().toString(),
-                            costData.getText().toString(),
-                            websiteData.getText().toString(),
-                            contactData.getText().toString());
-                    navController.navigate(action);
+                    nameData = view.findViewById(R.id.cardTitle1);
+                    descData = view.findViewById(R.id.cardDesc1);
+                    termData = view.findViewById(R.id.cardTerm1);
+                    coverageData = view.findViewById(R.id.cardCoverage1);
+                    payoutData = view.findViewById(R.id.cardPayout1);
+                    premiumData = view.findViewById(R.id.cardPremium1);
+                    costData = view.findViewById(R.id.cardCost1);
+                    websiteData = view.findViewById(R.id.cardWebsite1);
+                    contactData = view.findViewById(R.id.cardContact1);
                 }
                 else if (cardView2.isPressed()) {
-                    TextView nameData = view.findViewById(R.id.cardTitle2);
-                    TextView descData = view.findViewById(R.id.cardDesc2);
-                    TextView termData = view.findViewById(R.id.cardTerm2);
-                    TextView coverageData = view.findViewById(R.id.cardCoverage2);
-                    TextView payoutData = view.findViewById(R.id.cardPayout2);
-                    TextView premiumData = view.findViewById(R.id.cardPremium2);
-                    TextView costData = view.findViewById(R.id.cardCost2);
-                    TextView websiteData = view.findViewById(R.id.cardWebsite2);
-                    TextView contactData = view.findViewById(R.id.cardContact2);
-                    NavDirections action = policiesPageDirections.actionPoliciesPageToDetailsPage(
-                            nameData.getText().toString(),
-                            descData.getText().toString(),
-                            termData.getText().toString(),
-                            coverageData.getText().toString(),
-                            payoutData.getText().toString(),
-                            premiumData.getText().toString(),
-                            costData.getText().toString(),
-                            websiteData.getText().toString(),
-                            contactData.getText().toString());
-                    navController.navigate(action);
+                    nameData = view.findViewById(R.id.cardTitle2);
+                    descData = view.findViewById(R.id.cardDesc2);
+                    termData = view.findViewById(R.id.cardTerm2);
+                    coverageData = view.findViewById(R.id.cardCoverage2);
+                    payoutData = view.findViewById(R.id.cardPayout2);
+                    premiumData = view.findViewById(R.id.cardPremium2);
+                    costData = view.findViewById(R.id.cardCost2);
+                    websiteData = view.findViewById(R.id.cardWebsite2);
+                    contactData = view.findViewById(R.id.cardContact2);
                 }
+                else if (cardView3.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle3);
+                    descData = view.findViewById(R.id.cardDesc3);
+                    termData = view.findViewById(R.id.cardTerm3);
+                    coverageData = view.findViewById(R.id.cardCoverage3);
+                    payoutData = view.findViewById(R.id.cardPayout3);
+                    premiumData = view.findViewById(R.id.cardPremium3);
+                    costData = view.findViewById(R.id.cardCost3);
+                    websiteData = view.findViewById(R.id.cardWebsite3);
+                    contactData = view.findViewById(R.id.cardContact3);
+                }
+                else if (cardView4.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle4);
+                    descData = view.findViewById(R.id.cardDesc4);
+                    termData = view.findViewById(R.id.cardTerm4);
+                    coverageData = view.findViewById(R.id.cardCoverage4);
+                    payoutData = view.findViewById(R.id.cardPayout4);
+                    premiumData = view.findViewById(R.id.cardPremium4);
+                    costData = view.findViewById(R.id.cardCost4);
+                    websiteData = view.findViewById(R.id.cardWebsite4);
+                    contactData = view.findViewById(R.id.cardContact4);
+                }
+                else if (cardView5.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle5);
+                    descData = view.findViewById(R.id.cardDesc5);
+                    termData = view.findViewById(R.id.cardTerm5);
+                    coverageData = view.findViewById(R.id.cardCoverage5);
+                    payoutData = view.findViewById(R.id.cardPayout5);
+                    premiumData = view.findViewById(R.id.cardPremium5);
+                    costData = view.findViewById(R.id.cardCost5);
+                    websiteData = view.findViewById(R.id.cardWebsite5);
+                    contactData = view.findViewById(R.id.cardContact5);
+                }
+                else if (cardView6.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle6);
+                    descData = view.findViewById(R.id.cardDesc6);
+                    termData = view.findViewById(R.id.cardTerm6);
+                    coverageData = view.findViewById(R.id.cardCoverage6);
+                    payoutData = view.findViewById(R.id.cardPayout6);
+                    premiumData = view.findViewById(R.id.cardPremium6);
+                    costData = view.findViewById(R.id.cardCost6);
+                    websiteData = view.findViewById(R.id.cardWebsite6);
+                    contactData = view.findViewById(R.id.cardContact6);
+                }
+                else if (cardView7.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle7);
+                    descData = view.findViewById(R.id.cardDesc7);
+                    termData = view.findViewById(R.id.cardTerm7);
+                    coverageData = view.findViewById(R.id.cardCoverage7);
+                    payoutData = view.findViewById(R.id.cardPayout7);
+                    premiumData = view.findViewById(R.id.cardPremium7);
+                    costData = view.findViewById(R.id.cardCost7);
+                    websiteData = view.findViewById(R.id.cardWebsite7);
+                    contactData = view.findViewById(R.id.cardContact7);
+                }
+                else if (cardView8.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle8);
+                    descData = view.findViewById(R.id.cardDesc8);
+                    termData = view.findViewById(R.id.cardTerm8);
+                    coverageData = view.findViewById(R.id.cardCoverage8);
+                    payoutData = view.findViewById(R.id.cardPayout8);
+                    premiumData = view.findViewById(R.id.cardPremium8);
+                    costData = view.findViewById(R.id.cardCost8);
+                    websiteData = view.findViewById(R.id.cardWebsite8);
+                    contactData = view.findViewById(R.id.cardContact8);
+                }
+                else if (cardView9.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle9);
+                    descData = view.findViewById(R.id.cardDesc9);
+                    termData = view.findViewById(R.id.cardTerm9);
+                    coverageData = view.findViewById(R.id.cardCoverage9);
+                    payoutData = view.findViewById(R.id.cardPayout9);
+                    premiumData = view.findViewById(R.id.cardPremium9);
+                    costData = view.findViewById(R.id.cardCost9);
+                    websiteData = view.findViewById(R.id.cardWebsite9);
+                    contactData = view.findViewById(R.id.cardContact9);
+                }
+                else if (cardView10.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle10);
+                    descData = view.findViewById(R.id.cardDesc10);
+                    termData = view.findViewById(R.id.cardTerm10);
+                    coverageData = view.findViewById(R.id.cardCoverage10);
+                    payoutData = view.findViewById(R.id.cardPayout10);
+                    premiumData = view.findViewById(R.id.cardPremium10);
+                    costData = view.findViewById(R.id.cardCost10);
+                    websiteData = view.findViewById(R.id.cardWebsite10);
+                    contactData = view.findViewById(R.id.cardContact10);
+                }
+                else if (cardView11.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle11);
+                    descData = view.findViewById(R.id.cardDesc11);
+                    termData = view.findViewById(R.id.cardTerm11);
+                    coverageData = view.findViewById(R.id.cardCoverage11);
+                    payoutData = view.findViewById(R.id.cardPayout11);
+                    premiumData = view.findViewById(R.id.cardPremium11);
+                    costData = view.findViewById(R.id.cardCost11);
+                    websiteData = view.findViewById(R.id.cardWebsite11);
+                    contactData = view.findViewById(R.id.cardContact11);
+                }
+                else if (cardView12.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle12);
+                    descData = view.findViewById(R.id.cardDesc12);
+                    termData = view.findViewById(R.id.cardTerm12);
+                    coverageData = view.findViewById(R.id.cardCoverage12);
+                    payoutData = view.findViewById(R.id.cardPayout12);
+                    premiumData = view.findViewById(R.id.cardPremium12);
+                    costData = view.findViewById(R.id.cardCost12);
+                    websiteData = view.findViewById(R.id.cardWebsite12);
+                    contactData = view.findViewById(R.id.cardContact12);
+                }
+                else if (cardView13.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle13);
+                    descData = view.findViewById(R.id.cardDesc13);
+                    termData = view.findViewById(R.id.cardTerm13);
+                    coverageData = view.findViewById(R.id.cardCoverage13);
+                    payoutData = view.findViewById(R.id.cardPayout13);
+                    premiumData = view.findViewById(R.id.cardPremium13);
+                    costData = view.findViewById(R.id.cardCost13);
+                    websiteData = view.findViewById(R.id.cardWebsite13);
+                    contactData = view.findViewById(R.id.cardContact13);
+                }
+                else if (cardView14.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle14);
+                    descData = view.findViewById(R.id.cardDesc14);
+                    termData = view.findViewById(R.id.cardTerm14);
+                    coverageData = view.findViewById(R.id.cardCoverage14);
+                    payoutData = view.findViewById(R.id.cardPayout14);
+                    premiumData = view.findViewById(R.id.cardPremium14);
+                    costData = view.findViewById(R.id.cardCost14);
+                    websiteData = view.findViewById(R.id.cardWebsite14);
+                    contactData = view.findViewById(R.id.cardContact14);
+                }
+                else if (cardView15.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle15);
+                    descData = view.findViewById(R.id.cardDesc15);
+                    termData = view.findViewById(R.id.cardTerm15);
+                    coverageData = view.findViewById(R.id.cardCoverage15);
+                    payoutData = view.findViewById(R.id.cardPayout15);
+                    premiumData = view.findViewById(R.id.cardPremium15);
+                    costData = view.findViewById(R.id.cardCost15);
+                    websiteData = view.findViewById(R.id.cardWebsite15);
+                    contactData = view.findViewById(R.id.cardContact15);
+                }
+                else if (cardView16.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle16);
+                    descData = view.findViewById(R.id.cardDesc16);
+                    termData = view.findViewById(R.id.cardTerm16);
+                    coverageData = view.findViewById(R.id.cardCoverage16);
+                    payoutData = view.findViewById(R.id.cardPayout16);
+                    premiumData = view.findViewById(R.id.cardPremium16);
+                    costData = view.findViewById(R.id.cardCost16);
+                    websiteData = view.findViewById(R.id.cardWebsite16);
+                    contactData = view.findViewById(R.id.cardContact16);
+                }
+                else if (cardView17.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle17);
+                    descData = view.findViewById(R.id.cardDesc17);
+                    termData = view.findViewById(R.id.cardTerm17);
+                    coverageData = view.findViewById(R.id.cardCoverage17);
+                    payoutData = view.findViewById(R.id.cardPayout17);
+                    premiumData = view.findViewById(R.id.cardPremium17);
+                    costData = view.findViewById(R.id.cardCost17);
+                    websiteData = view.findViewById(R.id.cardWebsite17);
+                    contactData = view.findViewById(R.id.cardContact17);
+                }
+                else if (cardView18.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle18);
+                    descData = view.findViewById(R.id.cardDesc18);
+                    termData = view.findViewById(R.id.cardTerm18);
+                    coverageData = view.findViewById(R.id.cardCoverage18);
+                    payoutData = view.findViewById(R.id.cardPayout18);
+                    premiumData = view.findViewById(R.id.cardPremium18);
+                    costData = view.findViewById(R.id.cardCost18);
+                    websiteData = view.findViewById(R.id.cardWebsite18);
+                    contactData = view.findViewById(R.id.cardContact18);
+                }
+                else if (cardView19.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle19);
+                    descData = view.findViewById(R.id.cardDesc19);
+                    termData = view.findViewById(R.id.cardTerm19);
+                    coverageData = view.findViewById(R.id.cardCoverage19);
+                    payoutData = view.findViewById(R.id.cardPayout19);
+                    premiumData = view.findViewById(R.id.cardPremium19);
+                    costData = view.findViewById(R.id.cardCost19);
+                    websiteData = view.findViewById(R.id.cardWebsite19);
+                    contactData = view.findViewById(R.id.cardContact19);
+                }
+                else if (cardView20.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle20);
+                    descData = view.findViewById(R.id.cardDesc20);
+                    termData = view.findViewById(R.id.cardTerm20);
+                    coverageData = view.findViewById(R.id.cardCoverage20);
+                    payoutData = view.findViewById(R.id.cardPayout20);
+                    premiumData = view.findViewById(R.id.cardPremium20);
+                    costData = view.findViewById(R.id.cardCost20);
+                    websiteData = view.findViewById(R.id.cardWebsite20);
+                    contactData = view.findViewById(R.id.cardContact20);
+                }
+                else if (cardView21.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle21);
+                    descData = view.findViewById(R.id.cardDesc21);
+                    termData = view.findViewById(R.id.cardTerm21);
+                    coverageData = view.findViewById(R.id.cardCoverage21);
+                    payoutData = view.findViewById(R.id.cardPayout21);
+                    premiumData = view.findViewById(R.id.cardPremium21);
+                    costData = view.findViewById(R.id.cardCost21);
+                    websiteData = view.findViewById(R.id.cardWebsite21);
+                    contactData = view.findViewById(R.id.cardContact21);
+                }
+                else if (cardView22.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle22);
+                    descData = view.findViewById(R.id.cardDesc22);
+                    termData = view.findViewById(R.id.cardTerm22);
+                    coverageData = view.findViewById(R.id.cardCoverage22);
+                    payoutData = view.findViewById(R.id.cardPayout22);
+                    premiumData = view.findViewById(R.id.cardPremium22);
+                    costData = view.findViewById(R.id.cardCost22);
+                    websiteData = view.findViewById(R.id.cardWebsite22);
+                    contactData = view.findViewById(R.id.cardContact22);
+                }
+                else if (cardView23.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle23);
+                    descData = view.findViewById(R.id.cardDesc23);
+                    termData = view.findViewById(R.id.cardTerm23);
+                    coverageData = view.findViewById(R.id.cardCoverage23);
+                    payoutData = view.findViewById(R.id.cardPayout23);
+                    premiumData = view.findViewById(R.id.cardPremium23);
+                    costData = view.findViewById(R.id.cardCost23);
+                    websiteData = view.findViewById(R.id.cardWebsite23);
+                    contactData = view.findViewById(R.id.cardContact23);
+                }
+                else if (cardView24.isPressed()) {
+                    nameData = view.findViewById(R.id.cardTitle24);
+                    descData = view.findViewById(R.id.cardDesc24);
+                    termData = view.findViewById(R.id.cardTerm24);
+                    coverageData = view.findViewById(R.id.cardCoverage24);
+                    payoutData = view.findViewById(R.id.cardPayout24);
+                    premiumData = view.findViewById(R.id.cardPremium24);
+                    costData = view.findViewById(R.id.cardCost24);
+                    websiteData = view.findViewById(R.id.cardWebsite24);
+                    contactData = view.findViewById(R.id.cardContact24);
+                }
+                toDetailsPage(nameData, descData, termData, coverageData, payoutData, premiumData, costData, websiteData, contactData, navController);
             }
         };
 
@@ -147,6 +371,58 @@ public class policiesPage extends Fragment {
         cardView1.setOnClickListener(cardListener);
         cardView2 = view.findViewById(R.id.cardView2);
         cardView2.setOnClickListener(cardListener);
+        cardView3 = view.findViewById(R.id.cardView3);
+        cardView3.setOnClickListener(cardListener);
+        cardView4 = view.findViewById(R.id.cardView4);
+        cardView4.setOnClickListener(cardListener);
+        cardView5 = view.findViewById(R.id.cardView5);
+        cardView5.setOnClickListener(cardListener);
+        cardView6 = view.findViewById(R.id.cardView6);
+        cardView6.setOnClickListener(cardListener);
+        cardView7 = view.findViewById(R.id.cardView7);
+        cardView7.setOnClickListener(cardListener);
+        cardView8 = view.findViewById(R.id.cardView8);
+        cardView8.setOnClickListener(cardListener);
+        cardView9 = view.findViewById(R.id.cardView9);
+        cardView9.setOnClickListener(cardListener);
+        cardView10 = view.findViewById(R.id.cardView10);
+        cardView10.setOnClickListener(cardListener);
+        cardView11 = view.findViewById(R.id.cardView11);
+        cardView11.setOnClickListener(cardListener);
+        cardView12 = view.findViewById(R.id.cardView12);
+        cardView12.setOnClickListener(cardListener);
+        cardView13 = view.findViewById(R.id.cardView13);
+        cardView13.setOnClickListener(cardListener);
+        cardView14 = view.findViewById(R.id.cardView14);
+        cardView14.setOnClickListener(cardListener);
+        cardView15 = view.findViewById(R.id.cardView15);
+        cardView15.setOnClickListener(cardListener);
+        cardView16 = view.findViewById(R.id.cardView16);
+        cardView16.setOnClickListener(cardListener);
+        cardView17 = view.findViewById(R.id.cardView17);
+        cardView17.setOnClickListener(cardListener);
+        cardView18 = view.findViewById(R.id.cardView18);
+        cardView18.setOnClickListener(cardListener);
+        cardView19 = view.findViewById(R.id.cardView19);
+        cardView19.setOnClickListener(cardListener);
+        cardView20 = view.findViewById(R.id.cardView20);
+        cardView20.setOnClickListener(cardListener);
+        cardView21 = view.findViewById(R.id.cardView21);
+        cardView21.setOnClickListener(cardListener);
+        cardView22 = view.findViewById(R.id.cardView22);
+        cardView22.setOnClickListener(cardListener);
+        cardView23 = view.findViewById(R.id.cardView23);
+        cardView23.setOnClickListener(cardListener);
+        cardView24 = view.findViewById(R.id.cardView24);
+        cardView24.setOnClickListener(cardListener);
+    }
+
+    private void toDetailsPage(TextView name, TextView desc, TextView term, TextView coverage, TextView payout, TextView premium, TextView cost, TextView website, TextView contact, NavController nav) {
+        NavDirections action = policiesPageDirections.actionPoliciesPageToDetailsPage(name.getText().toString(),
+                desc.getText().toString(), term.getText().toString(), coverage.getText().toString(),
+                payout.getText().toString(), premium.getText().toString(), cost.getText().toString(),
+                website.getText().toString(), contact.getText().toString());
+        nav.navigate(action);
     }
 
     private View.OnClickListener typeListener = new View.OnClickListener() {
