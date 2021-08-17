@@ -29,6 +29,12 @@ public class policiesPage extends Fragment {
             cardView11, cardView12, cardView13, cardView14, cardView15, cardView16, cardView17, cardView18, cardView19,
             cardView20, cardView21, cardView22, cardView23, cardView24;
 
+    String[] ciList = {"1","7","9","13","17","22"};
+    String[] aList = {"2","6","10","15","19","21"};
+    String[] dList = {"3","5","11","14","20","24"};
+    String[] hList = {"4","8","12","16","18","23"};
+    String[] fullList = {"1","7","9","13","17","22","2","6","10","15","19","21","3","5","11","14","20","24","4","8","12","16","18","23"};
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -92,6 +98,63 @@ public class policiesPage extends Fragment {
         imgBtn2.setOnClickListener(typeListener);
         imgBtn3.setOnClickListener(typeListener);
         imgBtn4.setOnClickListener(typeListener);
+
+        imgBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 1,7,9,13,17,22 CI
+                setAllGone();
+                cardView1.setVisibility(View.VISIBLE);
+                cardView7.setVisibility(View.VISIBLE);
+                cardView9.setVisibility(View.VISIBLE);
+                cardView13.setVisibility(View.VISIBLE);
+                cardView17.setVisibility(View.VISIBLE);
+                cardView22.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+        imgBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //2,6,10,15,19,21 A
+                setAllGone();
+                cardView2.setVisibility(View.VISIBLE);
+                cardView6.setVisibility(View.VISIBLE);
+                cardView10.setVisibility(View.VISIBLE);
+                cardView15.setVisibility(View.VISIBLE);
+                cardView19.setVisibility(View.VISIBLE);
+                cardView21.setVisibility(View.VISIBLE);
+            }
+        });
+
+        imgBtn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //3,5,11,14,20,24 D
+                setAllGone();
+                cardView3.setVisibility(View.VISIBLE);
+                cardView5.setVisibility(View.VISIBLE);
+                cardView11.setVisibility(View.VISIBLE);
+                cardView14.setVisibility(View.VISIBLE);
+                cardView20.setVisibility(View.VISIBLE);
+                cardView24.setVisibility(View.VISIBLE);
+            }
+        });
+
+        imgBtn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //4,8,12,16,18,23 H
+                setAllGone();
+                cardView4.setVisibility(View.VISIBLE);
+                cardView8.setVisibility(View.VISIBLE);
+                cardView12.setVisibility(View.VISIBLE);
+                cardView16.setVisibility(View.VISIBLE);
+                cardView18.setVisibility(View.VISIBLE);
+                cardView23.setVisibility(View.VISIBLE);
+            }
+        });
 
         //handlers for policies
         View.OnClickListener cardListener = new View.OnClickListener() {
@@ -430,4 +493,32 @@ public class policiesPage extends Fragment {
             Toast.makeText(getContext(), "Image clicked", Toast.LENGTH_SHORT).show();
         }
     };
+
+    private void setAllGone(){
+        cardView1.setVisibility(View.GONE);
+        cardView2.setVisibility(View.GONE);
+        cardView3.setVisibility(View.GONE);
+        cardView4.setVisibility(View.GONE);
+        cardView5.setVisibility(View.GONE);
+        cardView6.setVisibility(View.GONE);
+        cardView7.setVisibility(View.GONE);
+        cardView8.setVisibility(View.GONE);
+        cardView9.setVisibility(View.GONE);
+        cardView10.setVisibility(View.GONE);
+        cardView11.setVisibility(View.GONE);
+        cardView12.setVisibility(View.GONE);
+        cardView13.setVisibility(View.GONE);
+        cardView14.setVisibility(View.GONE);
+        cardView15.setVisibility(View.GONE);
+        cardView16.setVisibility(View.GONE);
+        cardView17.setVisibility(View.GONE);
+        cardView18.setVisibility(View.GONE);
+        cardView19.setVisibility(View.GONE);
+        cardView20.setVisibility(View.GONE);
+        cardView21.setVisibility(View.GONE);
+        cardView22.setVisibility(View.GONE);
+        cardView23.setVisibility(View.GONE);
+        cardView24.setVisibility(View.GONE);
+
+    }
 }
