@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../layout/custom_preview.xml" value="0.33489583333333334" />
         <entry key="..\:/Users/Foo Li May/AndroidStudioProjects/guardifySG/app/src/main/res/layout/fragment_landing_page.xml" value="0.1" />
         <entry key="..\:/Users/Foo Li May/AndroidStudioProjects/guardifySG/app/src/main/res/layout/fragment_news_page.xml" value="0.1" />
         <entry key="..\:/Users/Foo Li May/AndroidStudioProjects/guardifySG/app/src/main/res/layout/slider_item.xml" value="0.1796875" />
