@@ -94,10 +94,7 @@ public class policiesPage extends Fragment {
         ImageView imgBtn2 = view.findViewById(R.id.typeAccident);
         ImageView imgBtn3 = view.findViewById(R.id.typeDisability);
         ImageView imgBtn4 = view.findViewById(R.id.typeHospitalisation);
-        imgBtn1.setOnClickListener(typeListener);
-        imgBtn2.setOnClickListener(typeListener);
-        imgBtn3.setOnClickListener(typeListener);
-        imgBtn4.setOnClickListener(typeListener);
+        ImageView refreshBtn = view.findViewById(R.id.refresh);
 
         imgBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,6 +150,36 @@ public class policiesPage extends Fragment {
                 cardView16.setVisibility(View.VISIBLE);
                 cardView18.setVisibility(View.VISIBLE);
                 cardView23.setVisibility(View.VISIBLE);
+            }
+        });
+
+        refreshBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cardView1.setVisibility(View.VISIBLE);
+                cardView2.setVisibility(View.VISIBLE);
+                cardView3.setVisibility(View.VISIBLE);
+                cardView4.setVisibility(View.VISIBLE);
+                cardView5.setVisibility(View.VISIBLE);
+                cardView6.setVisibility(View.VISIBLE);
+                cardView7.setVisibility(View.VISIBLE);
+                cardView8.setVisibility(View.VISIBLE);
+                cardView9.setVisibility(View.VISIBLE);
+                cardView10.setVisibility(View.VISIBLE);
+                cardView11.setVisibility(View.VISIBLE);
+                cardView12.setVisibility(View.VISIBLE);
+                cardView13.setVisibility(View.VISIBLE);
+                cardView14.setVisibility(View.VISIBLE);
+                cardView15.setVisibility(View.VISIBLE);
+                cardView16.setVisibility(View.VISIBLE);
+                cardView17.setVisibility(View.VISIBLE);
+                cardView18.setVisibility(View.VISIBLE);
+                cardView19.setVisibility(View.VISIBLE);
+                cardView20.setVisibility(View.VISIBLE);
+                cardView21.setVisibility(View.VISIBLE);
+                cardView22.setVisibility(View.VISIBLE);
+                cardView23.setVisibility(View.VISIBLE);
+                cardView24.setVisibility(View.VISIBLE);
             }
         });
 
@@ -488,12 +515,6 @@ public class policiesPage extends Fragment {
         nav.navigate(action);
     }
 
-    private View.OnClickListener typeListener = new View.OnClickListener() {
-        public void onClick(View v) {
-            Toast.makeText(getContext(), "Image clicked", Toast.LENGTH_SHORT).show();
-        }
-    };
-
     private void setAllGone(){
         cardView1.setVisibility(View.GONE);
         cardView2.setVisibility(View.GONE);
@@ -519,6 +540,5 @@ public class policiesPage extends Fragment {
         cardView22.setVisibility(View.GONE);
         cardView23.setVisibility(View.GONE);
         cardView24.setVisibility(View.GONE);
-
     }
 }
