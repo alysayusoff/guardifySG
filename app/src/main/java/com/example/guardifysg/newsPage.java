@@ -89,5 +89,9 @@ public class newsPage extends Fragment {
         String artDesc = newsPageArgs.fromBundle(getArguments()).getDesc();
         TextView frag1Desc = view.findViewById(R.id.newsContent);
         frag1Desc.setText(artDesc);
+
+        int artImg = newsPageArgs.fromBundle(getArguments()).getImage();
+        ImageView frag1Img = view.findViewById(R.id.newsImage);
+        frag1Img.setImageResource(artImg);
     }
 }

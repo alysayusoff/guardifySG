@@ -1,6 +1,7 @@
 package com.example.guardifysg;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -8,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Bundle;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -116,33 +118,38 @@ public class landingPage extends Fragment {
             @Override
             public void onClick(View v) {
                 if (news1.isPressed()) {
+                    int imgData = R.drawable.image_from_ios_67;
                     TextView titleData = v.findViewById(R.id.newsTitle);
                     TextView descData = v.findViewById(R.id.newsLongDesc);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
                     navController.navigate(action);
                 }
                 if (news2.isPressed()) {
+                    int imgData = R.drawable.ntuc_dude;
                     TextView titleData = v.findViewById(R.id.newsTitle2);
                     TextView descData = v.findViewById(R.id.newsLongDesc2);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
                     navController.navigate(action);
                 }
                 if (news3.isPressed()) {
+                    int imgData = R.drawable.greateastern_covid_plan;
                     TextView titleData = v.findViewById(R.id.newsTitle3);
                     TextView descData = v.findViewById(R.id.newsLongDesc3);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
                     navController.navigate(action);
                 }
                 if (news4.isPressed()) {
+                    int imgData = R.drawable.news4;
                     TextView titleData = v.findViewById(R.id.newsTitle4);
                     TextView descData = v.findViewById(R.id.newsLongDesc4);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
                     navController.navigate(action);
                 }
                 if (news5.isPressed()) {
+                    int imgData = R.drawable.news5;
                     TextView titleData = v.findViewById(R.id.newsTitle5);
                     TextView descData = v.findViewById(R.id.newsLongDesc5);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString());
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
                     navController.navigate(action);
                 }
             }

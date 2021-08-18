@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -151,5 +152,9 @@ public class detailsPage extends Fragment {
         String title = detailsPageArgs.fromBundle(getArguments()).getPolicyName();
         TextView frag1title = view.findViewById(R.id.policyName);
         frag1title.setText(title);
+
+        int img = detailsPageArgs.fromBundle(getArguments()).getLogo();
+        ImageView frag1img = view.findViewById(R.id.companyLogo);
+        frag1img.setImageResource(img);
     }
 }
