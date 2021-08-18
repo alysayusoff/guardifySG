@@ -54,6 +54,9 @@
         <argument
             android:name="contact"
             app:argType="string" />
+        <argument
+            android:name="logo"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/policiesPage"
@@ -85,5 +88,8 @@
         <argument
             android:name="desc"
             app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="integer" />
     </fragment>
 </navigation>

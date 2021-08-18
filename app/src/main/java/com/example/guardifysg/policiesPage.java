@@ -187,6 +187,7 @@ public class policiesPage extends Fragment {
         View.OnClickListener cardListener = new View.OnClickListener() {
             //handler TextViews
             TextView nameData, descData, termData, coverageData, payoutData, premiumData, costData, websiteData, contactData;
+            int imgData;
             @Override
             public void onClick(View v) {
                 if (cardView1.isPressed()) {
@@ -199,6 +200,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost1);
                     websiteData = view.findViewById(R.id.cardWebsite1);
                     contactData = view.findViewById(R.id.cardContact1);
+                    imgData = R.drawable.aia_logo;
                 }
                 else if (cardView2.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle2);
@@ -210,6 +212,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost2);
                     websiteData = view.findViewById(R.id.cardWebsite2);
                     contactData = view.findViewById(R.id.cardContact2);
+                    imgData = R.drawable.aia_logo;
                 }
                 else if (cardView3.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle3);
@@ -221,6 +224,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost3);
                     websiteData = view.findViewById(R.id.cardWebsite3);
                     contactData = view.findViewById(R.id.cardContact3);
+                    imgData = R.drawable.aia_logo;
                 }
                 else if (cardView4.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle4);
@@ -232,6 +236,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost4);
                     websiteData = view.findViewById(R.id.cardWebsite4);
                     contactData = view.findViewById(R.id.cardContact4);
+                    imgData = R.drawable.aia_logo;
                 }
                 else if (cardView5.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle5);
@@ -243,6 +248,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost5);
                     websiteData = view.findViewById(R.id.cardWebsite5);
                     contactData = view.findViewById(R.id.cardContact5);
+                    imgData = R.drawable.fwd_car_insurance;
                 }
                 else if (cardView6.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle6);
@@ -254,6 +260,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost6);
                     websiteData = view.findViewById(R.id.cardWebsite6);
                     contactData = view.findViewById(R.id.cardContact6);
+                    imgData = R.drawable.fwd_car_insurance;
                 }
                 else if (cardView7.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle7);
@@ -265,6 +272,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost7);
                     websiteData = view.findViewById(R.id.cardWebsite7);
                     contactData = view.findViewById(R.id.cardContact7);
+                    imgData = R.drawable.fwd_car_insurance;
                 }
                 else if (cardView8.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle8);
@@ -276,6 +284,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost8);
                     websiteData = view.findViewById(R.id.cardWebsite8);
                     contactData = view.findViewById(R.id.cardContact8);
+                    imgData = R.drawable.fwd_car_insurance;
                 }
                 else if (cardView9.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle9);
@@ -287,6 +296,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost9);
                     websiteData = view.findViewById(R.id.cardWebsite9);
                     contactData = view.findViewById(R.id.cardContact9);
+                    imgData = R.drawable.ntucincome;
                 }
                 else if (cardView10.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle10);
@@ -298,6 +308,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost10);
                     websiteData = view.findViewById(R.id.cardWebsite10);
                     contactData = view.findViewById(R.id.cardContact10);
+                    imgData = R.drawable.ntucincome;
                 }
                 else if (cardView11.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle11);
@@ -309,6 +320,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost11);
                     websiteData = view.findViewById(R.id.cardWebsite11);
                     contactData = view.findViewById(R.id.cardContact11);
+                    imgData = R.drawable.ntucincome;
                 }
                 else if (cardView12.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle12);
@@ -320,6 +332,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost12);
                     websiteData = view.findViewById(R.id.cardWebsite12);
                     contactData = view.findViewById(R.id.cardContact12);
+                    imgData = R.drawable.ntucincome;
                 }
                 else if (cardView13.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle13);
@@ -331,6 +344,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost13);
                     websiteData = view.findViewById(R.id.cardWebsite13);
                     contactData = view.findViewById(R.id.cardContact13);
+                    imgData = R.drawable.aviva_cloud;
                 }
                 else if (cardView14.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle14);
@@ -342,6 +356,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost14);
                     websiteData = view.findViewById(R.id.cardWebsite14);
                     contactData = view.findViewById(R.id.cardContact14);
+                    imgData = R.drawable.aviva_cloud;
                 }
                 else if (cardView15.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle15);
@@ -353,6 +368,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost15);
                     websiteData = view.findViewById(R.id.cardWebsite15);
                     contactData = view.findViewById(R.id.cardContact15);
+                    imgData = R.drawable.aviva_cloud;
                 }
                 else if (cardView16.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle16);
@@ -364,6 +380,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost16);
                     websiteData = view.findViewById(R.id.cardWebsite16);
                     contactData = view.findViewById(R.id.cardContact16);
+                    imgData = R.drawable.aviva_cloud;
                 }
                 else if (cardView17.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle17);
@@ -375,6 +392,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost17);
                     websiteData = view.findViewById(R.id.cardWebsite17);
                     contactData = view.findViewById(R.id.cardContact17);
+                    imgData = R.drawable.great_eastern_logo;
                 }
                 else if (cardView18.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle18);
@@ -386,6 +404,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost18);
                     websiteData = view.findViewById(R.id.cardWebsite18);
                     contactData = view.findViewById(R.id.cardContact18);
+                    imgData = R.drawable.great_eastern_logo;
                 }
                 else if (cardView19.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle19);
@@ -397,6 +416,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost19);
                     websiteData = view.findViewById(R.id.cardWebsite19);
                     contactData = view.findViewById(R.id.cardContact19);
+                    imgData = R.drawable.great_eastern_logo;
                 }
                 else if (cardView20.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle20);
@@ -408,6 +428,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost20);
                     websiteData = view.findViewById(R.id.cardWebsite20);
                     contactData = view.findViewById(R.id.cardContact20);
+                    imgData = R.drawable.great_eastern_logo;
                 }
                 else if (cardView21.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle21);
@@ -419,6 +440,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost21);
                     websiteData = view.findViewById(R.id.cardWebsite21);
                     contactData = view.findViewById(R.id.cardContact21);
+                    imgData = R.drawable.prudential_plc;
                 }
                 else if (cardView22.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle22);
@@ -430,6 +452,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost22);
                     websiteData = view.findViewById(R.id.cardWebsite22);
                     contactData = view.findViewById(R.id.cardContact22);
+                    imgData = R.drawable.prudential_plc;
                 }
                 else if (cardView23.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle23);
@@ -441,6 +464,7 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost23);
                     websiteData = view.findViewById(R.id.cardWebsite23);
                     contactData = view.findViewById(R.id.cardContact23);
+                    imgData = R.drawable.prudential_plc;
                 }
                 else if (cardView24.isPressed()) {
                     nameData = view.findViewById(R.id.cardTitle24);
@@ -452,8 +476,9 @@ public class policiesPage extends Fragment {
                     costData = view.findViewById(R.id.cardCost24);
                     websiteData = view.findViewById(R.id.cardWebsite24);
                     contactData = view.findViewById(R.id.cardContact24);
+                    imgData = R.drawable.prudential_plc;
                 }
-                toDetailsPage(nameData, descData, termData, coverageData, payoutData, premiumData, costData, websiteData, contactData, navController);
+                toDetailsPage(nameData, descData, termData, coverageData, payoutData, premiumData, costData, websiteData, contactData, imgData, navController);
             }
         };
 
@@ -507,11 +532,11 @@ public class policiesPage extends Fragment {
         cardView24.setOnClickListener(cardListener);
     }
 
-    private void toDetailsPage(TextView name, TextView desc, TextView term, TextView coverage, TextView payout, TextView premium, TextView cost, TextView website, TextView contact, NavController nav) {
+    private void toDetailsPage(TextView name, TextView desc, TextView term, TextView coverage, TextView payout, TextView premium, TextView cost, TextView website, TextView contact, int img, NavController nav) {
         NavDirections action = policiesPageDirections.actionPoliciesPageToDetailsPage(name.getText().toString(),
                 desc.getText().toString(), term.getText().toString(), coverage.getText().toString(),
                 payout.getText().toString(), premium.getText().toString(), cost.getText().toString(),
-                website.getText().toString(), contact.getText().toString());
+                website.getText().toString(), contact.getText().toString(), img);
         nav.navigate(action);
     }
 
