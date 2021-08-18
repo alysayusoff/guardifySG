@@ -74,7 +74,6 @@ public class detailsPage extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        // setContentView(R.layout.fragment_details_page);
         View detailsView = inflater.inflate(R.layout.fragment_details_page, container, false);
         recyclerView = detailsView.findViewById(R.id.recyclerView);
 
@@ -86,6 +85,10 @@ public class detailsPage extends Fragment {
         String payout = detailsPageArgs.fromBundle(getArguments()).getPayout();
         String premium = detailsPageArgs.fromBundle(getArguments()).getPremium();
         String cost = detailsPageArgs.fromBundle(getArguments()).getCost();
+        // qy added
+        String website = detailsPageArgs.fromBundle(getArguments()).getWebsite();
+        String contact = detailsPageArgs.fromBundle(getArguments()).getContact();
+        String contactDetails = website + "\n" + contact;
 
         policyDetailsList =  new ArrayList<>();
         policyDetailsList.add(new PolicyDetail("Description", desc));
@@ -95,6 +98,8 @@ public class detailsPage extends Fragment {
         policyDetailsList.add(new PolicyDetail("Premium Type", premium));
         policyDetailsList.add(new PolicyDetail("Premium Cost", cost));
         //alysa end edit code
+        // qy added
+        policyDetailsList.add(new PolicyDetail("Contact Us", contactDetails));
 
         initRecyclerView();
 
