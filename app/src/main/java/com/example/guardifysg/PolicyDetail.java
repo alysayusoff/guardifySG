@@ -1,7 +1,6 @@
 package com.example.guardifysg;
 
 public class PolicyDetail {
-
     private String detailTitle;
     private String detailText;
     private boolean expanded;
@@ -32,7 +31,7 @@ public class PolicyDetail {
         return detailText;
     }
 
-    public void getDetailText(String detailText) {
+    public void setDetailText(String detailText) {
         this.detailText = detailText;
     }
 

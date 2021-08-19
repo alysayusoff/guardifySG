@@ -1,4 +1,9 @@
 <resources>
+    //guide page
+    <string name="sample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.</string>
+    <string name="basicsHeader">INSURANCE BASICS</string>
+    <string name="who">Who needs insurance?</string>
+
     //questionnairePage strings
     <string name="app_name">guardifySG</string>
     <!-- TODO: Remove or change this placeholder text -->
