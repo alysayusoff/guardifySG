@@ -3,10 +3,17 @@ package com.example.guardifysg;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +21,11 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class guidePage extends Fragment {
+
+    //GLOBAL VARS HERE
+    RecyclerView recyclerView;
+    GuideAdapter guideAdapter;
+    List<PolicyGuide> insuranceBasicsTitles;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +71,27 @@ public class guidePage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_guide_page, container, false);
+        View v = inflater.inflate(R.layout.fragment_guide_page, container, false);
+        recyclerView = v.findViewById(R.id.guiderecycler);
+        initData();
+        initRecyclerView();
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this.requireContext(), DividerItemDecoration.VERTICAL);
+        recyclerView.addItemDecoration(dividerItemDecoration);
+        return v;
+    }
+
+    private void initData() {
+        insuranceBasicsTitles = new ArrayList<>();
+        insuranceBasicsTitles.add(new PolicyGuide("Who", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
+        insuranceBasicsTitles.add(new PolicyGuide("What", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
+        insuranceBasicsTitles.add(new PolicyGuide("Where", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
+        insuranceBasicsTitles.add(new PolicyGuide("When", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
+        insuranceBasicsTitles.add(new PolicyGuide("Why", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
+        insuranceBasicsTitles.add(new PolicyGuide("How", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
+    }
+
+    private void initRecyclerView() {
+        guideAdapter = new GuideAdapter(insuranceBasicsTitles);
+        recyclerView.setAdapter(guideAdapter);
     }
 }

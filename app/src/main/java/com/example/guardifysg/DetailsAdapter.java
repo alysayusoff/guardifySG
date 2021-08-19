@@ -30,13 +30,12 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.ViewHold
     }
 
     @Override
-    // called once for every individual row
     public void onBindViewHolder(@NonNull @NotNull DetailsAdapter.ViewHolder holder, int position) {
         PolicyDetail policyDetails = policyDetailsList.get(position);
         holder.detailTitle.setText(policyDetails.getDetailTitle());
         holder.detailText.setText(policyDetails.getDetailText());
 
-        // holds current state of movie
+        // holds current state of policy detail
         boolean isExpanded = policyDetailsList.get(position).isExpanded();
         // makes view visible or gone based on state of isExpanded
         holder.expandableDetail.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
