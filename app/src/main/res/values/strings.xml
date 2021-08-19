@@ -5,9 +5,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="gender">Gender</string>
     <string name="age_group">Age Group</string>
-    <string name="budget">Budget</string>
+    <string name="budget">Budget (per year)</string>
     <string name="existing_insurance_you_own">Existing Insurance You Own</string>
-    <string name="life_insurance">Life Insurance</string>
+    <string name="life_insurance">Critical Illness Insurance</string>
     <string name="disability_insurance">Disability Insurance</string>
     <string name="integrated_shield_plan">Integrated Shield Plan</string>
     <string name="accident_insurance">Accident Insurance</string>
@@ -48,7 +48,7 @@
         <item>Cover for Hospital Bills</item>
         <item>Cover for Accidents</item>
         <item>Cover for Critical Illness</item>
-        <item>Cover for Life</item>
+        <item>Cover for Disability</item>
     </string-array>
 
     <string-array name="term_array">

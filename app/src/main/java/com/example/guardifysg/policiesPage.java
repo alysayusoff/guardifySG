@@ -35,6 +35,8 @@ public class policiesPage extends Fragment {
     String[] hList = {"4","8","12","16","18","23"};
     String[] fullList = {"1","7","9","13","17","22","2","6","10","15","19","21","3","5","11","14","20","24","4","8","12","16","18","23"};
 
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -107,7 +109,6 @@ public class policiesPage extends Fragment {
                 cardView13.setVisibility(View.VISIBLE);
                 cardView17.setVisibility(View.VISIBLE);
                 cardView22.setVisibility(View.VISIBLE);
-
             }
         });
 
