@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -64,6 +65,11 @@ public class questionnairePage extends Fragment {
     int cardView23Score = 0;
     int cardView24Score = 0;
 
+
+
+    public policiesPage policyPage;
+
+
     public questionnairePage() {
         // Required empty public constructor
     }
@@ -107,6 +113,9 @@ public class questionnairePage extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         int[] cardViewScore = {cardView1Score, cardView2Score, cardView3Score, cardView4Score, cardView5Score, cardView6Score, cardView7Score, cardView8Score, cardView9Score, cardView10Score, cardView11Score, cardView12Score,
                 cardView13Score, cardView14Score, cardView15Score, cardView16Score, cardView17Score, cardView18Score, cardView19Score, cardView20Score, cardView21Score, cardView22Score, cardView23Score, cardView24Score};
+
+        policyPage = new policiesPage();
+        List<String> cardViewsList = new ArrayList<String>();
 
         for(int i = 0; i < cardViewScore.length; i++) {
             cardViewScore[i] = 0;
@@ -161,6 +170,11 @@ public class questionnairePage extends Fragment {
                 String coverageValue = coverageSpinner.getSelectedItem().toString();
                 String termValue = termSpinner.getSelectedItem().toString();
                 String expenseValue = expenseSpinner.getSelectedItem().toString();
+
+                // Score Reset
+                for (int i = 0; i < cardViewScore.length; i++){
+                    cardViewScore[i] = 0;
+                }
 
                 // Gender Value Check
                 if (genderValue.equals("Male")){
@@ -341,6 +355,17 @@ public class questionnairePage extends Fragment {
                         }
                     }
                 }
+
+                for (int i = 0; i < cardViewScore.length; i++){
+                    if(cardViewScore[i] > 3){
+                        String newString = "cardView" + String.valueOf(i+1);
+                        cardViewsList.add(newString);
+                    }
+
+                }
+
+                policyPage.qnDone = true;
+                policyPage.policiesRecommended = cardViewsList;
 
                 final NavController navController = Navigation.findNavController(view);
                 navController.navigate(R.id.action_questionnairePage_to_policiesPage);
