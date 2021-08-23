@@ -17,6 +17,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link policiesPage#newInstance} factory method to
@@ -34,6 +37,9 @@ public class policiesPage extends Fragment {
     String[] dList = {"3","5","11","14","20","24"};
     String[] hList = {"4","8","12","16","18","23"};
     String[] fullList = {"1","7","9","13","17","22","2","6","10","15","19","21","3","5","11","14","20","24","4","8","12","16","18","23"};
+
+    public static boolean qnDone;
+    public static List<String> policiesRecommended = new ArrayList<String>();
 
 
 
@@ -531,6 +537,11 @@ public class policiesPage extends Fragment {
         cardView23.setOnClickListener(cardListener);
         cardView24 = view.findViewById(R.id.cardView24);
         cardView24.setOnClickListener(cardListener);
+
+        if(qnDone){
+            setAllGone();
+            setPoliciesRecommended(policiesRecommended);
+        }
     }
 
     private void toDetailsPage(TextView name, TextView desc, TextView term, TextView coverage, TextView payout, TextView premium, TextView cost, TextView website, TextView contact, int img, NavController nav) {
@@ -567,4 +578,84 @@ public class policiesPage extends Fragment {
         cardView23.setVisibility(View.GONE);
         cardView24.setVisibility(View.GONE);
     }
+
+    private void setPoliciesRecommended(List<String> policiesRecommended){
+        for(int i = 0; i < policiesRecommended.size(); i++){
+            if("cardView1".equals(policiesRecommended.get(i))){
+                cardView1.setVisibility(View.VISIBLE);
+            }
+            else if("cardView2".equals(policiesRecommended.get(i))){
+                cardView2.setVisibility(View.VISIBLE);
+            }
+            else if("cardView3".equals(policiesRecommended.get(i))){
+                cardView3.setVisibility(View.VISIBLE);
+            }
+            else if("cardView4".equals(policiesRecommended.get(i))){
+                cardView4.setVisibility(View.VISIBLE);
+            }
+            else if("cardView5".equals(policiesRecommended.get(i))){
+                cardView5.setVisibility(View.VISIBLE);
+            }
+            else if("cardView6".equals(policiesRecommended.get(i))){
+                cardView6.setVisibility(View.VISIBLE);
+            }
+            else if("cardView7".equals(policiesRecommended.get(i))){
+                cardView7.setVisibility(View.VISIBLE);
+            }
+            else if("cardView8".equals(policiesRecommended.get(i))){
+                cardView8.setVisibility(View.VISIBLE);
+            }
+            else if("cardView9".equals(policiesRecommended.get(i))){
+                cardView9.setVisibility(View.VISIBLE);
+            }
+            else if("cardView10".equals(policiesRecommended.get(i))){
+                cardView10.setVisibility(View.VISIBLE);
+            }
+            else if("cardView11".equals(policiesRecommended.get(i))){
+                cardView11.setVisibility(View.VISIBLE);
+            }
+            else if("cardView12".equals(policiesRecommended.get(i))){
+                cardView12.setVisibility(View.VISIBLE);
+            }
+            else if("cardView13".equals(policiesRecommended.get(i))){
+                cardView13.setVisibility(View.VISIBLE);
+            }
+            else if("cardView14".equals(policiesRecommended.get(i))){
+                cardView14.setVisibility(View.VISIBLE);
+            }
+            else if("cardView15".equals(policiesRecommended.get(i))){
+                cardView15.setVisibility(View.VISIBLE);
+            }
+            else if("cardView16".equals(policiesRecommended.get(i))){
+                cardView16.setVisibility(View.VISIBLE);
+            }
+            else if("cardView17".equals(policiesRecommended.get(i))){
+                cardView17.setVisibility(View.VISIBLE);
+            }
+            else if("cardView18".equals(policiesRecommended.get(i))){
+                cardView18.setVisibility(View.VISIBLE);
+            }
+            else if("cardView19".equals(policiesRecommended.get(i))){
+                cardView19.setVisibility(View.VISIBLE);
+            }
+            else if("cardView20".equals(policiesRecommended.get(i))){
+                cardView20.setVisibility(View.VISIBLE);
+            }
+            else if("cardView21".equals(policiesRecommended.get(i))){
+                cardView21.setVisibility(View.VISIBLE);
+            }
+            else if("cardView22".equals(policiesRecommended.get(i))){
+                cardView22.setVisibility(View.VISIBLE);
+            }
+            else if("cardView23".equals(policiesRecommended.get(i))){
+                cardView23.setVisibility(View.VISIBLE);
+            }
+            else if("cardView24".equals(policiesRecommended.get(i))){
+                cardView24.setVisibility(View.VISIBLE);
+            }
+        }
+    }
+
+
+
 }
