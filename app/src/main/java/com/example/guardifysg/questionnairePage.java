@@ -361,8 +361,8 @@ public class questionnairePage extends Fragment {
                         String newString = "cardView" + String.valueOf(i+1);
                         cardViewsList.add(newString);
                     }
-
                 }
+
 
                 policyPage.qnDone = true;
                 policyPage.policiesRecommended = cardViewsList;

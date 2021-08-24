@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -542,6 +543,369 @@ public class policiesPage extends Fragment {
             setAllGone();
             setPoliciesRecommended(policiesRecommended);
         }
+
+        // handlers for search
+        SearchView searchview = view.findViewById(R.id.searchView);
+        searchview.setQueryHint("Search for Policies");
+
+        searchview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+// Check for Term Coverage premium Description
+                setAllGone();
+                for (int i = 1; i < 25; i++){
+                    if(i == 1){
+                      TextView  descData = view.findViewById(R.id.cardDesc1);
+                      TextView  termData = view.findViewById(R.id.cardTerm1);
+                      TextView  coverageData = view.findViewById(R.id.cardCoverage1);
+                      TextView  premiumData = view.findViewById(R.id.cardPremium1);
+                      String descDataString = descData.getText().toString();
+                      String termDataString = termData.getText().toString();
+                      String coverageDataString = coverageData.getText().toString();
+                      String premiumDataString = premiumData.getText().toString();
+                      if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                          cardView1.setVisibility(View.VISIBLE);
+                      }
+                    }
+
+                    else if(i == 2){
+                        TextView  descData = view.findViewById(R.id.cardDesc2);
+                        TextView  termData = view.findViewById(R.id.cardTerm2);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage2);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium2);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView2.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 3){
+                        TextView  descData = view.findViewById(R.id.cardDesc3);
+                        TextView  termData = view.findViewById(R.id.cardTerm3);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage3);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium3);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView3.setVisibility(View.VISIBLE);
+                        }
+
+                    }
+
+                    else if(i == 4){
+                        TextView  descData = view.findViewById(R.id.cardDesc4);
+                        TextView  termData = view.findViewById(R.id.cardTerm4);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage4);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium4);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView4.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 5){
+                        TextView  descData = view.findViewById(R.id.cardDesc5);
+                        TextView  termData = view.findViewById(R.id.cardTerm5);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage5);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium5);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView5.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 6){
+                        TextView  descData = view.findViewById(R.id.cardDesc6);
+                        TextView  termData = view.findViewById(R.id.cardTerm6);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage6);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium6);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView6.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 7){
+                        TextView  descData = view.findViewById(R.id.cardDesc7);
+                        TextView  termData = view.findViewById(R.id.cardTerm7);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage7);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium7);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView7.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 8){
+                        TextView  descData = view.findViewById(R.id.cardDesc8);
+                        TextView  termData = view.findViewById(R.id.cardTerm8);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage8);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium8);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView8.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 9){
+                        TextView  descData = view.findViewById(R.id.cardDesc9);
+                        TextView  termData = view.findViewById(R.id.cardTerm9);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage9);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium9);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView9.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 10){
+                        TextView  descData = view.findViewById(R.id.cardDesc10);
+                        TextView  termData = view.findViewById(R.id.cardTerm10);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage10);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium10);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView10.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 11){
+                        TextView  descData = view.findViewById(R.id.cardDesc11);
+                        TextView  termData = view.findViewById(R.id.cardTerm11);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage11);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium11);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView11.setVisibility(View.VISIBLE);
+                        }
+
+                    }
+
+                    else if(i == 12){
+                        TextView  descData = view.findViewById(R.id.cardDesc12);
+                        TextView  termData = view.findViewById(R.id.cardTerm12);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage12);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium12);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView12.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 13){
+                        TextView  descData = view.findViewById(R.id.cardDesc13);
+                        TextView  termData = view.findViewById(R.id.cardTerm13);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage13);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium13);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView13.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 14){
+                        TextView  descData = view.findViewById(R.id.cardDesc14);
+                        TextView  termData = view.findViewById(R.id.cardTerm14);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage14);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium14);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView14.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 15){
+                        TextView  descData = view.findViewById(R.id.cardDesc15);
+                        TextView  termData = view.findViewById(R.id.cardTerm15);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage15);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium15);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView15.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 16){
+                        TextView  descData = view.findViewById(R.id.cardDesc16);
+                        TextView  termData = view.findViewById(R.id.cardTerm16);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage16);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium16);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView16.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    if(i == 17){
+                        TextView  descData = view.findViewById(R.id.cardDesc17);
+                        TextView  termData = view.findViewById(R.id.cardTerm17);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage17);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium17);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView17.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 18){
+                        TextView  descData = view.findViewById(R.id.cardDesc18);
+                        TextView  termData = view.findViewById(R.id.cardTerm18);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage18);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium18);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView18.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 19){
+                        TextView  descData = view.findViewById(R.id.cardDesc19);
+                        TextView  termData = view.findViewById(R.id.cardTerm19);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage19);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium19);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView19.setVisibility(View.VISIBLE);
+                        }
+
+                    }
+
+                    else if(i == 20){
+                        TextView  descData = view.findViewById(R.id.cardDesc20);
+                        TextView  termData = view.findViewById(R.id.cardTerm20);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage20);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium20);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView20.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 21){
+                        TextView  descData = view.findViewById(R.id.cardDesc21);
+                        TextView  termData = view.findViewById(R.id.cardTerm21);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage21);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium21);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView21.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 22){
+                        TextView  descData = view.findViewById(R.id.cardDesc22);
+                        TextView  termData = view.findViewById(R.id.cardTerm22);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage22);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium22);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView22.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 23){
+                        TextView  descData = view.findViewById(R.id.cardDesc23);
+                        TextView  termData = view.findViewById(R.id.cardTerm23);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage23);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium23);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView23.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                    else if(i == 24){
+                        TextView  descData = view.findViewById(R.id.cardDesc24);
+                        TextView  termData = view.findViewById(R.id.cardTerm24);
+                        TextView  coverageData = view.findViewById(R.id.cardCoverage24);
+                        TextView  premiumData = view.findViewById(R.id.cardPremium24);
+                        String descDataString = descData.getText().toString();
+                        String termDataString = termData.getText().toString();
+                        String coverageDataString = coverageData.getText().toString();
+                        String premiumDataString = premiumData.getText().toString();
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                            cardView24.setVisibility(View.VISIBLE);
+                        }
+                    }
+
+                }
+
+
+
+                return false;
+            }
+        });
+
     }
 
     private void toDetailsPage(TextView name, TextView desc, TextView term, TextView coverage, TextView payout, TextView premium, TextView cost, TextView website, TextView contact, int img, NavController nav) {
@@ -580,6 +944,13 @@ public class policiesPage extends Fragment {
     }
 
     private void setPoliciesRecommended(List<String> policiesRecommended){
+
+        if(policiesRecommended.isEmpty()){
+            CharSequence text = "No Products to Recommend";
+            int duration = Toast.LENGTH_SHORT;
+            Toast.makeText(getActivity(), text, duration).show();
+        }
+
         for(int i = 0; i < policiesRecommended.size(); i++){
             if("cardView1".equals(policiesRecommended.get(i))){
                 cardView1.setVisibility(View.VISIBLE);
