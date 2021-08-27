@@ -113,17 +113,6 @@ public class policiesPage extends Fragment {
             public void onClick(View v) {
                 // 1,7,9,13,17,22 Crit Ill
                 setAllGone();
-                //set colors
-                /*imgBtn1.setTextColor(Color.parseColor("#2d8bbe"));
-                imgBtn1.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn2.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn2.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn3.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn3.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn4.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn4.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                refreshBtn.setTextColor(Color.parseColor("#FFFFFFFF"));
-                refreshBtn.setBackgroundColor(Color.parseColor("#2d8bbe"));*/
                 //card visibility
                 cardView1.setVisibility(View.VISIBLE);
                 cardView7.setVisibility(View.VISIBLE);
@@ -139,17 +128,6 @@ public class policiesPage extends Fragment {
             public void onClick(View v) {
                 //2,6,10,15,19,21 Acci
                 setAllGone();
-                //set colors
-                /*imgBtn2.setTextColor(Color.parseColor("#2d8bbe"));
-                imgBtn2.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn1.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn1.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn3.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn3.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn4.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn4.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                refreshBtn.setTextColor(Color.parseColor("#FFFFFFFF"));
-                refreshBtn.setBackgroundColor(Color.parseColor("#2d8bbe"));*/
                 cardView2.setVisibility(View.VISIBLE);
                 cardView6.setVisibility(View.VISIBLE);
                 cardView10.setVisibility(View.VISIBLE);
@@ -164,17 +142,6 @@ public class policiesPage extends Fragment {
             public void onClick(View v) {
                 //3,5,11,14,20,24 Disab
                 setAllGone();
-                //set colors
-                /*imgBtn3.setTextColor(Color.parseColor("#2d8bbe"));
-                imgBtn3.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn2.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn2.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn1.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn1.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn4.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn4.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                refreshBtn.setTextColor(Color.parseColor("#FFFFFFFF"));
-                refreshBtn.setBackgroundColor(Color.parseColor("#2d8bbe"));*/
                 cardView3.setVisibility(View.VISIBLE);
                 cardView5.setVisibility(View.VISIBLE);
                 cardView11.setVisibility(View.VISIBLE);
@@ -189,17 +156,6 @@ public class policiesPage extends Fragment {
             public void onClick(View v) {
                 //4,8,12,16,18,23 Hosp
                 setAllGone();
-                //set colors
-                /*imgBtn4.setTextColor(Color.parseColor("#2d8bbe"));
-                imgBtn4.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn2.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn2.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn3.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn3.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn1.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn1.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                refreshBtn.setTextColor(Color.parseColor("#FFFFFFFF"));
-                refreshBtn.setBackgroundColor(Color.parseColor("#2d8bbe"));*/
                 cardView4.setVisibility(View.VISIBLE);
                 cardView8.setVisibility(View.VISIBLE);
                 cardView12.setVisibility(View.VISIBLE);
@@ -212,18 +168,6 @@ public class policiesPage extends Fragment {
         refreshBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //all
-                //set colors
-                /*refreshBtn.setTextColor(Color.parseColor("#2d8bbe"));
-                refreshBtn.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn2.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn2.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn3.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn3.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn4.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn4.setBackgroundColor(Color.parseColor("#2d8bbe"));
-                imgBtn1.setTextColor(Color.parseColor("#FFFFFFFF"));
-                imgBtn1.setBackgroundColor(Color.parseColor("#2d8bbe"));*/
                 cardView1.setVisibility(View.VISIBLE);
                 cardView2.setVisibility(View.VISIBLE);
                 cardView3.setVisibility(View.VISIBLE);
@@ -620,14 +564,6 @@ public class policiesPage extends Fragment {
                 setAllGone();
                 for (int i = 1; i < 25; i++){
                     if(i == 1){
-                      /*TextView  descData = view.findViewById(R.id.cardDesc1);
-                      TextView  termData = view.findViewById(R.id.cardTerm1);
-                      TextView  coverageData = view.findViewById(R.id.cardCoverage1);
-                      TextView  premiumData = view.findViewById(R.id.cardPremium1);
-                      String descDataString = descData.getText().toString();
-                      String termDataString = termData.getText().toString();
-                      String coverageDataString = coverageData.getText().toString();
-                      String premiumDataString = premiumData.getText().toString();*/
                         String descDataString = getString(R.string.cardDesc1);
                         String termDataString = getString(R.string.cardTerm1);
                         String coverageDataString = getString(R.string.cardCoverage1);
@@ -869,11 +805,7 @@ public class policiesPage extends Fragment {
                             cardView24.setVisibility(View.VISIBLE);
                         }
                     }
-
                 }
-
-
-
                 return false;
             }
         });
@@ -995,7 +927,4 @@ public class policiesPage extends Fragment {
             }
         }
     }
-
-
-
 }

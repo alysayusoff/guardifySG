@@ -99,6 +99,7 @@
                     app:layout_constraintTop_toBottomOf="@id/imageView3"
                     app:layout_constraintStart_toEndOf="@id/findSuitable"
                     android:textStyle="bold"
+                    android:fontFamily="@font/lato"
                     android:backgroundTint="#ff2a39"
                     android:text="take the\nsurvey now" />
 
