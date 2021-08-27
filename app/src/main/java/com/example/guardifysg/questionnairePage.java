@@ -181,6 +181,8 @@ public class questionnairePage extends Fragment {
                     System.out.println("Selected Gender is Male");
                 } else if(genderValue.equals("Female")){
                     System.out.println("Selected Gender is Female");
+                } else if(genderValue.equals("Prefer not to say")){
+                    System.out.println("Selected Gender is Female");
                 }
 
                 // Age Value Check
@@ -240,6 +242,8 @@ public class questionnairePage extends Fragment {
                             cardViewScore[i] = cardViewScore[i] + 1;
                         }
                     }
+                }else if(ageValue.equals("Prefer not to say")){
+                    System.out.println("Selected Age is null");
                 }
 
                 // Budget Value Check
@@ -281,6 +285,8 @@ public class questionnairePage extends Fragment {
                             cardViewScore[i] = cardViewScore[i] + 1;
                         }
                     }
+                }else if(budgetValue.equals("Prefer not to say")){
+                    System.out.println("Selected budget is null");
                 }
 
                 // Coverage Value Check
@@ -310,6 +316,8 @@ public class questionnairePage extends Fragment {
                             cardViewScore[i] = cardViewScore[i] + 1;
                         }
                     }
+                } else if(coverageValue.equals("Prefer not to say")){
+                    System.out.println("Selected coverage is null");
                 }
 
                 // Term Value Check
@@ -329,6 +337,8 @@ public class questionnairePage extends Fragment {
                             cardViewScore[i] = cardViewScore[i] + 1;
                         }
                     }
+                }else if(termValue.equals("Prefer not to say")){
+                    System.out.println("Selected term is null");
                 }
 
                 // Expense Value Check
@@ -354,6 +364,8 @@ public class questionnairePage extends Fragment {
                             cardViewScore[i] = cardViewScore[i] + 1;
                         }
                     }
+                } else if(expenseValue.equals("Prefer not to say")){
+                    System.out.println("Selected expense is null");
                 }
 
                 for (int i = 0; i < cardViewScore.length; i++){
@@ -362,7 +374,6 @@ public class questionnairePage extends Fragment {
                         cardViewsList.add(newString);
                     }
                 }
-
 
                 policyPage.qnDone = true;
                 policyPage.policiesRecommended = cardViewsList;

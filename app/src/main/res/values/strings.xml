@@ -24,6 +24,7 @@
     <string-array name="gender_array">
         <item>Male</item>
         <item>Female</item>
+        <item>Prefer not to say</item>
     </string-array>
 
     <string-array name="age_array">
@@ -39,6 +40,7 @@
         <item>60 to 64</item>
         <item>65 to 69</item>
         <item>70 and older</item>
+        <item>Prefer not to say</item>
     </string-array>
 
     <string-array name="budget_array">
@@ -47,6 +49,7 @@
         <item>$151 to $200</item>
         <item>$201 to $250</item>
         <item>$251 and above</item>
+        <item>Prefer not to say</item>
     </string-array>
 
     <string-array name="coverage_array">
@@ -54,12 +57,14 @@
         <item>Cover for Accidents</item>
         <item>Cover for Critical Illness</item>
         <item>Cover for Disability</item>
+        <item>Prefer not to say</item>
     </string-array>
 
     <string-array name="term_array">
         <item>Up to age 65</item>
         <item>Up to age 85</item>
         <item>Life Time Coverage</item>
+        <item>Prefer not to say</item>
     </string-array>
 
     <string-array name="expense_array">
@@ -67,6 +72,7 @@
         <item>$501 to $1,000</item>
         <item>$1,001 to $1,500</item>
         <item>$1,501 and above</item>
+        <item>Prefer not to say</item>
     </string-array>
 
     //AboutUsPage strings
@@ -75,6 +81,7 @@
         <item>Quote</item>
         <item>Feedback</item>
         <item>Other</item>
+        <item>Prefer not to say</item>
     </string-array>
 
     //homepage strings
@@ -720,5 +727,6 @@
         \nFrom overseas/ payphone
         \n+65 6333 0333
     </string>
+    <string name="disclaimer">Please note that by selecting Prefer not to say, it would result in non-optimal suggestions.</string>
 
 </resources>

@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -568,7 +569,7 @@ public class policiesPage extends Fragment {
                       String termDataString = termData.getText().toString();
                       String coverageDataString = coverageData.getText().toString();
                       String premiumDataString = premiumData.getText().toString();
-                      if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                      if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("aia")){
                           cardView1.setVisibility(View.VISIBLE);
                       }
                     }
@@ -582,7 +583,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("aia")){
                             cardView2.setVisibility(View.VISIBLE);
                         }
                     }
@@ -596,7 +597,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("aia")){
                             cardView3.setVisibility(View.VISIBLE);
                         }
 
@@ -611,7 +612,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("aia")){
                             cardView4.setVisibility(View.VISIBLE);
                         }
                     }
@@ -625,7 +626,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("fwd")){
                             cardView5.setVisibility(View.VISIBLE);
                         }
                     }
@@ -639,7 +640,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("fwd")){
                             cardView6.setVisibility(View.VISIBLE);
                         }
                     }
@@ -653,7 +654,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("fwd")){
                             cardView7.setVisibility(View.VISIBLE);
                         }
                     }
@@ -667,7 +668,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("fwd")){
                             cardView8.setVisibility(View.VISIBLE);
                         }
                     }
@@ -681,7 +682,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("ntuc") || newText.toLowerCase(Locale.ROOT).contains("income")){
                             cardView9.setVisibility(View.VISIBLE);
                         }
                     }
@@ -695,7 +696,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("ntuc") || newText.toLowerCase(Locale.ROOT).contains("income")){
                             cardView10.setVisibility(View.VISIBLE);
                         }
                     }
@@ -709,7 +710,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("ntuc") || newText.toLowerCase(Locale.ROOT).contains("income")){
                             cardView11.setVisibility(View.VISIBLE);
                         }
 
@@ -724,7 +725,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("ntuc") || newText.toLowerCase(Locale.ROOT).contains("income")){
                             cardView12.setVisibility(View.VISIBLE);
                         }
                     }
@@ -738,7 +739,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("aviva")){
                             cardView13.setVisibility(View.VISIBLE);
                         }
                     }
@@ -752,7 +753,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("aviva")){
                             cardView14.setVisibility(View.VISIBLE);
                         }
                     }
@@ -766,7 +767,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("aviva")){
                             cardView15.setVisibility(View.VISIBLE);
                         }
                     }
@@ -780,7 +781,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("aviva")){
                             cardView16.setVisibility(View.VISIBLE);
                         }
                     }
@@ -794,7 +795,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("great") || newText.toLowerCase(Locale.ROOT).contains("eastern")){
                             cardView17.setVisibility(View.VISIBLE);
                         }
                     }
@@ -808,7 +809,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("great") || newText.toLowerCase(Locale.ROOT).contains("eastern")){
                             cardView18.setVisibility(View.VISIBLE);
                         }
                     }
@@ -822,7 +823,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("great") || newText.toLowerCase(Locale.ROOT).contains("eastern")){
                             cardView19.setVisibility(View.VISIBLE);
                         }
 
@@ -837,7 +838,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("great") || newText.toLowerCase(Locale.ROOT).contains("eastern")){
                             cardView20.setVisibility(View.VISIBLE);
                         }
                     }
@@ -851,7 +852,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("prudential")){
                             cardView21.setVisibility(View.VISIBLE);
                         }
                     }
@@ -865,7 +866,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("prudential")){
                             cardView22.setVisibility(View.VISIBLE);
                         }
                     }
@@ -879,7 +880,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("prudential")){
                             cardView23.setVisibility(View.VISIBLE);
                         }
                     }
@@ -893,7 +894,7 @@ public class policiesPage extends Fragment {
                         String termDataString = termData.getText().toString();
                         String coverageDataString = coverageData.getText().toString();
                         String premiumDataString = premiumData.getText().toString();
-                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText)){
+                        if(descDataString.contains(newText) || termDataString.contains(newText) || coverageDataString.contains(newText) || premiumDataString.contains(newText) || newText.toLowerCase(Locale.ROOT).contains("prudential")){
                             cardView24.setVisibility(View.VISIBLE);
                         }
                     }
