@@ -3,6 +3,7 @@ package com.example.guardifysg;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -34,11 +35,9 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.ViewHold
         PolicyDetail policyDetails = policyDetailsList.get(position);
         holder.detailTitle.setText(policyDetails.getDetailTitle());
         holder.detailText.setText(policyDetails.getDetailText());
-
-        // holds current state of policy detail
         boolean isExpanded = policyDetailsList.get(position).isExpanded();
-        // makes view visible or gone based on state of isExpanded
         holder.expandableDetail.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
+        holder.detailArrow.setRotation(isExpanded ? 90 : 0);
     }
 
     @Override
@@ -50,12 +49,14 @@ public class DetailsAdapter extends RecyclerView.Adapter<DetailsAdapter.ViewHold
     class ViewHolder extends RecyclerView.ViewHolder {
         TextView detailTitle, detailText;
         ConstraintLayout expandableDetail;
+        ImageView detailArrow;
 
         public ViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
             detailTitle = itemView.findViewById(R.id.detailTitle);
             detailText = itemView.findViewById(R.id.detailText);
             expandableDetail = itemView.findViewById(R.id.expandableDetail);
+            detailArrow = itemView.findViewById(R.id.detailArrow);
 
             detailTitle.setOnClickListener(view -> {
                 PolicyDetail policyDetails = policyDetailsList.get(getAbsoluteAdapterPosition());

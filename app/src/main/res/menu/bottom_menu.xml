@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/landingPage" android:title="Home" android:icon="@drawable/homewhite" />
-    <item android:id="@+id/guidePage" android:title="Guide" android:icon="@drawable/informationwhite" />
-    <item android:id="@+id/policiesPage" android:title="Policies" android:icon="@drawable/discover" />
+    <item android:id="@+id/guidePage" android:title="Guide" android:icon="@drawable/information" />
+    <item android:id="@+id/policiesPage" android:title="Policies" android:icon="@drawable/explore" />
     <item android:id="@+id/aboutPage" android:title="About" android:icon="@drawable/agentwhite" />
 </menu>

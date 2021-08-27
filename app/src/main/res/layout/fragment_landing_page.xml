@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient3"
     tools:context=".landingPage">
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,8 +26,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:contentDescription="@string/content"
                 android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/questionnaireContainer"
                 app:sliderAnimationDuration="600"
                 app:sliderAutoCycleDirection="back_and_forth"
                 app:sliderAutoCycleEnabled="true"
@@ -37,55 +42,65 @@
                 app:sliderIndicatorOrientation="horizontal"
                 app:sliderIndicatorPadding="3dp"
                 app:sliderIndicatorRadius="2dp"
-                app:sliderIndicatorSelectedColor="@color/teal_200"
+                app:sliderIndicatorSelectedColor="#2d8bbe"
                 app:sliderIndicatorUnselectedColor="@color/white"
                 app:sliderScrollTimeInSec="2"
-                app:sliderStartAutoCycle="true"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:sliderStartAutoCycle="true">
 
-                app:layout_constraintTop_toTopOf="parent" />
+            </com.smarteist.autoimageslider.SliderView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/questionnaireContainer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#CCCCCC"
-                android:paddingTop="7dp"
-                android:paddingBottom="7dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/image_slider">
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/meetagent1" />
 
                 <TextView
                     android:id="@+id/findSuitable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/questionnaireText"
+                    android:textColor="#172b44"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingEnd="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/questionnaireButton"
+                    app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+                <Button
+                    android:id="@+id/questionnaireButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/questionnaireText"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/questionnaireButton"
-                    android:layout_width="110dp"
-                    android:layout_height="35dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="10dp"
-                    android:background="@drawable/questionnairebutton_border"
-                    android:contentDescription="@string/content"
-                    android:padding="8dp"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/image__6_"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="25dp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView3"
+                    app:layout_constraintStart_toEndOf="@id/findSuitable"
+                    android:textStyle="bold"
+                    android:backgroundTint="#ff2a39"
+                    android:text="take the\nsurvey now" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -93,22 +108,23 @@
                 android:id="@+id/latestNews"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/latestNews"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:textColor="#000000"
-                android:textSize="30sp"
                 android:layout_marginStart="10dp"
-                app:layout_constraintTop_toBottomOf="@id/questionnaireContainer"
+                android:layout_marginTop="10dp"
+                android:text="@string/latestNews"
+                android:fontFamily="@font/lato"
+                android:textStyle="bold"
+                android:textColor="@color/header"
+                android:textSize="30sp"
                 app:layout_constraintBottom_toTopOf="@id/newsContainer"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_slider" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/newsContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:background="#ECECEC"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/latestNews">
@@ -117,33 +133,18 @@
                     android:id="@+id/newsTitle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="@font/lato"
                     android:text="@string/artTitle1"
-                    android:textColor="#000000"
+                    android:textColor="@color/title"
                     android:textSize="17sp"
-                    app:layout_constraintBottom_toTopOf="@id/newsShortDesc"
                     app:layout_constraintEnd_toStartOf="@id/newsLogo"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/newsShortDesc"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/artShortDesc1"
-                    android:textColor="#838383"
-                    android:textSize="13sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/newsLogo"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/newsTitle" />
-
                 <ImageView
                     android:id="@+id/newsLogo"
-                    android:layout_width="75dp"
+                    android:layout_width="100dp"
                     android:layout_height="75dp"
                     android:contentDescription="@string/content"
                     android:padding="5dp"
@@ -162,14 +163,32 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/newsMinRead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artMin1"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artFull1"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/newsContainer2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:background="#ECECEC"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/newsContainer">
@@ -178,33 +197,18 @@
                     android:id="@+id/newsTitle2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="@font/lato"
                     android:text="@string/artTitle2"
-                    android:textColor="#000000"
+                    android:textColor="@color/title"
                     android:textSize="17sp"
-                    app:layout_constraintBottom_toTopOf="@id/newsDescription2"
                     app:layout_constraintEnd_toStartOf="@id/newsLogo2"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/newsDescription2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/artShortDesc2"
-                    android:textColor="#838383"
-                    android:textSize="13sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/newsLogo2"
-                    app:layout_constraintTop_toBottomOf="@id/newsTitle2" />
-
                 <ImageView
                     android:id="@+id/newsLogo2"
-                    android:layout_width="75dp"
+                    android:layout_width="100dp"
                     android:layout_height="75dp"
                     android:contentDescription="@string/content"
                     android:padding="5dp"
@@ -223,14 +227,40 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/newsMinRead2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artMin2"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsWebsite2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artFull2"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/newsContainer3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:background="#ECECEC"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/newsContainer2">
@@ -239,33 +269,18 @@
                     android:id="@+id/newsTitle3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="@font/lato"
                     android:text="@string/artTitle3"
-                    android:textColor="#000000"
+                    android:textColor="@color/title"
                     android:textSize="17sp"
-                    app:layout_constraintBottom_toTopOf="@id/newsDescription3"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/newsLogo3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/newsDescription3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/artShortDesc3"
-                    android:textColor="#838383"
-                    android:textSize="13sp"
-                    app:layout_constraintEnd_toStartOf="@id/newsLogo3"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/newsTitle3" />
-
                 <ImageView
                     android:id="@+id/newsLogo3"
-                    android:layout_width="75dp"
+                    android:layout_width="100dp"
                     android:layout_height="75dp"
                     android:contentDescription="@string/content"
                     android:padding="5dp"
@@ -284,14 +299,40 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/newsMinRead3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artMin3"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsWebsite3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artFull3"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/newsContainer4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:background="#ECECEC"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/newsContainer3">
@@ -300,33 +341,18 @@
                     android:id="@+id/newsTitle4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="@font/lato"
                     android:text="@string/artTitle4"
-                    android:textColor="#000000"
+                    android:textColor="@color/title"
                     android:textSize="17sp"
-                    app:layout_constraintBottom_toTopOf="@id/newsDescription4"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/newsLogo4"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/newsDescription4"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/artShortDesc4"
-                    android:textColor="#838383"
-                    android:textSize="13sp"
-                    app:layout_constraintEnd_toStartOf="@id/newsLogo4"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/newsTitle4" />
-
                 <ImageView
                     android:id="@+id/newsLogo4"
-                    android:layout_width="75dp"
+                    android:layout_width="100dp"
                     android:layout_height="75dp"
                     android:contentDescription="@string/content"
                     android:padding="5dp"
@@ -345,14 +371,40 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/newsMinRead4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artMin4"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsWebsite4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artFull4"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/newsContainer5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                android:background="#ECECEC"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/newsContainer4">
@@ -361,33 +413,18 @@
                     android:id="@+id/newsTitle5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
+                    android:fontFamily="@font/lato"
                     android:text="@string/artTitle5"
-                    android:textColor="#000000"
+                    android:textColor="@color/title"
                     android:textSize="17sp"
-                    app:layout_constraintBottom_toTopOf="@id/newsDescription5"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/newsLogo5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/newsDescription5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/artShortDesc5"
-                    android:textColor="#838383"
-                    android:textSize="13sp"
-                    app:layout_constraintEnd_toStartOf="@id/newsLogo5"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/newsTitle5" />
-
                 <ImageView
                     android:id="@+id/newsLogo5"
-                    android:layout_width="75dp"
+                    android:layout_width="100dp"
                     android:layout_height="75dp"
                     android:contentDescription="@string/content"
                     android:padding="5dp"
@@ -405,6 +442,32 @@
                     android:visibility="gone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsMinRead5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artMin5"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/newsWebsite5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artFull5"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

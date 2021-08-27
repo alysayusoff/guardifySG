@@ -13,10 +13,10 @@ public class PolicyDetail {
         this.expanded = expanded;
     }
 
-    public PolicyDetail(String detailTitle, String detailText) {
+    public PolicyDetail(String detailTitle, String detailText, boolean expanded) {
         this.detailTitle = detailTitle;
         this.detailText = detailText;
-        this.expanded = false;
+        this.expanded = expanded;
     }
 
     public String getDetailTitle() {

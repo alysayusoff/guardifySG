@@ -85,46 +85,49 @@
     </string-array>
 
     //homepage strings
-    <string name="questionnaireText">FIND YOUR SUITABLE POLICIES!</string>
+    <string name="questionnaireText">Find the perfect insurance policies for you and your loved ones.</string>
     <string name="latestNews">THE LATEST NEWS</string>
     <string name="newsTitle">NEW COVID-19 POLICIES</string>
     <string name="newsDesc">MULTIPLE INSURANCE COMPANIES NOW OFFER COVERAGE FOR HOSPITALISATION DUE TO COVID-19</string>
 
     //newsPage strings 1
     <string name="artTitle1">MAS reprimands AIA, Prudential and Aviva for breaching regulatory requirements</string>
-    <string name="artShortDesc1">Insurance companies Aviva, AIA and Prudential have been found by the Monetary Authority of Singapore (MAS) to have breached regulations by not reviewing the performance of their supervisors and for paying them beyond the limit set by regulations.</string>
     <string name="artLongDesc1">MAS in a release on Tuesday (June 15) said that the companies have been reprimanded for the offences that happened between
         2017 and 2019. MAS has serious concerns regarding the misconduct and the financial institutions, and individuals are required to remediate the issues
         promptly.The Monetary Authority of Singapore (MAS) found that three insurance companies did not review the performance of their supervisors. The
         firms also failed to assign the supervisors a grade as required under regulations. They paid commissions to these supervisors that exceeded the
         stipulated cap as well. The central bank has reprimanded these companies and two other individuals for the breaches. MAS has also directed Aviva
-        Financial Advisers to appoint independent persons to conduct a review of its internal control processes </string>
+        Financial Advisers to appoint independent persons to conduct a review of its internal control processes.</string>
+    <string name="artMin1">2 min read | June 15 2021</string>
+    <string name="artFull1">Full article on todayonline.com</string>
     //string 2
     <string name="artTitle2">NTUC Income reimagines insurance to give control back to customers</string>
-    <string name="artShortDesc2">The company(NTUC Income) introduced Singapore’s first rain insurance, Droplet, which protects customers against price surges on ride-hailing platforms during rainy days</string>
     <string name="artLongDesc2">As an insurtech player, Income has launched groundbreaking products that have enriched customers’ insurance experience. For instance, the company introduced Singapore’s first rain insurance,
         Droplet, which protects customers against price surges on ride-hailing platforms during rainy days by reimbursing 60 per cent of fares so that commuters could confidently hail rides. In support of the Singapore
         Green Plan 2030, Income recently partnered with car marketplace Carro, integrating the latter’s telematics capabilities and its dynamic pricing technology to launch Covered, a usage-based model where electric car
         drivers pay for motor insurance according to the mileage they drove. Income aims to insure all eligible electric vehicles to promote the adoption of green cars in the island-state.</string>
+    <string name="artMin2">2 min read | 10 August 2021</string>
+    <string name="artFull2">Full article on scmp.com</string>
     //string 3
     <string name="artTitle3">Great Eastern offers complimentary COVID-19 protection coverage for all Singapore residents</string>
-    <string name="artShortDesc3">Leading insurer Great Eastern is continuing its efforts to protect the community and support the national phased recovery with the launch of the GREAT Covid Care Plan, a complimentary post-vaccination protection plan available to all Singapore residents</string>
     <string name="artLongDesc3">The GREAT Covid Care Plan provides a cash payout of S$200 per day of hospitalisation up to a total of $2,000, in the event one is hospitalised due to COVID-19 after their vaccination. The plan provides worldwide coverage so that hospitalisation in Singapore as well as overseas is covered. This will provide additional peace of mind for Singaporeans who may travel abroad for work or leisure, and for overseas residents returning to their home country for visits as countries start to open up.
         This free coverage applies to any Singapore resident who has completed his/her first dose of a COVID-19 vaccine2 approved for use by the Health Sciences Authority or supplied under the Special Access Route (SAR). Coverage also includes children who have been vaccinated. Parents may register on behalf of their children who are under 18.
         Registration on Great Eastern’s website is required to activate the free coverage, and all eligible recipients will receive their GREAT Covid Care insurance certificate via email once their sign up is confirmed. The plan provides coverage for 12 months from the date of registration or when the individual receives his/her first dose of COVID-19 vaccine, whichever is later. The sign up period ends on 30 September 2021 and applicants must also complete their first vaccination dose by 31 December 2021 to qualify for the coverage.
         The GREAT Covid Care Plan complements the coverage provided by the S$1 million GREAT Vaccine Fund launched in January 2021 and is the latest support measure that Great Eastern has rolled out with the progression of the COVID-19 vaccination programme in Singapore.
         More information on the GREAT Covid Care Plan can be found on Great Eastern’s website. The company will also be reaching out to its customers through its financial representatives.</string>
+    <string name="artMin3">3 min read | 26 June 2021</string>
+    <string name="artFull3">Full article on straitstimes.com</string>
     //string 4
     <string name="artTitle4">As borders begin to open, NTUC Income adds Covid-19 coverage to travel insurance</string>
-    <string name="artShortDesc4">SINGAPORE — Customers who buy travel insurance from NTUC Income will now receive coverage for Covid-19 medical expenses while overseas, the insurer announced on Thursday (Nov 26).</string>
     <string name="artLongDesc4">The Covid-19 benefits are automatically included in single trip travel insurance plans purchased from Thursday and are also included in plans that cover pre-existing conditions. They apply to trips with travel dates starting from Thursday.
         Travellers who have bought the plan will be protected for 90 days for Covid-19-related hospitalisation expenses of up to US$100,000 while overseas, as well as costs incurred for medical evacuation or repatriation of up to US$100,000, if that becomes necessary.
         NTUC Income said in a press release that it has decided to enhance its travel insurance offerings “in response to the gradual lifting of border restrictions in Singapore and other parts of the world”.
         These Covid-19 benefits, however, will be excluded from travel insurance for trips to countries that the World Health Organization deems as high-risk for Covid-19 at the point of purchase, NTUC Income said.
         Mr Fabian Ng, NTUC Income’s general manager for consumer business, said: “While overseas travel in general continues to be restricted, we understand that there are some who will need to travel for necessary business-related and other essential matters.</string>
+    <string name="artMin4">3 min read | 26 November 2020</string>
+    <string name="artFull4">Full article on todayonline.com</string>
     //string 5
     <string name="artTitle5">Subscription-based Netflix-style insurance launched by NTUC Income</string>
-    <string name="artShortDesc5">SINGAPORE - Customers of streaming service Netflix are familiar with the concept of paying around $10 a month for a subscription plan that can be changed at any time.</string>
     <string name="artLongDesc5">SINGAPORE - Customers of streaming service Netflix are familiar with the concept of paying around $10 a month for a subscription plan that can be changed at any time.
         This model has now been adopted by insurer NTUC Income.
         Tribe, as the product is called, was launched on Wednesday (July 28) and is Singapore\'s first subscription-based and customisable insurance offering.
@@ -145,10 +148,12 @@
         He noted that globally, subscription businesses have grown five to eight times faster than traditional businesses, with services like Netflix and Spotify booming in popularity.
         "Technology has enabled customers to get access to what they want immediately and with greater personalisation," he said.
         This provides new market opportunities for insurers. "Access to insurance and its affordability must be made available so that people can stay protected."</string>
+    <string name="artMin5">6 min read | 29 July 2021</string>
+    <string name="artFull5">Full article on straitstimes.com</string>
 
     //policiesPage strings
     <string name="content">image</string>
-    <string name="browseByType">BROWSE INSURANCE POLICIES BY TYPE</string>
+    <string name="browseByType">BROWSE POLICIES BY TYPE</string>
     <string name="type1">Critical Illness</string>
     <string name="type2">Disability</string>
     <string name="type3">Hospitalisation</string>
@@ -210,7 +215,7 @@
         \n8.45am to 5.30pm (Mon-Fri)
     </string>
 
-    <string name="cardTitle3">AIA Premier Disability Cover</string>
+    <string name="cardTitle3">AIA Premiere Disability Cover</string>
     <string name="cardDesc3">Ongoing income to help provide financial stability while adjusting to your situation.</string>
     <string name="cardTerm3">Coverage up till age 65</string>
     <string name="cardCoverage3">Covers you if you are unable to work/earn an income due to disability/illness</string>

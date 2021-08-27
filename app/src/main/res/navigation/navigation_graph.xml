@@ -95,5 +95,11 @@
         <argument
             android:name="image"
             app:argType="integer" />
+        <argument
+            android:name="read"
+            app:argType="string" />
+        <argument
+            android:name="website"
+            app:argType="string" />
     </fragment>
 </navigation>

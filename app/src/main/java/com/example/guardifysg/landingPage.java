@@ -23,6 +23,7 @@ import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -106,7 +107,7 @@ public class landingPage extends Fragment {
         //navController code
         final NavController navController = Navigation.findNavController(view);
         //open questionnairePage code
-        ImageView btnQuestionnaire = view.findViewById(R.id.questionnaireButton);
+        Button btnQuestionnaire = view.findViewById(R.id.questionnaireButton);
         btnQuestionnaire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -117,39 +118,51 @@ public class landingPage extends Fragment {
         View.OnClickListener checker = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                TextView titleData, descData, readData, websiteData;
+                int imgData;
                 if (news1.isPressed()) {
-                    int imgData = R.drawable.image_from_ios_67;
-                    TextView titleData = v.findViewById(R.id.newsTitle);
-                    TextView descData = v.findViewById(R.id.newsLongDesc);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
+                    imgData = R.drawable.image_from_ios_67;
+                    titleData = v.findViewById(R.id.newsTitle);
+                    descData = v.findViewById(R.id.newsLongDesc);
+                    readData = v.findViewById(R.id.newsMinRead);
+                    websiteData = v.findViewById(R.id.newsWebsite);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData, readData.getText().toString(), websiteData.getText().toString());
                     navController.navigate(action);
                 }
                 if (news2.isPressed()) {
-                    int imgData = R.drawable.ntuc_dude;
-                    TextView titleData = v.findViewById(R.id.newsTitle2);
-                    TextView descData = v.findViewById(R.id.newsLongDesc2);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
+                    imgData = R.drawable.ntuc_dude;
+                    titleData = v.findViewById(R.id.newsTitle2);
+                    descData = v.findViewById(R.id.newsLongDesc2);
+                    readData = v.findViewById(R.id.newsMinRead2);
+                    websiteData = v.findViewById(R.id.newsWebsite2);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData, readData.getText().toString(), websiteData.getText().toString());
                     navController.navigate(action);
                 }
                 if (news3.isPressed()) {
-                    int imgData = R.drawable.greateastern_covid_plan;
-                    TextView titleData = v.findViewById(R.id.newsTitle3);
-                    TextView descData = v.findViewById(R.id.newsLongDesc3);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
+                    imgData = R.drawable.greateastern_covid_plan;
+                    titleData = v.findViewById(R.id.newsTitle3);
+                    descData = v.findViewById(R.id.newsLongDesc3);
+                    readData = v.findViewById(R.id.newsMinRead3);
+                    websiteData = v.findViewById(R.id.newsWebsite3);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData, readData.getText().toString(), websiteData.getText().toString());
                     navController.navigate(action);
                 }
                 if (news4.isPressed()) {
-                    int imgData = R.drawable.news4;
-                    TextView titleData = v.findViewById(R.id.newsTitle4);
-                    TextView descData = v.findViewById(R.id.newsLongDesc4);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
+                    imgData = R.drawable.news4;
+                    titleData = v.findViewById(R.id.newsTitle4);
+                    descData = v.findViewById(R.id.newsLongDesc4);
+                    readData = v.findViewById(R.id.newsMinRead4);
+                    websiteData = v.findViewById(R.id.newsWebsite4);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData, readData.getText().toString(), websiteData.getText().toString());
                     navController.navigate(action);
                 }
                 if (news5.isPressed()) {
-                    int imgData = R.drawable.news5;
-                    TextView titleData = v.findViewById(R.id.newsTitle5);
-                    TextView descData = v.findViewById(R.id.newsLongDesc5);
-                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData);
+                    imgData = R.drawable.news5;
+                    titleData = v.findViewById(R.id.newsTitle5);
+                    descData = v.findViewById(R.id.newsLongDesc5);
+                    readData = v.findViewById(R.id.newsMinRead5);
+                    websiteData = v.findViewById(R.id.newsWebsite5);
+                    NavDirections action = landingPageDirections.actionLandingPageToNewsPage(titleData.getText().toString(), descData.getText().toString(), imgData, readData.getText().toString(), websiteData.getText().toString());
                     navController.navigate(action);
                 }
             }

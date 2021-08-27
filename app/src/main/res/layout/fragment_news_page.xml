@@ -9,65 +9,85 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp"
-        tools:ignore="SpeakableTextPresentCheck"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" >
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
-
-            <ImageView
-                android:id="@+id/newsImage"
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:contentDescription="@string/content"
-                android:scaleType="fitCenter"
-                android:src="@drawable/covid"
-                app:layout_constraintBottom_toTopOf="@id/newsTitle"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/newsTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="25dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="Data from landingPage"
-                android:textAllCaps="true"
-                android:textColor="#434343"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:lineSpacingExtra="4dp"
-                app:layout_constraintBottom_toTopOf="@id/newsContent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/newsImage" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/minRead"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="@string/artTitle1"
+                android:textColor="#172b44"
+                android:textSize="23sp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:id="@+id/minRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="@string/artMin1"
+                android:textColor="#9F9F9F"
+                app:layout_constraintBottom_toTopOf="@id/newsImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/newsTitle" />
+
+            <ImageView
+                android:id="@+id/newsImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintTop_toBottomOf="@id/minRead"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/newsContent"
+                android:contentDescription="@string/content"
+                android:src="@drawable/image_from_ios_67"
+                android:adjustViewBounds="true" />
 
             <TextView
                 android:id="@+id/newsContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-thin"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:text="Data from landingPage"
-                android:textColor="#292929"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/lato"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/artLongDesc1"
+                android:textColor="#4A535E"
                 android:textSize="15sp"
-                android:textStyle="bold"
-                android:lineSpacingExtra="3dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/fullart"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/newsTitle" />
+                app:layout_constraintTop_toBottomOf="@id/newsImage" />
+
+            <TextView
+                android:id="@+id/fullart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/newsContent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#9F9F9F"
+                android:text="@string/artFull1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
