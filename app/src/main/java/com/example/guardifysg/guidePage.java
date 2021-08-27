@@ -82,12 +82,12 @@ public class guidePage extends Fragment {
 
     private void initData() {
         insuranceBasicsTitles = new ArrayList<>();
-        insuranceBasicsTitles.add(new PolicyGuide("Who", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
-        insuranceBasicsTitles.add(new PolicyGuide("What", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
-        insuranceBasicsTitles.add(new PolicyGuide("Where", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
-        insuranceBasicsTitles.add(new PolicyGuide("When", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
-        insuranceBasicsTitles.add(new PolicyGuide("Why", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
-        insuranceBasicsTitles.add(new PolicyGuide("How", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."));
+        insuranceBasicsTitles.add(new PolicyGuide("Who needs insurance?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", true));
+        insuranceBasicsTitles.add(new PolicyGuide("Why should anyone have insurance?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", false));
+        insuranceBasicsTitles.add(new PolicyGuide("When should I get insurance?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", false));
+        insuranceBasicsTitles.add(new PolicyGuide("What do I need to know before purchasing an insurance policy?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", false));
+        insuranceBasicsTitles.add(new PolicyGuide("How do I make sure I am purchasing the right insurance for me and/or my loved ones?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", true));
+        insuranceBasicsTitles.add(new PolicyGuide("Where can I purchase insurance?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", false));
     }
 
     private void initRecyclerView() {

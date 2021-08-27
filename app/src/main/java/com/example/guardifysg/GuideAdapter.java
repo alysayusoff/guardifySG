@@ -3,6 +3,7 @@ package com.example.guardifysg;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +38,7 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.ViewHolder> 
         holder.itemExpanded.setText(policyGuide.getDescription());
         boolean isExpanded = insuranceBasicsTitles.get(position).isExpanded();
         holder.expandableBox.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
+        holder.arrow.setRotation(isExpanded ? 90 : 0);
     }
 
     @Override
@@ -47,12 +49,14 @@ public class GuideAdapter extends RecyclerView.Adapter<GuideAdapter.ViewHolder> 
     class ViewHolder extends RecyclerView.ViewHolder {
         TextView itemTitle, itemExpanded;
         ConstraintLayout expandableBox;
+        ImageView arrow;
 
         public ViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
             itemTitle = itemView.findViewById(R.id.itemTitle);
             itemExpanded = itemView.findViewById(R.id.itemExpanded);
             expandableBox = itemView.findViewById(R.id.expandableLayout);
+            arrow = itemView.findViewById(R.id.arrow);
 
             itemTitle.setOnClickListener(view -> {
                 PolicyGuide policyGuide = insuranceBasicsTitles.get(getAbsoluteAdapterPosition());

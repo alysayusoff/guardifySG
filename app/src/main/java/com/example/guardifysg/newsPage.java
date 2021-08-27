@@ -93,5 +93,13 @@ public class newsPage extends Fragment {
         int artImg = newsPageArgs.fromBundle(getArguments()).getImage();
         ImageView frag1Img = view.findViewById(R.id.newsImage);
         frag1Img.setImageResource(artImg);
+
+        String artRead = newsPageArgs.fromBundle(getArguments()).getRead();
+        TextView frag1Read = view.findViewById(R.id.minRead);
+        frag1Read.setText(artRead);
+
+        String artWeb = newsPageArgs.fromBundle(getArguments()).getWebsite();
+        TextView frag1Web = view.findViewById(R.id.fullart);
+        frag1Web.setText(artWeb);
     }
 }
