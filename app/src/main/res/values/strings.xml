@@ -83,6 +83,7 @@
         <item>Other</item>
         <item>Prefer not to say</item>
     </string-array>
+    <string name="string1">Created in 2021, GuardifySG helps individuals have a better understanding of the different insurance policies and coverage, specifically for health insurance. This gives individuals a stepping stone so that they are able to learn more about insurances easily.\nWe also believe in creating an application that helps individuals \nkeep them up to date on insurance news and policies.</string>
 
     //homepage strings
     <string name="questionnaireText">Find the perfect insurance policies for you and your loved ones.</string>

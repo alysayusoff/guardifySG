@@ -82,12 +82,12 @@ public class guidePage extends Fragment {
 
     private void initData() {
         insuranceBasicsTitles = new ArrayList<>();
-        insuranceBasicsTitles.add(new PolicyGuide("Who needs insurance?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", true));
-        insuranceBasicsTitles.add(new PolicyGuide("Why should anyone have insurance?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", false));
-        insuranceBasicsTitles.add(new PolicyGuide("When should I get insurance?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", false));
-        insuranceBasicsTitles.add(new PolicyGuide("What do I need to know before purchasing an insurance policy?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", false));
-        insuranceBasicsTitles.add(new PolicyGuide("How do I make sure I am purchasing the right insurance for me and/or my loved ones?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", true));
-        insuranceBasicsTitles.add(new PolicyGuide("Where can I purchase insurance?", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur.", false));
+        insuranceBasicsTitles.add(new PolicyGuide("Who needs insurance?", "Insurance serves to protect the interest of the policyholders. Depending on the type of insurance, insurance companies may pay for medical bills and/or provide financial assistance should anything happen to the policyholders.", true));
+        insuranceBasicsTitles.add(new PolicyGuide("Why should anyone have insurance?", "People who are looking at different stages of their lives may want to look into some financial planning for different purposes. Insurance can help policyholders set aside a sum of money for future use, or subsidise hospital bills.", false));
+        insuranceBasicsTitles.add(new PolicyGuide("When should I get insurance?", "It is never too early or too late to purchase insurance. Most importantly, explore different insurances to find the most suitable one for your needs.", false));
+        insuranceBasicsTitles.add(new PolicyGuide("What do I need to know before purchasing an insurance policy?", "It is important to know the purpose of the insurance and understanding your own needs. This will help you locate a suitable insurance easier.", false));
+        insuranceBasicsTitles.add(new PolicyGuide("How do I make sure I am purchasing the right insurance for me and/or my loved ones?", "We provide all the information stated in the insurances provided by their respective companies. While we aim to provide the insurance information to the best of our efforts, if there are still any doubts, please do not hesitate to contact an insurance agent from the respective insurance companies for clarification.", true));
+        insuranceBasicsTitles.add(new PolicyGuide("Where can I purchase insurance?", "Please contact an insurance agent from the respective insurance companies to book an appointment for the purchase.", false));
     }
 
     private void initRecyclerView() {
