@@ -59,18 +59,18 @@
                 android:fontFamily="@font/lato"
                 android:text="Helping others choose the right insurance in their best interests."
                 android:textColor="@color/title"
-                android:textSize="17sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/TextParagraphSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:lineSpacingExtra="2dp"
                 android:gravity="center"
                 android:fontFamily="@font/lato"
                 android:textColor="@color/title"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget faucibus risus. In hac habitasse platea dictumst. Fusce dignissim sem suscipit fermentum consectetur."
+                android:text="@string/string1"
                 android:textSize="13sp" />
 
             <TextView
