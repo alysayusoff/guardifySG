@@ -23,6 +23,11 @@
         android:label="fragment_about_page"
         tools:layout="@layout/fragment_about_page" />
     <fragment
+        android:id="@+id/guidePage"
+        android:name="com.example.guardifysg.guidePage"
+        android:label="fragment_guide_page"
+        tools:layout="@layout/fragment_guide_page" />
+    <fragment
         android:id="@+id/detailsPage"
         android:name="com.example.guardifysg.detailsPage"
         android:label="fragment_details_page"
@@ -67,11 +72,6 @@
             android:id="@+id/action_policiesPage_to_detailsPage"
             app:destination="@id/detailsPage" />
     </fragment>
-    <fragment
-        android:id="@+id/guidePage"
-        android:name="com.example.guardifysg.guidePage"
-        android:label="fragment_guide_page"
-        tools:layout="@layout/fragment_guide_page" />
     <fragment
         android:id="@+id/questionnairePage"
         android:name="com.example.guardifysg.questionnairePage"
