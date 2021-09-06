@@ -97,8 +97,8 @@ public class landingPage extends Fragment {
         super.onViewCreated(view, savedInstanceState);
       
         //image carousel
-        sliderView=view.findViewById(R.id.image_slider);
-        SliderAdapter sliderAdapter=new SliderAdapter(images);
+        SliderAdapter sliderAdapter= new SliderAdapter(images);
+        sliderView = view.findViewById(R.id.image_slider);
         sliderView.setSliderAdapter(sliderAdapter);
         sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
         sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
